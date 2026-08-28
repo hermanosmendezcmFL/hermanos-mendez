@@ -1,101 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hmcmfl.com/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/"/>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/es/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/"/>
   </url>
   <url>
     <loc>https://hmcmfl.com/about/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/empresa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/about/"/>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/empresa/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/empresa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/about/"/>
+    <loc>https://hmcmfl.com/construction-management/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/services/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/"/>
+    <loc>https://hmcmfl.com/consulting/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/servicios/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/"/>
+    <loc>https://hmcmfl.com/consulting/commercial/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/services/consulting/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/consulting/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/consultoria/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/consulting/"/>
+    <loc>https://hmcmfl.com/consulting/other/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/servicios/consultoria/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/consulting/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/consultoria/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/consulting/"/>
+    <loc>https://hmcmfl.com/consulting/other/business-development/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/services/construction-management/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/construction-management/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/gerencia-de-construccion/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/construction-management/"/>
+    <loc>https://hmcmfl.com/consulting/other/efficiency-evaluations/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/servicios/gerencia-de-construccion/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/construction-management/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/gerencia-de-construccion/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/construction-management/"/>
+    <loc>https://hmcmfl.com/consulting/other/purchasing-assistance/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/services/project-management/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/project-management/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/gerencia-de-proyectos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/project-management/"/>
+    <loc>https://hmcmfl.com/consulting/other/sop-employee-management/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/servicios/gerencia-de-proyectos/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/services/project-management/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/servicios/gerencia-de-proyectos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/services/project-management/"/>
+    <loc>https://hmcmfl.com/consulting/other/special-projects/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/consulting/other/systems-evaluations/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/consulting/other/takeoff-support/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/consulting/residential/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/contact/"/>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/comercial/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/asistencia-en-compras/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/desarrollo-de-negocios/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/evaluaciones-de-eficiencia/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/evaluaciones-de-sistemas/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/proyectos-especiales/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/sop-gestion-de-empleados/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/otros/soporte-de-estimacion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/consultoria/residencial/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/es/contacto/</loc>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://hmcmfl.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://hmcmfl.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hmcmfl.com/contact/"/>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/empresa/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/demolicion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/desarrollo-de-terrenos/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/nueva-construccion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/renovacion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/gerencia-de-construccion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/gerencia-de-proyectos/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/comercial/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/construccion-a-medida/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/despeje-de-terrenos/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/diseno-construccion/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/inspecciones/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/mitigacion-de-aguas-pluviales/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/multifamiliar/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/permisos/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/industrias/sfr/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/commercial/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/custom-build/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/design-build/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/inspections/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/land-clearing/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/multi-family/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/permitting/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/sfr/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/industries/stormwater-mitigation/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/project-management/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/demolition/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/land-development/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/new-construction/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/renovation/</loc>
   </url>
 </urlset>

@@ -1,2 +1,10 @@
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
+Redirect 301 /services/ /consulting/
+Redirect 301 /services/consulting/ /consulting/
+Redirect 301 /services/construction-management/ /construction-management/
+Redirect 301 /services/project-management/ /project-management/
+Redirect 301 /es/servicios/ /es/consultoria/
+Redirect 301 /es/servicios/consultoria/ /es/consultoria/
+Redirect 301 /es/servicios/gerencia-de-construccion/ /es/gerencia-de-construccion/
+Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/
