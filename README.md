@@ -24,5 +24,3 @@ Upload the repository contents (keep the folder structure) to any static host. `
 - 10002 N Forest Hills Dr, Tampa, FL 33612
 - (813) 323-4648
 - Monday–Friday 8:00 AM–5:00 PM; Saturday–Sunday closed
-
-Photography is atmospheric stock imagery and is not a record of HMCM project work.

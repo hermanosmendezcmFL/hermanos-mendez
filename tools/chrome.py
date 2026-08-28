@@ -30,7 +30,7 @@ T = {
         "overview": "Overview",
         "commercial": "Commercial",
         "residential": "Residential",
-        "other_group": "Other consulting services",
+        "other_group": "Other Consulting Services",
         "cm": "Construction Management",
         "pm": "Project Management",
         "specialties": "Specialties",
@@ -42,16 +42,15 @@ T = {
         "hours_short": "Mon–Fri 8:00 AM–5:00 PM",
         "maps": "Open in Google Maps",
         "parking": "Free on-site parking",
-        "photo_note": "Photography is atmospheric stock imagery and is not a record of HMCM project work.",
-        "footer_note": "Photography on this site is decorative. It is not captioned as Hermanos Mendez Construction Management job work.",
         "domain": "HMCMFL.com",
         "es_label": "Español",
-        "copy": "© Hermanos Mendez Construction Management, LLC",
+        "copy": "© 2026 HMCM",
         "see": "View",
-        "cta_services": "See services",
+        "cta_services": "See Services",
         "related": "Related",
-        "on_this": "On this site",
-        "call_now": "Call now",
+        "on_this": "More",
+        "call_now": "Call Now",
+        "contact_cta": "Get in Touch",
         "visit": "Visit the office",
         "breadcrumb": "Breadcrumb",
         "other_items": [
@@ -104,16 +103,15 @@ T = {
         "hours_short": "Lun–vie 8:00 a. m.–5:00 p. m.",
         "maps": "Abrir en Google Maps",
         "parking": "Estacionamiento gratuito en el sitio",
-        "photo_note": "Las fotografías son de archivo y no documentan obras de HMCM.",
-        "footer_note": "Las fotografías de este sitio son decorativas. No se presentan como obras de Hermanos Mendez Construction Management.",
         "domain": "HMCMFL.com",
         "es_label": "English",
-        "copy": "© Hermanos Mendez Construction Management, LLC",
+        "copy": "© 2026 HMCM",
         "see": "Ver",
         "cta_services": "Ver servicios",
         "related": "Relacionado",
-        "on_this": "En este sitio",
+        "on_this": "Más",
         "call_now": "Llamar ahora",
+        "contact_cta": "Póngase en contacto",
         "visit": "Visitar la oficina",
         "breadcrumb": "Miga de pan",
         "other_items": [
@@ -413,12 +411,9 @@ def footer(lang):
         <a class="footer-logo" href="{home}">
           <img src="/assets/logo-light.svg" width="200" height="75" alt="HMCM — Hermanos Mendez Construction Management">
         </a>
-        <p class="footer-legal">{LEGAL}</p>
         <p class="footer-meta">{ADDR1}<br>{CITY}<br>
-          <a href="tel:{PHONE_TEL}">{PHONE_DISP}</a><br>{t['hours']}<br>{t['parking']}</p>
+          <a href="tel:{PHONE_TEL}">{PHONE_DISP}</a></p>
         <p class="footer-meta"><a href="{MAPS}" rel="noopener noreferrer" target="_blank">{t['maps']}</a></p>
-        <p class="footer-meta"><a href="{CANON}/">{t['domain']}</a></p>
-        <p class="footer-note">{t['footer_note']}</p>
       </div>
       <div class="footer-nav">
         <h2>{t['consulting']}</h2>

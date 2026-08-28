@@ -319,8 +319,8 @@ address { font-style: normal; }
   text-decoration: none;
   font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-transform: none;
   white-space: nowrap;
   transition: background var(--ease);
 }
@@ -336,9 +336,9 @@ address { font-style: normal; }
   padding: 0.95rem 1.35rem;
   text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-size: 0.9rem;
   transition: background var(--ease), color var(--ease), border-color var(--ease), transform var(--ease);
 }
 .btn:hover { transform: translateY(-1px); }
@@ -392,6 +392,24 @@ address { font-style: normal; }
   font-size: clamp(2.35rem, 5.6vw, 4.15rem);
   line-height: 1.12;
   letter-spacing: -0.02em;
+}
+.hero-position {
+  margin: 0 0 0.85rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 2.6vw, 1.95rem);
+  letter-spacing: -0.015em;
+  color: var(--copper-soft);
+  text-transform: none;
+}
+.hero-sub {
+  margin: 0 0 1rem;
+  max-width: 36rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  color: var(--stone);
+  text-transform: none;
 }
 .hero-lead {
   margin: 0 0 1.85rem;
@@ -528,10 +546,10 @@ address { font-style: normal; }
 .section--ink .section-intro { color: var(--stone); }
 
 .link-more {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   text-decoration: none;
   color: var(--copper-deep);
   border-bottom: 1px solid currentColor;
@@ -602,10 +620,10 @@ address { font-style: normal; }
 .tile .tile-go {
   display: inline-block;
   margin-top: 0.85rem;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: #fff;
   border-bottom: 1px solid var(--copper);
   padding-bottom: 0.12rem;
@@ -760,8 +778,8 @@ address { font-style: normal; }
   margin-top: 0.85rem;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--copper-deep);
 }
 
@@ -822,10 +840,10 @@ address { font-style: normal; }
 .map-link {
   display: inline-block;
   margin-top: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   text-decoration: none;
   border-bottom: 1px solid var(--copper);
   padding-bottom: 0.1rem;
@@ -994,12 +1012,63 @@ address { font-style: normal; }
 /* Redirect notice */
 .redirect-note { padding: 6rem 0; text-align: left; }
 
+
+/* Proof strip + story headlines */
+.proof {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 0;
+}
+.proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.proof article {
+  padding: 3rem 0;
+  border-top: 1px solid var(--rule-dark);
+}
+.proof article + article {
+  padding-left: 2.5rem;
+  border-left: 1px solid var(--rule-dark);
+}
+.proof-figure {
+  margin: 0 0 0.55rem;
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--cream);
+}
+.proof h2 {
+  margin: 0;
+  max-width: 16ch;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.25;
+  color: var(--stone);
+}
+.story-head { max-width: 24rem; }
+.position-line {
+  margin: 1.15rem 0 0.35rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  max-width: 28rem;
+  text-transform: none;
+}
+.section--dark .position-line,
+.section--ink .position-line { color: var(--cream); }
+.story-copy { margin-top: 1.25rem; }
+
 /* Mobile */
 @media (max-width: 1080px) {
   .tile-grid,
   .spec-grid,
   .process-grid,
-  .mini-grid { grid-template-columns: repeat(2, 1fr); }
+  .mini-grid,
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .nav-drop--wide {
     min-width: 22rem;
@@ -1065,8 +1134,13 @@ address { font-style: normal; }
   .contact-strip,
   .content-grid,
   .related,
-  .footer-grid {
+  .footer-grid,
+  .proof-grid {
     grid-template-columns: 1fr;
+  }
+  .proof article + article {
+    padding-left: 0;
+    border-left: 0;
   }
   .split-card { grid-template-columns: 1fr; }
   .tile, .spec-card { min-height: 18rem; }

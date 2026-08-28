@@ -65,12 +65,14 @@ def interior_body(lang, crumbs, h1, lead, photo, paras, links, related):
         '          <a class="btn btn-primary" href="tel:%s">%s</a>\n'
         '          <a class="btn btn-ghost" href="%s">%s</a>\n'
         "        </div>\n      </div>\n    </section>"
-    ) % (PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact"])
+    ) % (PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact_cta"])
     return body
 
 def build_from_json():
     pages = json.loads((Path(__file__).parent / "pages.json").read_text())["pages"]
     for pg in pages:
+        if pg["en_path"] == "/about/":
+            continue
         en, es = pg["en"], pg["es"]
         write(pg["en_path"], wrap_page(
             "en", pg["en_path"], pg["es_path"], pg["nav"], en["title"], en["desc"],
@@ -100,20 +102,20 @@ def build_contact():
     for lang, path, pair, title, desc, h1, lead, p1 in [
         ("en","/contact/","/es/contacto/","Contact HMCM in Tampa | (813) 323-4648",
          "Contact Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday-Friday 8:00 AM-5:00 PM.",
-         "Contact Hermanos Mendez Construction Management",
-         "Phone is the primary way to reach us. The office is in Tampa, with free on-site parking.",
+         "Get in Touch",
+         "Call the office. We are in Tampa, with free on-site parking.",
          "Call <a href=\"tel:%s\">%s</a>. There is no email published on this website." % (PHONE_TEL, PHONE_DISP)),
         ("es","/es/contacto/","/contact/","Contacto HMCM en Tampa | (813) 323-4648",
          "Contacto de Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
-         "Contacto de Hermanos Mendez Construction Management",
+         "P\u00f3ngase en contacto",
          "El telefono es la via principal. La oficina esta en Tampa, con estacionamiento gratuito en el sitio.",
          "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electronico." % (PHONE_TEL, PHONE_DISP)),
     ]:
         t = T[lang]
         crumbs = [("Home","/"),("Contact", None)] if lang=="en" else [("Inicio","/es/"),("Contacto", None)]
         if lang == "es":
-            h1 = "Contacto de Hermanos Mendez Construction Management"
-            lead = "El tel\u00e9fono es la v\u00eda principal. La oficina est\u00e1 en Tampa, con estacionamiento gratuito en el sitio."
+            h1 = "P\u00f3ngase en contacto"
+            lead = "Llame a la oficina. Estamos en Tampa, con estacionamiento gratuito en el sitio."
             p1 = "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electr\u00f3nico." % (PHONE_TEL, PHONE_DISP)
         lis = "\n".join("            <li><span>%s</span><span>%s</span></li>" % (d,h) for d,h in hours[lang])
         hours_h = "Hours" if lang=="en" else "Horario"
@@ -136,7 +138,7 @@ def build_contact():
             '      <div class="wrap">\n'
             '        <iframe class="map-embed" title="%s" src="%s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n'
             "      </div>\n    </section>"
-        ) % (p1, LEGAL, ADDR1, CITY, MAPS, t["maps"], t["parking"], PHONE_TEL, PHONE_DISP, hours_h, lis, map_t, embed)
+        ) % (p1, BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"], PHONE_TEL, PHONE_DISP, hours_h, lis, map_t, embed)
         write(path, wrap_page(lang, path, pair, "contact", title, desc, body))
 
 def build_404():
@@ -230,16 +232,16 @@ def build_meta():
         "- Hermanos Mendez Construction Management, LLC\n"
         "- 10002 N Forest Hills Dr, Tampa, FL 33612\n"
         "- (813) 323-4648\n"
-        "- Monday\u2013Friday 8:00 AM\u20135:00 PM; Saturday\u2013Sunday closed\n\n"
-        "Photography is atmospheric stock imagery and is not a record of HMCM project work.\n",
+        "- Monday\u2013Friday 8:00 AM\u20135:00 PM; Saturday\u2013Sunday closed\n",
         encoding="utf-8",
     )
     return urls
 
 if __name__ == "__main__":
     # home imported after definition in home_render
-    from home_render import build_homes
+    from home_render import build_homes, build_about
     build_homes(write, wrap_page)
+    build_about(write, wrap_page)
     build_from_json()
     build_contact()
     build_404()
