@@ -1878,7 +1878,7 @@
           ],
           [
             "Project Execution & Oversight",
-            "/construction-management/project-execution/"
+            "/project-management/"
           ]
         ],
         "related": [],
@@ -1909,7 +1909,7 @@
           ],
           [
             "Ejecución y supervisión de proyectos",
-            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+            "/es/gerencia-de-proyectos/"
           ]
         ],
         "related": [],
@@ -2268,8 +2268,8 @@
         "lead": "Pure field execution and oversight of existing projects. This service manages pre-existing plans and budgets only—with no preliminary budgeting, scoping, or design-phase involvement.",
         "paras": [
           "Project Execution &amp; Oversight is strictly field execution and oversight of a project that already exists. This service manages pre-existing plans and budgets only. There is no preliminary budgeting, no scoping, and no design-phase involvement in this pathway.",
-          "Owners hire this when drawings, numbers, and a path are already in place, and the need is on site: sourcing and managing contractors and subcontractors, daily sequences, trade coordination, site constraints, and quality through completion.",
-          "This is not full Construction Management. <a href=\"/construction-management/concept-to-completion/\">Concept to Completion Services</a> includes architect pairing, budget creation, permitting, and preconstruction. It is also not <a href=\"/project-management/\">Project Management</a>, which holds scope, cost, and timeline from the first budget through closeout. Execution and oversight stays in the field on what is already drawn and already budgeted."
+          "Owners hire this when designs, budgets, and trades are already in place, and the need is on site: ownership of the schedule, daily workflow, trade coordination, site constraints, and strict quality control through closeout. We do not design the project, build the initial budgets, or negotiate trade contracts.",
+          "This is not full Construction Management. <a href=\"/construction-management/concept-to-completion/\">Concept to Completion Services</a> includes architect pairing, budget creation, permitting, and preconstruction. This pathway matches our <a href=\"/project-management/\">Project Management</a> service: dedicated execution and field oversight of pre-existing plans, budgets, and trades. We do not design the project, build the initial budgets, or negotiate trade contracts here."
         ],
         "links": [
           [
@@ -2303,8 +2303,8 @@
         "lead": "Ejecución y supervisión de campo, en sentido estricto, de proyectos existentes. Este servicio gestiona solo planos y presupuestos preexistentes, sin presupuestación preliminar, alcance ni participación en la fase de diseño.",
         "paras": [
           "Ejecución y supervisión de proyectos es, en sentido estricto, la ejecución y supervisión de campo de un proyecto que ya existe. Este servicio gestiona solo planos y presupuestos preexistentes. En esta vía no hay presupuestación preliminar, no hay definición de alcance y no hay participación en la fase de diseño.",
-          "Los propietarios contratan esto cuando los planos, las cifras y el camino ya están en su lugar, y lo que hace falta está en el sitio: seleccionar y dirigir contratistas y subcontratistas, secuencias diarias, coordinación de gremios, restricciones del predio y calidad hasta la entrega.",
-          "Esto no es la gerencia de construcción completa. <a href=\"/es/gerencia-de-construccion/concepto-a-entrega/\">Concepto a entrega</a> incluye el emparejamiento con el arquitecto, la creación del presupuesto, los permisos y la preconstrucción. Tampoco es <a href=\"/es/gerencia-de-proyectos/\">gerencia de proyectos</a>, que sostiene alcance, costo y plazo desde el primer presupuesto hasta el cierre. La ejecución y supervisión se queda en el campo, sobre lo que ya está dibujado y ya está presupuestado."
+          "Los propietarios contratan esto cuando los diseños, los presupuestos y los gremios ya están en su lugar, y lo que hace falta está en el sitio: la titularidad del programa, el flujo de trabajo diario, la coordinación de gremios, las restricciones del predio y un control de calidad estricto hasta el cierre. No diseñamos el proyecto, no armamos los presupuestos iniciales ni negociamos los contratos de gremios.",
+          "Esto no es la gerencia de construcción completa. <a href=\"/es/gerencia-de-construccion/concepto-a-entrega/\">Concepto a entrega</a> incluye el emparejamiento con el arquitecto, la creación del presupuesto, los permisos y la preconstrucción. Esta vía coincide con nuestro servicio de <a href=\"/es/gerencia-de-proyectos/\">gerencia de proyectos</a>: ejecución y supervisión de campo dedicadas de planos, presupuestos y gremios preexistentes. Aquí no diseñamos el proyecto, no armamos los presupuestos iniciales ni negociamos los contratos de gremios."
         ],
         "links": [
           [
@@ -2326,6 +2326,262 @@
           [
             "Ejecución y supervisión de proyectos",
             "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/design-build/",
+      "es_path": "/es/gerencia-de-construccion/diseno-construccion/",
+      "nav": "cm-designbuild",
+      "photo": "plans.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Design-Build",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Diseño-construcción",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Design-Build | Construction Management | HMCM",
+        "desc": "Owner-side design-build representation in Tampa Bay, as a Construction Management pathway: design and construction delivered as one path.",
+        "h1": "Design-Build",
+        "lead": "Owner-side consulting and management when design and construction are delivered as one path.",
+        "paras": [
+          "Design-build is a delivery method: the owner is not running a pure design-bid-build split. HMCM can advise or manage on the owner's side of that arrangement so scope and cost stay visible.",
+          "We do not run an architecture studio. We represent the owner when design and construction move together.",
+          "This page lives under Construction Management. The same delivery method remains listed under <a href=\"/industries/design-build/\">Industries</a>."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ],
+          [
+            "Design-Build",
+            "/construction-management/design-build/"
+          ],
+          [
+            "Permitting",
+            "/construction-management/permitting/"
+          ],
+          [
+            "Project Management",
+            "/project-management/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Diseño-construcción | Gerencia de construcción | HMCM",
+        "desc": "Representación del propietario en diseño-construcción en Tampa Bay, como vía de gerencia de construcción: diseño y construcción por la misma ruta.",
+        "h1": "Diseño-construcción",
+        "lead": "Consultoría y gerencia del lado del propietario cuando diseño y construcción se entregan por la misma vía.",
+        "paras": [
+          "Diseño-construcción es un método de entrega: el propietario no corre una separación pura de diseño-licitación-construcción. HMCM puede asesorar o gerenciar del lado del propietario para que alcance y costo sigan visibles.",
+          "No operamos un estudio de arquitectura. Representamos al propietario cuando diseño y construcción se mueven juntos.",
+          "Esta página vive bajo gerencia de construcción. El mismo método de entrega sigue listado en <a href=\"/es/industrias/diseno-construccion/\">Industrias</a>."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ],
+          [
+            "Diseño-construcción",
+            "/es/gerencia-de-construccion/diseno-construccion/"
+          ],
+          [
+            "Permisos",
+            "/es/gerencia-de-construccion/permisos/"
+          ],
+          [
+            "Gerencia de proyectos",
+            "/es/gerencia-de-proyectos/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/permitting/",
+      "es_path": "/es/gerencia-de-construccion/permisos/",
+      "nav": "cm-permitting",
+      "photo": "docs.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Permitting",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Permisos",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Permitting | Construction Management | HMCM",
+        "desc": "Permit sequencing and agency follow-through in Tampa Bay, as a Construction Management pathway.",
+        "h1": "Permitting",
+        "lead": "Permit sequencing and follow-through with the agencies that have to sign off, as part of the job.",
+        "paras": [
+          "In Tampa Bay, permitting is often the critical path. Consulting and project management include who needs which stamp, in which order, and what the drawings still owe the reviewer.",
+          "Permits are scheduled with the rest of the work, not treated as a courier errand.",
+          "This page lives under Construction Management. The same work remains listed under <a href=\"/industries/permitting/\">Industries</a>."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ],
+          [
+            "Design-Build",
+            "/construction-management/design-build/"
+          ],
+          [
+            "Permitting",
+            "/construction-management/permitting/"
+          ],
+          [
+            "Project Management",
+            "/project-management/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Permisos | Gerencia de construcción | HMCM",
+        "desc": "Secuencia de permisos y seguimiento con las agencias en Tampa Bay, como vía de gerencia de construcción.",
+        "h1": "Permisos",
+        "lead": "Secuencia de permisos y seguimiento con las agencias que deben firmar, como parte de la obra.",
+        "paras": [
+          "En Tampa Bay, los permisos suelen ser la ruta crítica. La consultoría y la gerencia de proyectos incluyen quién necesita qué sello, en qué orden, y qué le deben todavía los planos al revisor.",
+          "Los permisos se programan con el resto del trabajo; no se tratan como un recado de mensajería.",
+          "Esta página vive bajo gerencia de construcción. El mismo trabajo sigue listado en <a href=\"/es/industrias/permisos/\">Industrias</a>."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ],
+          [
+            "Diseño-construcción",
+            "/es/gerencia-de-construccion/diseno-construccion/"
+          ],
+          [
+            "Permisos",
+            "/es/gerencia-de-construccion/permisos/"
+          ],
+          [
+            "Gerencia de proyectos",
+            "/es/gerencia-de-proyectos/"
           ]
         ],
         "related": [],
@@ -2358,112 +2614,56 @@
         ]
       ],
       "en": {
-        "title": "Project Management in Tampa Bay | HMCM",
-        "desc": "Project management for land development and construction in Tampa Bay: scope, cost, and timeline from preconstruction through closeout.",
-        "h1": "Project management from preconstruction through closeout",
-        "lead": "Oversight of scope, cost, and timeline: a single point of contact for the decisions that keep a job on the rails.",
+        "title": "Project Management: Dedicated Oversight and Execution | HMCM Tampa Bay",
+        "desc": "HMCM Project Management in Tampa Bay: dedicated on-site execution and field oversight for owners and developers who already have designs, budgets, and trades in place.",
+        "h1": "Project Management: Dedicated Oversight and Execution",
+        "lead": "Dedicated execution and field oversight for owners and developers who already have designs, budgets, and trades in place.",
         "paras": [
-          "Project management is how HMCM is hired when an owner needs someone to hold the job together from the first budget through closeout: what is in scope, what it should cost, and when it has to be done.",
-          "Preconstruction is part of the work. Drawings, quantities, purchasing, and permits are aligned so the field is not asked to invent the job.",
-          "During construction, project management stays tied to the site so schedule and cost are the same conversation as the work."
+          "At HMCM, our Project Management service is strictly focused on execution and field oversight. This service is designed for owners and developers who already have their designs, budgets, and trades in place, but lack an in-house project manager or require seasoned leadership to drive the daily operations. We do not design the project, build the initial budgets, or negotiate trade contracts; rather, we take your established framework and ensure it is executed flawlessly in the field.",
+          "Serving as your dedicated representative on site, we take ownership of the schedule, coordinate the daily workflow, and enforce strict quality control. Whether you need an experienced manager to take the reins from day one or require a mid-project intervention to regain control of a struggling site, our team integrates seamlessly into your operation at any phase. We act as the single point of contact holding the job together, ensuring that your plans are built exactly as specified and that the project advances efficiently through final closeout."
         ],
         "links": [
-          [
-            "Construction Management",
-            "/construction-management/"
-          ],
-          [
-            "Consulting",
-            "/consulting/"
-          ],
-          [
-            "Takeoff Support and Contract Negotiations",
-            "/consulting/other/takeoff-support/"
-          ],
-          [
-            "Permitting",
-            "/industries/permitting/"
-          ],
           [
             "Design-Build",
-            "/industries/design-build/"
-          ],
-          [
-            "Contact",
-            "/contact/"
-          ]
-        ],
-        "related": [
-          [
-            "Construction Management",
-            "/construction-management/",
-            "Field coordination of the same job."
+            "/construction-management/design-build/"
           ],
           [
             "Permitting",
-            "/industries/permitting/",
-            "Agency sequence as part of the timeline."
+            "/construction-management/permitting/"
           ],
           [
-            "Special Projects",
-            "/consulting/other/special-projects/",
-            "When the job does not fit a standard box."
+            "Takeoff Support & Contract Negotiations",
+            "/consulting/other/takeoff-support/"
           ]
-        ]
+        ],
+        "related": [],
+        "aside_h": "Service Pathways"
       },
       "es": {
-        "title": "Gerencia de proyectos en Tampa Bay | HMCM",
-        "desc": "Gerencia de proyectos para desarrollo de terrenos y construcción en Tampa Bay: alcance, costo y plazo desde la preconstrucción hasta el cierre.",
-        "h1": "Gerencia de proyectos desde la preconstrucción hasta el cierre",
-        "lead": "Control de alcance, costo y plazo: un solo punto de contacto para las decisiones que mantienen la obra en rieles.",
+        "title": "Gerencia de proyectos: supervisión y ejecución dedicadas | HMCM Tampa Bay",
+        "desc": "Gerencia de proyectos HMCM en Tampa Bay: ejecución y supervisión de campo dedicadas para propietarios y desarrolladores que ya tienen diseños, presupuestos y gremios en su lugar.",
+        "h1": "Gerencia de proyectos: supervisión y ejecución dedicadas",
+        "lead": "Ejecución y supervisión de campo dedicadas para propietarios y desarrolladores que ya tienen diseños, presupuestos y gremios en su lugar.",
         "paras": [
-          "La gerencia de proyectos es cómo se contrata a HMCM cuando el propietario necesita a alguien que sostenga la obra desde el primer presupuesto hasta el cierre: qué entra en el alcance, cuánto debería costar y cuándo tiene que estar lista.",
-          "La preconstrucción es parte del trabajo. Se alinean planos, cantidades, compras y permisos para que el campo no tenga que inventar la obra.",
-          "Durante la construcción, la gerencia de proyectos se mantiene unida al sitio para que plazo y costo sean la misma conversación que el trabajo."
+          "En HMCM, nuestro servicio de gerencia de proyectos se centra estrictamente en la ejecución y la supervisión de campo. Este servicio está pensado para propietarios y desarrolladores que ya tienen diseños, presupuestos y gremios en su lugar, pero no cuentan con un gerente de proyectos interno o necesitan un liderazgo experimentado para conducir las operaciones diarias. No diseñamos el proyecto, no armamos los presupuestos iniciales ni negociamos los contratos de gremios; tomamos el marco que usted ya estableció y nos aseguramos de que se ejecute con precisión en el campo.",
+          "Como su representante dedicado en el sitio, asumimos el programa, coordinamos el flujo de trabajo diario y aplicamos un control de calidad estricto. Ya sea que necesite un gerente experimentado que tome las riendas desde el primer día o una intervención a mitad de obra para recuperar el control de un sitio en dificultades, nuestro equipo se integra de forma fluida en su operación en cualquier fase. Actuamos como el único punto de contacto que sostiene la obra, de modo que sus planos se construyan exactamente como se especificaron y el proyecto avance con eficiencia hasta el cierre final."
         ],
         "links": [
           [
-            "Gerencia de construcción",
-            "/es/gerencia-de-construccion/"
-          ],
-          [
-            "Consultoría",
-            "/es/consultoria/"
-          ],
-          [
-            "Takeoff y negociación de contratos",
-            "/es/consultoria/otros/soporte-de-estimacion/"
+            "Diseño-construcción",
+            "/es/gerencia-de-construccion/diseno-construccion/"
           ],
           [
             "Permisos",
-            "/es/industrias/permisos/"
+            "/es/gerencia-de-construccion/permisos/"
           ],
           [
-            "Diseño-construcción",
-            "/es/industrias/diseno-construccion/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
+            "Soporte de takeoff y negociación de contratos",
+            "/es/consultoria/otros/soporte-de-estimacion/"
           ]
         ],
-        "related": [
-          [
-            "Gerencia de construcción",
-            "/es/gerencia-de-construccion/",
-            "Coordinación de campo de la misma obra."
-          ],
-          [
-            "Permisos",
-            "/es/industrias/permisos/",
-            "La secuencia con las agencias como parte del plazo."
-          ],
-          [
-            "Proyectos especiales",
-            "/es/consultoria/otros/proyectos-especiales/",
-            "Cuando la obra no cabe en una caja estándar."
-          ]
-        ]
+        "related": [],
+        "aside_h": "Rutas de servicio"
       }
     },
     {

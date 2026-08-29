@@ -311,14 +311,14 @@ def services_body(lang):
         photo = "construction-mgmt.jpg"
         intro = (
             "Hermanos Mendez Construction Management is hired two ways to run the work: "
-            "construction management in the field, and project management from preconstruction through closeout."
+            "construction management as an end-to-end partner, and project management as dedicated execution and field oversight of an established framework."
         )
         tiles = [
             ("01", "Construction Management",
              "Field coordination of trades, schedule, and site so the work moves with a single point of contact.",
              "/construction-management/", "construction-mgmt.jpg"),
             ("02", "Project Management",
-             "Oversight of scope, cost, and timeline from preconstruction through closeout.",
+             "Dedicated execution and field oversight for owners who already have designs, budgets, and trades in place.",
              "/project-management/", "project-mgmt.jpg"),
         ]
         related = [
@@ -332,14 +332,14 @@ def services_body(lang):
         photo = "construction-mgmt.jpg"
         intro = (
             "A Hermanos Mendez Construction Management se le contrata de dos maneras para dirigir el trabajo: "
-            "gerencia de construcción en el campo, y gerencia de proyectos desde la preconstrucción hasta el cierre."
+            "gerencia de construcción como socio de principio a fin, y gerencia de proyectos como ejecución y supervisión de campo dedicadas de un marco ya establecido."
         )
         tiles = [
             ("01", "Gerencia de construcción",
              "Coordinación de gremios, programa y sitio de obra, con un solo punto de contacto.",
              "/es/gerencia-de-construccion/", "construction-mgmt.jpg"),
             ("02", "Gerencia de proyectos",
-             "Control de alcance, costo y plazo desde la preconstrucción hasta el cierre.",
+             "Ejecución y supervisión de campo dedicadas para propietarios que ya tienen diseños, presupuestos y gremios en su lugar.",
              "/es/gerencia-de-proyectos/", "project-mgmt.jpg"),
         ]
         related = [
