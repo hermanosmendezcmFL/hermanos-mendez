@@ -3352,13 +3352,14 @@
         ]
       ],
       "en": {
-        "title": "Industries | Commercial, Multi-Family, SFR, Design-Build | HMCM",
-        "desc": "Industries and markets HMCM serves in Tampa Bay: commercial, multi-family, SFR, custom build, land clearing, stormwater mitigation, permitting, inspections, and design-build.",
-        "h1": "Industries and markets we serve",
-        "lead": "Markets we advise and manage in Tampa Bay.",
+        "title": "Expertise Across Tampa Bay’s Key Markets | HMCM Tampa Bay",
+        "desc": "Comprehensive advisory, project management, and construction solutions designed for substantial developments across Tampa Bay’s key markets.",
+        "h1": "Expertise Across Tampa Bay’s Key Markets",
+        "lead": "Comprehensive advisory, project management, and construction solutions designed for substantial developments.",
         "paras": [
-          "Industries describe who the owner is and what kind of asset is on the ground.",
-          "We work these markets as a consultant, construction manager, or project manager."
+          "At HMCM, we are dedicated to supporting your vision with an unmatched depth of construction expertise. Whether we are partnering with a large-scale institution, an investment group, or an individual developer, we approach every engagement with the same unwavering diligence, professionalism, and commitment to delivering the exact results you expect. We view ourselves as a true extension of your team, ready to step in, navigate industry complexities, and drive your project safely to the finish line.",
+          "Our team brings decades of hands-on experience across all facets of the construction lifecycle, allowing us to help you achieve your highest-level objectives. We are specifically structured to manage comprehensive project scopes, substantial capital investments, and volume-driven portfolios. From extensive commercial developments to significant custom builds, our operational framework is built to support projects that demand rigorous oversight, complex coordination, and a high level of technical sophistication. We thrive in environments where the scale of the work requires a steady, experienced partner to ensure flawless execution.",
+          "By aligning our deep industry knowledge with your specific operational needs, we ensure that every phase of your project is optimized for success. We know the Tampa Bay market inside and out, and we are here to provide the strategic guidance, field management, and high-impact support necessary to turn your ambitious plans into completed assets."
         ],
         "links": [
           [
@@ -3378,56 +3379,22 @@
             "/industries/custom-build/"
           ],
           [
-            "Land Clearing",
-            "/industries/land-clearing/"
-          ],
-          [
-            "Stormwater Mitigation",
-            "/industries/stormwater-mitigation/"
-          ],
-          [
-            "Permitting",
-            "/industries/permitting/"
-          ],
-          [
-            "Inspections",
-            "/industries/inspections/"
-          ],
-          [
-            "Design-Build",
-            "/industries/design-build/"
-          ],
-          [
-            "Contact",
-            "/contact/"
+            "Residential",
+            "/consulting/residential/"
           ]
         ],
-        "related": [
-          [
-            "Commercial",
-            "/industries/commercial/",
-            "Consultoría y gerencia de construcción comercial en Tampa Bay"
-          ],
-          [
-            "Multi-Family",
-            "/industries/multi-family/",
-            "Consultoría y gerencia en construcción multifamiliar"
-          ],
-          [
-            "SFR (Single-Family Residential)",
-            "/industries/sfr/",
-            "Consultoría y gerencia en residencial unifamiliar (SFR)"
-          ]
-        ]
+        "related": [],
+        "aside_h": "Our Markets"
       },
       "es": {
-        "title": "Industrias | Comercial, multifamiliar, SFR, diseño-construcción | HMCM",
-        "desc": "Industrias y mercados que HMCM atiende en Tampa Bay: comercial, multifamiliar, SFR, construcción a medida, despeje, aguas pluviales, permisos, inspecciones y diseño-construcción.",
-        "h1": "Industrias y mercados que atendemos",
-        "lead": "Mercados que asesoramos y gerenciamos en Tampa Bay.",
+        "title": "Experiencia en los mercados clave de Tampa Bay | HMCM Tampa Bay",
+        "desc": "Asesoría integral, gerencia de proyectos y soluciones de construcción diseñadas para desarrollos de envergadura en los mercados clave de Tampa Bay.",
+        "h1": "Experiencia en los mercados clave de Tampa Bay",
+        "lead": "Asesoría integral, gerencia de proyectos y soluciones de construcción diseñadas para desarrollos de envergadura.",
         "paras": [
-          "Las industrias describen quién es el propietario y qué tipo de bien hay en el terreno.",
-          "Trabajamos estos mercados como consultor, gerente de construcción o gerente de proyectos."
+          "En HMCM, nos dedicamos a respaldar su visión con una profundidad de experiencia en construcción difícil de igualar. Ya sea que nos asociemos con una institución de gran escala, un grupo de inversión o un desarrollador individual, abordamos cada encargo con la misma diligencia constante, profesionalismo y compromiso de entregar exactamente los resultados que espera. Nos consideramos una verdadera extensión de su equipo, listos para intervenir, navegar las complejidades del sector y llevar su proyecto de forma segura hasta la meta.",
+          "Nuestro equipo aporta décadas de experiencia práctica en todas las facetas del ciclo de vida de la construcción, lo que nos permite ayudarle a alcanzar sus objetivos de más alto nivel. Estamos estructurados específicamente para gestionar alcances de proyecto integrales, inversiones de capital sustanciales y portafolios de alto volumen. Desde desarrollos comerciales extensos hasta obras a medida de envergadura, nuestro marco operativo está pensado para proyectos que exigen supervisión rigurosa, coordinación compleja y un alto nivel de sofisticación técnica. Prosperamos en entornos donde la escala del trabajo requiere un socio firme y experimentado para asegurar una ejecución impecable.",
+          "Al alinear nuestro profundo conocimiento del sector con sus necesidades operativas específicas, nos aseguramos de que cada fase de su proyecto esté optimizada para el éxito. Conocemos el mercado de Tampa Bay a fondo, y estamos aquí para brindar la orientación estratégica, la gerencia de campo y el apoyo de alto impacto necesarios para convertir sus planes ambiciosos en activos terminados."
         ],
         "links": [
           [
@@ -3447,47 +3414,12 @@
             "/es/industrias/construccion-a-medida/"
           ],
           [
-            "Despeje de terrenos",
-            "/es/industrias/despeje-de-terrenos/"
-          ],
-          [
-            "Mitigación de aguas pluviales",
-            "/es/industrias/mitigacion-de-aguas-pluviales/"
-          ],
-          [
-            "Permisos",
-            "/es/industrias/permisos/"
-          ],
-          [
-            "Inspecciones",
-            "/es/industrias/inspecciones/"
-          ],
-          [
-            "Diseño-construcción",
-            "/es/industrias/diseno-construccion/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
+            "Residencial",
+            "/es/consultoria/residencial/"
           ]
         ],
-        "related": [
-          [
-            "Comercial",
-            "/es/industrias/comercial/",
-            "Commercial buildings, sites, and owner-side delivery — advised and managed, not listed as a portfolio of named jobs."
-          ],
-          [
-            "Multifamiliar",
-            "/es/industrias/multifamiliar/",
-            "Residential buildings with more than one dwelling — planned and coordinated as construction, not as a real-estate brochure."
-          ],
-          [
-            "Residencial unifamiliar (SFR)",
-            "/es/industrias/sfr/",
-            "Houses — new, added-onto, or renovated — with permitting, inspections, and site work in the same conversation."
-          ]
-        ]
+        "related": [],
+        "aside_h": "Nuestros mercados"
       }
     },
     {
