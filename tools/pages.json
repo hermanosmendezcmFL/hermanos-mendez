@@ -4019,6 +4019,138 @@
       }
     },
     {
+      "en_path": "/industries/residential/",
+      "es_path": "/es/industrias/residencial/",
+      "nav": "ind",
+      "photo": "sfr.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Industries",
+          "/industries/"
+        ],
+        [
+          "Residential",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Industrias",
+          "/es/industrias/"
+        ],
+        [
+          "Residencial",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Residential | HMCM Tampa Bay",
+        "desc": "HMCM Residential work in Tampa Bay: consulting, construction management, and project management.",
+        "h1": "Residential construction consulting and management",
+        "lead": "Houses and residential sites, advised and managed on the owner's side.",
+        "paras": [
+          "Residential work on this site means dwellings and the lots they sit on. HMCM is hired as consultant, construction manager, or project manager.",
+          "Single-family, custom, and related residential construction are planned with permitting, inspections, and site work in the same conversation."
+        ],
+        "links": [
+          [
+            "Industries overview",
+            "/industries/"
+          ],
+          [
+            "Consulting",
+            "/consulting/"
+          ],
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Project Management",
+            "/project-management/"
+          ],
+          [
+            "Contact",
+            "/contact/"
+          ]
+        ],
+        "related": [
+          [
+            "Specialties",
+            "/specialties/",
+            "Land development through demolition."
+          ],
+          [
+            "Consulting",
+            "/consulting/",
+            "Commercial and residential advisory."
+          ],
+          [
+            "Contact",
+            "/contact/",
+            "Office, hours, and phone."
+          ]
+        ]
+      },
+      "es": {
+        "title": "Residencial | HMCM Tampa Bay",
+        "desc": "HMCM en residencial en Tampa Bay: consultoría, gerencia de construcción y gerencia de proyectos.",
+        "h1": "Consultoría y gerencia de construcción residencial",
+        "lead": "Viviendas y predios residenciales, asesorados y gerenciados del lado del propietario.",
+        "paras": [
+          "Lo residencial en este sitio cubre viviendas y los lotes donde se asientan. HMCM se contrata como consultor, gerente de construcción o gerente de proyectos.",
+          "La obra unifamiliar, a medida y residencial afín se planea con permisos, inspecciones y obra de sitio en la misma conversación."
+        ],
+        "links": [
+          [
+            "Industrias",
+            "/es/industrias/"
+          ],
+          [
+            "Consultoría",
+            "/es/consultoria/"
+          ],
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Gerencia de proyectos",
+            "/es/gerencia-de-proyectos/"
+          ],
+          [
+            "Contacto",
+            "/es/contacto/"
+          ]
+        ],
+        "related": [
+          [
+            "Especialidades",
+            "/es/especialidades/",
+            "Del desarrollo de terrenos a la demolición."
+          ],
+          [
+            "Consultoría",
+            "/es/consultoria/",
+            "Asesoría comercial y residencial."
+          ],
+          [
+            "Contacto",
+            "/es/contacto/",
+            "Oficina, horario y teléfono."
+          ]
+        ]
+      }
+    },
+    {
       "en_path": "/industries/land-clearing/",
       "es_path": "/es/industrias/despeje-de-terrenos/",
       "nav": "ind",

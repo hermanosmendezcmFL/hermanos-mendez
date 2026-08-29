@@ -32,6 +32,8 @@ T = {
         "overview": "Overview",
         "commercial": "Commercial",
         "residential": "Residential",
+        "commercial_services": "Commercial Services",
+        "residential_services": "Residential Services",
         "other_group": "Other Consulting Services",
         "specialized_group": "Specialized Consulting Services",
         "partner_solutions": "Partner Solutions",
@@ -88,6 +90,13 @@ T = {
             ("Inspections", "/industries/inspections/"),
             ("Design-Build", "/industries/design-build/"),
         ],
+        "footer_inds": [
+            ("Commercial", "/industries/commercial/"),
+            ("Multi-Family", "/industries/multi-family/"),
+            ("SFR (Single-Family Residential)", "/industries/sfr/"),
+            ("Custom Build", "/industries/custom-build/"),
+            ("Residential", "/industries/residential/"),
+        ],
     },
     "es": {
         "skip": "Saltar al contenido",
@@ -102,6 +111,8 @@ T = {
         "overview": "Resumen",
         "commercial": "Comercial",
         "residential": "Residencial",
+        "commercial_services": "Servicios comerciales",
+        "residential_services": "Servicios residenciales",
         "other_group": "Otros servicios de consultoría",
         "specialized_group": "Consultoría especializada",
         "partner_solutions": "Soluciones para socios",
@@ -157,6 +168,13 @@ T = {
             ("Permisos", "/es/industrias/permisos/"),
             ("Inspecciones", "/es/industrias/inspecciones/"),
             ("Diseño-construcción", "/es/industrias/diseno-construccion/"),
+        ],
+        "footer_inds": [
+            ("Comercial", "/es/industrias/comercial/"),
+            ("Multifamiliar", "/es/industrias/multifamiliar/"),
+            ("Residencial unifamiliar (SFR)", "/es/industrias/sfr/"),
+            ("Construcción a medida", "/es/industrias/construccion-a-medida/"),
+            ("Residencial", "/es/industrias/residencial/"),
         ],
     },
 }
@@ -451,14 +469,11 @@ def footer(lang):
     c_over = "/consulting/" if lang == "en" else "/es/consultoria/"
     c_com = "/consulting/commercial/" if lang == "en" else "/es/consultoria/comercial/"
     c_res = "/consulting/residential/" if lang == "en" else "/es/consultoria/residencial/"
-    c_oth = "/consulting/other/" if lang == "en" else "/es/consultoria/otros/"
     cm = "/construction-management/" if lang == "en" else "/es/gerencia-de-construccion/"
     pm = "/project-management/" if lang == "en" else "/es/gerencia-de-proyectos/"
     sp = "/specialties/" if lang == "en" else "/es/especialidades/"
-    ind = "/industries/" if lang == "en" else "/es/industrias/"
-    other = "\n".join(f"            <li><a href=\"{h}\">{esc(n)}</a></li>" for n, h in t["other_items"])
     specs = "\n".join(f"            <li><a href=\"{h}\">{esc(n)}</a></li>" for n, h in t["specs"])
-    inds = "\n".join(f"            <li><a href=\"{h}\">{esc(n)}</a></li>" for n, h in t["inds"])
+    inds = "\n".join(f"            <li><a href=\"{h}\">{esc(n)}</a></li>" for n, h in t["footer_inds"])
     return f"""  <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
@@ -473,20 +488,15 @@ def footer(lang):
         <h2>{t['consulting']}</h2>
         <ul>
           <li><a href="{c_over}">{t['overview']}</a></li>
-          <li><a href="{c_com}">{t['commercial']}</a></li>
-          <li><a href="{c_res}">{t['residential']}</a></li>
-          <li><a href="{c_oth}">{t['other_group']}</a></li>
-{other}
+          <li><a href="{c_com}">{t['commercial_services']}</a></li>
+          <li><a href="{c_res}">{t['residential_services']}</a></li>
         </ul>
       </div>
       <div class="footer-nav">
-        <h2>{t['cm']} / {t['pm']}</h2>
+        <h2>{t['services']}</h2>
         <ul>
           <li><a href="{cm}">{t['cm']}</a></li>
           <li><a href="{pm}">{t['pm']}</a></li>
-        </ul>
-        <h2 style="margin-top:1.25rem">{t['specialties']}</h2>
-        <ul>
           <li><a href="{sp}">{t['overview']}</a></li>
 {specs}
         </ul>
@@ -494,7 +504,6 @@ def footer(lang):
       <div class="footer-nav">
         <h2>{t['industries']}</h2>
         <ul>
-          <li><a href="{ind}">{t['overview']}</a></li>
 {inds}
         </ul>
       </div>
