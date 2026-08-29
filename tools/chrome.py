@@ -26,6 +26,8 @@ T = {
         "lang": "Language",
         "call": f"Call {PHONE_DISP}",
         "home": "Home",
+        "about_us": "About Us",
+        "services": "Services",
         "consulting": "Consulting",
         "overview": "Overview",
         "commercial": "Commercial",
@@ -87,6 +89,8 @@ T = {
         "lang": "Idioma",
         "call": f"Llamar {PHONE_DISP}",
         "home": "Inicio",
+        "about_us": "Empresa",
+        "services": "Servicios",
         "consulting": "Consultoría",
         "overview": "Resumen",
         "commercial": "Comercial",
@@ -296,6 +300,8 @@ def head(lang, path, pair, title, desc, robots="index,follow"):
 def _nav(lang, current):
     t = T[lang]
     home = "/" if lang == "en" else "/es/"
+    about = "/about/" if lang == "en" else "/es/empresa/"
+    services = "/services/" if lang == "en" else "/es/servicios/"
     c_over = "/consulting/" if lang == "en" else "/es/consultoria/"
     c_com = "/consulting/commercial/" if lang == "en" else "/es/consultoria/comercial/"
     c_res = "/consulting/residential/" if lang == "en" else "/es/consultoria/residencial/"
@@ -319,8 +325,18 @@ def _nav(lang, current):
         f'          <a href="{href}">{esc(name)}</a>' for name, href in t["inds"]
     )
     consult_open = " is-current" if current.startswith("consult") else ""
+    services_open = " is-current" if current in ("services", "cm", "pm") else ""
     return f"""      <nav id="site-nav" class="site-nav" aria-label="{t['primary']}">
         <a href="{home}"{cur('home')}>{t['home']}</a>
+        <a href="{about}"{cur('about')}>{t['about_us']}</a>
+        <div class="nav-item{services_open}">
+          <button class="nav-parent" type="button" aria-expanded="false">{t['services']}</button>
+          <div class="nav-drop">
+            <a href="{services}"{cur('services')}>{t['overview']}</a>
+            <a href="{cm}"{cur('cm')}>{t['cm']}</a>
+            <a href="{pm}"{cur('pm')}>{t['pm']}</a>
+          </div>
+        </div>
         <div class="nav-item{consult_open}">
           <button class="nav-parent" type="button" aria-expanded="false">{t['consulting']}</button>
           <div class="nav-drop nav-drop--wide">
@@ -337,8 +353,6 @@ def _nav(lang, current):
             </div>
           </div>
         </div>
-        <a href="{cm}"{cur('cm')}>{t['cm']}</a>
-        <a href="{pm}"{cur('pm')}>{t['pm']}</a>
         <div class="nav-item{' is-current' if current.startswith('spec') else ''}">
           <button class="nav-parent" type="button" aria-expanded="false">{t['specialties']}</button>
           <div class="nav-drop">

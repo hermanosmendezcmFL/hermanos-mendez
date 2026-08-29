@@ -166,11 +166,9 @@ def build_404():
 
 def build_redirects():
     mapping = [
-        ("/services/", "/consulting/"),
         ("/services/consulting/", "/consulting/"),
         ("/services/construction-management/", "/construction-management/"),
         ("/services/project-management/", "/project-management/"),
-        ("/es/servicios/", "/es/consultoria/"),
         ("/es/servicios/consultoria/", "/es/consultoria/"),
         ("/es/servicios/gerencia-de-construccion/", "/es/gerencia-de-construccion/"),
         ("/es/servicios/gerencia-de-proyectos/", "/es/gerencia-de-proyectos/"),
@@ -190,11 +188,9 @@ def build_redirects():
 def build_meta():
     (ROOT / ".htaccess").write_text(
         "DirectoryIndex index.html\nErrorDocument 404 /404.html\n"
-        "Redirect 301 /services/ /consulting/\n"
         "Redirect 301 /services/consulting/ /consulting/\n"
         "Redirect 301 /services/construction-management/ /construction-management/\n"
         "Redirect 301 /services/project-management/ /project-management/\n"
-        "Redirect 301 /es/servicios/ /es/consultoria/\n"
         "Redirect 301 /es/servicios/consultoria/ /es/consultoria/\n"
         "Redirect 301 /es/servicios/gerencia-de-construccion/ /es/gerencia-de-construccion/\n"
         "Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/\n",
@@ -239,9 +235,10 @@ def build_meta():
 
 if __name__ == "__main__":
     # home imported after definition in home_render
-    from home_render import build_homes, build_about
+    from home_render import build_homes, build_about, build_services
     build_homes(write, wrap_page)
     build_about(write, wrap_page)
+    build_services(write, wrap_page)
     build_from_json()
     build_contact()
     build_404()

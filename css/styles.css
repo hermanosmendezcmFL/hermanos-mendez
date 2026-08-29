@@ -386,7 +386,7 @@ address { font-style: normal; }
 }
 .hero-full h1 {
   margin: 0 0 1.1rem;
-  max-width: 18ch;
+  max-width: 24ch;
   font-family: var(--serif);
   font-weight: 400;
   font-size: clamp(2.35rem, 5.6vw, 4.15rem);

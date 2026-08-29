@@ -5,11 +5,11 @@ from chrome import T, BRAND, ADDR1, CITY, PHONE_DISP, PHONE_TEL, MAPS
 def proof_html(lang):
     if lang == "en":
         a_fig, a_h = "26", "26 Years in the Business"
-        b_fig, b_h = "$300 million", "Over $300 Million in Completed Projects"
+        b_fig, b_h = "$300+ million", "Over $300 Million in Completed Projects"
         label = "Proof"
     else:
         a_fig, a_h = "26", "26 años en el negocio"
-        b_fig, b_h = "$300 millones", "Más de $300 millones en proyectos completados"
+        b_fig, b_h = "$300+ millones", "Más de $300 millones en proyectos completados"
         label = "Trayectoria"
     return (
         '    <section class="proof" id="proof" aria-label="%s">\n'
@@ -231,257 +231,201 @@ def about_body(lang):
 def _home(lang):
     t = T[lang]
     if lang == "en":
-        h1 = "Advising and managing land development and construction in Tampa Bay."
-        position = "Expertise on Demand"
-        knowledge = "The Knowledge, Skills, and Abilities to Impact Change"
+        h1 = "Qualified Professionals You Can Count On to Assist You in Achieving Your Objectives Throughout Tampa Bay."
+        position = "Expertise on Demand – When You Need It"
+        knowledge = "Our Team Has the Knowledge, Skills, and Abilities to Impact Change Where You Need It Most."
         lead = (
-            "Hermanos Mendez Construction Management advises owners on land development "
-            "and construction in Tampa Bay. HMCM plans the money and runs the job."
+            "Hermanos Mendez Construction Management provides a wide array of services "
+            "to perform as an extension of our client partners' business — driving maximum "
+            "impact at a streamlined cost."
         )
-        cta2 = "What We Do"
-        three = "Consulting, construction management, and project management."
-        tiles = [
-            ("01", "Consulting", "Advisory for commercial and residential work: scoping, planning, and the consulting owners ask for before and during a job.", "/consulting/", "consulting.jpg"),
-            ("02", "Construction Management", "Field coordination of trades, schedule, and site so the work moves with a single point of contact.", "/construction-management/", "construction-mgmt.jpg"),
-            ("03", "Project Management", "Oversight of scope, cost, and timeline from preconstruction through closeout.", "/project-management/", "project-mgmt.jpg"),
-        ]
-        cons_k = "Consulting"
-        spec_k = "Specialties"
-        ind_k = "Markets"
-        cons_h = "Consulting by Market"
-        cons_intro = "Commercial and residential work, planned before anyone mobilizes."
-        com_t, com_h, com_p = "Commercial", "/consulting/commercial/", "Advisory for commercial sites, shells, tenant work, and owner-side decisions on schedule, scope, and delivery."
-        res_t, res_h, res_p = "Residential", "/consulting/residential/", "Advisory for houses, custom builds, and residential renovations, planned at dwelling scale, not a commercial playbook."
-        other_h = "Other Consulting Services"
-        other_intro = "Evaluations, takeoff, purchasing, and other defined consulting tasks."
-        oth_href = "/consulting/other/"
-        spec_href = "/specialties/"
-        ind_href = "/industries/"
+        cta_services = "What We Do"
+        cta_about = "Experience the Difference"
+        services_href = "/services/"
+        about_href = "/about/"
         contact_href = "/contact/"
-        consult_anchor = "/consulting/"
-        spec_h = "Specialties"
-        spec_intro = "The work types we plan and manage."
-        ind_h = "Industries"
-        ind_intro = "Markets we advise and manage in Tampa Bay."
-        area_h = "Tampa Bay Service Area"
-        area_p = "The office is at %s, %s, in Hillsborough County. We advise and manage land development and construction across Tampa Bay." % (ADDR1, CITY)
         contact_h = "Call or Visit"
-        other_blurb = [
-            "Sequence, labor, and waste, then putting changes in place.",
-            "How field, office, and building systems talk, and how to tighten that.",
-            "Pursuit, qualifications, and teaming support for construction work.",
-            "Scopes that do not fit a standard construction-management or project-management engagement.",
-            "Quantity takeoff support and help reviewing contract terms before you sign.",
-            "Buyout support, proposals, and purchase tracking.",
-            "Documenting how the work is done and how people are assigned to it.",
-        ]
-        ind_blurb = [
-            "Owner-side consulting and management for commercial buildings and sites.",
-            "Multi-family planning, construction management, and coordination.",
-            "Single-family residential: new houses, additions, and related site work.",
-            "Custom residential work that needs closer scope and finish control.",
-            "Clearing and site preparation as part of land development.",
-            "Drainage and stormwater work coordinated with the rest of the site.",
-            "Permit sequencing and follow-through with the agencies that have to sign off.",
-            "Inspection readiness and closeout, scheduled with the rest of the job.",
-            "Owner representation when design-build moves as one delivery.",
-        ]
-        spec_photos = ["land.jpg", "new-construction.jpg", "interior.jpg", "demolition.jpg"]
     else:
-        h1 = "Asesoramos y gerenciamos el desarrollo de terrenos y la construcci\u00f3n en Tampa Bay."
-        position = "Expertise on Demand"
-        knowledge = "El conocimiento, las habilidades y las aptitudes para impulsar el cambio"
+        h1 = "Profesionales calificados en quienes puede confiar para ayudarle a alcanzar sus objetivos en todo Tampa Bay."
+        position = "Experiencia a demanda — cuando la necesita"
+        knowledge = "Nuestro equipo tiene el conocimiento, las habilidades y las aptitudes para impulsar el cambio donde más lo necesita."
         lead = (
-            "Hermanos Mendez Construction Management asesora a propietarios en desarrollo de terrenos "
-            "y construcci\u00f3n en Tampa Bay. HMCM planea el dinero y dirige la obra."
+            "Hermanos Mendez Construction Management ofrece una amplia gama de servicios "
+            "para actuar como una extensión del negocio de nuestros socios clientes — "
+            "máximo impacto a un costo ágil."
         )
-        cta2 = "Qu\u00e9 hacemos"
-        three = "Consultor\u00eda, gerencia de construcci\u00f3n y gerencia de proyectos."
-        tiles = [
-            ("01", "Consultor\u00eda", "Asesor\u00eda comercial y residencial: alcance, planificaci\u00f3n y la consultor\u00eda que se pide antes y durante la obra.", "/es/consultoria/", "consulting.jpg"),
-            ("02", "Gerencia de construcci\u00f3n", "Coordinaci\u00f3n de gremios, programa y sitio de obra, con un solo punto de contacto.", "/es/gerencia-de-construccion/", "construction-mgmt.jpg"),
-            ("03", "Gerencia de proyectos", "Control de alcance, costo y plazo desde la preconstrucci\u00f3n hasta el cierre.", "/es/gerencia-de-proyectos/", "project-mgmt.jpg"),
-        ]
-        cons_k = "Consultor\u00eda"
-        spec_k = "Especialidades"
-        ind_k = "Mercados"
-        cons_h = "Consultor\u00eda por mercado"
-        cons_intro = "Obra comercial y residencial, planeada antes de movilizar a nadie."
-        com_t, com_h, com_p = "Comercial", "/es/consultoria/comercial/", "Asesor\u00eda para predios comerciales, naves, locales y decisiones del propietario sobre programa, alcance y entrega."
-        res_t, res_h, res_p = "Residencial", "/es/consultoria/residencial/", "Asesor\u00eda para viviendas, obras a medida y renovaciones residenciales, a escala de casa, no de campus comercial."
-        other_h = "Otros servicios de consultor\u00eda"
-        other_intro = "Evaluaciones, takeoff, compras y otras tareas concretas de consultor\u00eda."
-        oth_href = "/es/consultoria/otros/"
-        spec_href = "/es/especialidades/"
-        ind_href = "/es/industrias/"
+        cta_services = "Qué hacemos"
+        cta_about = "Conozca la diferencia"
+        services_href = "/es/servicios/"
+        about_href = "/es/empresa/"
         contact_href = "/es/contacto/"
-        consult_anchor = "/es/consultoria/"
-        spec_h = "Especialidades"
-        spec_intro = "Los tipos de obra que planeamos y gerenciamos."
-        ind_h = "Industrias"
-        ind_intro = "Mercados que asesoramos y gerenciamos en Tampa Bay."
-        area_h = "\u00c1rea de servicio en Tampa Bay"
-        area_p = "La oficina est\u00e1 en %s, %s, en el condado de Hillsborough. Asesoramos y gerenciamos desarrollo de terrenos y construcci\u00f3n en Tampa Bay." % (ADDR1, CITY)
         contact_h = "Llame o visite"
-        other_blurb = [
-            "C\u00f3mo se planea y se ejecuta la obra, e implementar cambios.",
-            "C\u00f3mo se comunican campo, oficina y sistemas del edificio.",
-            "Persecuci\u00f3n de obra, cualificaciones y alianzas.",
-            "Alcances que no caben en un encargo t\u00edpico de gerencia de construcci\u00f3n o de proyectos.",
-            "Cubicaci\u00f3n (takeoff) y revisi\u00f3n de t\u00e9rminos contractuales antes de firmar.",
-            "Buyout, propuestas y seguimiento de compras.",
-            "Documentar c\u00f3mo se hace el trabajo y c\u00f3mo se asigna a las personas.",
-        ]
-        ind_blurb = [
-            "Consultor\u00eda y gerencia del lado del propietario para edificios y predios comerciales.",
-            "Planificaci\u00f3n, gerencia de construcci\u00f3n y coordinaci\u00f3n en multifamiliar.",
-            "Residencial unifamiliar: casas nuevas, ampliaciones y obra de sitio.",
-            "Obra residencial a medida, con control m\u00e1s estrecho de alcance y acabados.",
-            "Despeje y preparaci\u00f3n del predio como parte del desarrollo.",
-            "Drenaje y aguas pluviales coordinados con el resto del sitio.",
-            "Secuencia de permisos y seguimiento con las agencias que deben firmar.",
-            "Preparaci\u00f3n para inspecciones y cierre, programados con el resto de la obra.",
-            "Representaci\u00f3n del propietario cuando dise\u00f1o y construcci\u00f3n se entregan juntos.",
-        ]
-        spec_photos = ["land.jpg", "new-construction.jpg", "interior.jpg", "demolition.jpg"]
-
-    tile_html = []
-    for idx, name, copy, href, ph in tiles:
-        tile_html.append(
-            '        <a class="tile" href="%s">\n'
-            '          <div class="tile__media" style="background-image:url(\'/assets/photos/%s\')" role="presentation"></div>\n'
-            '          <div class="tile__body">\n'
-            '            <span class="tile__index">%s</span>\n'
-            "            <h3>%s</h3>\n            <p>%s</p>\n"
-            '            <span class="tile-go">%s</span>\n'
-            "          </div>\n        </a>" % (href, ph, idx, esc(name), copy, t["see"])
-        )
-    others = []
-    for (name, href), blurb in zip(t["other_items"], other_blurb):
-        others.append(
-            '        <a class="mini-card" href="%s">\n'
-            "          <h3>%s</h3>\n          <p>%s</p>\n        </a>" % (href, esc(name), blurb)
-        )
-    specs = []
-    for (name, href), ph in zip(t["specs"], spec_photos):
-        specs.append(
-            '        <a class="spec-card" href="%s">\n'
-            '          <div class="spec-card__media" style="background-image:url(\'/assets/photos/%s\')" role="presentation"></div>\n'
-            "          <h3>%s</h3>\n        </a>" % (href, ph, esc(name))
-        )
-    inds = []
-    for (name, href), blurb in zip(t["inds"], ind_blurb):
-        inds.append(
-            '        <a class="ind-card" href="%s">\n'
-            "          <h3>%s</h3>\n          <p>%s</p>\n"
-            '          <span class="go">%s</span>\n        </a>' % (href, esc(name), blurb, t["see"])
-        )
 
     hero = (
-        '\n    <section class="hero-full">\n'
-        '      <div class="hero-full__bg" style="background-image:url(\'/assets/photos/hero.jpg\')" role="presentation"></div>\n'
-        '      <div class="wrap">\n'
-        '        <p class="eyebrow">Tampa, Florida</p>\n'
-        '        <p class="hero-tag">Construct | Renovate | Demolish</p>\n'
+        "\n    <section class=\"hero-full\">\n"
+        "      <div class=\"hero-full__bg\" style=\"background-image:url('/assets/photos/hero.jpg')\" role=\"presentation\"></div>\n"
+        "      <div class=\"wrap\">\n"
+        "        <p class=\"eyebrow\">Tampa, Florida</p>\n"
+        "        <p class=\"hero-tag\">Construct | Renovate | Demolish</p>\n"
         "        <h1>%s</h1>\n"
-        '        <p class="hero-position">%s</p>\n'
-        '        <p class="hero-sub">%s</p>\n'
-        '        <p class="hero-lead">%s</p>\n'
-        '        <div class="hero-actions">\n'
-        '          <a class="btn btn-primary" href="tel:%s">%s</a>\n'
-        '          <a class="btn btn-ghost" href="#expertise">%s</a>\n'
+        "        <p class=\"hero-position\">%s</p>\n"
+        "        <p class=\"hero-sub\">%s</p>\n"
+        "        <p class=\"hero-lead\">%s</p>\n"
+        "        <div class=\"hero-actions\">\n"
+        "          <a class=\"btn btn-primary\" href=\"tel:%s\">%s</a>\n"
+        "          <a class=\"btn btn-ghost\" href=\"%s\">%s</a>\n"
+        "          <a class=\"btn btn-ghost\" href=\"%s\">%s</a>\n"
         "        </div>\n"
-        '        <p class="hero-note">%s</p>\n'
         "      </div>\n    </section>\n"
     ) % (
         esc(h1), esc(position), esc(knowledge), lead,
-        PHONE_TEL, PHONE_DISP, cta2, t["hours"],
+        PHONE_TEL, PHONE_DISP, services_href, esc(cta_services), about_href, esc(cta_about),
     )
 
-    supporting = (
-        '    <section class="section section--stone" id="consulting-markets">\n'
-        '      <div class="wrap">\n        <div class="section-head">\n          <div>\n'
-        '            <p class="section-kicker">%s</p>\n'
-        "            <h2>%s</h2>\n"
-        '            <p class="section-intro">%s</p>\n          </div>\n'
-        '          <a class="link-more" href="%s">%s %s</a>\n        </div>\n'
-        '        <div class="split-cards">\n'
-        '          <a class="split-card" href="%s">\n'
-        '            <div class="split-card__media" style="background-image:url(\'/assets/photos/commercial.jpg\')" role="presentation"></div>\n'
-        '            <div class="split-card__body">\n              <h3>%s</h3>\n              <p>%s</p>\n            </div>\n          </a>\n'
-        '          <a class="split-card" href="%s">\n'
-        '            <div class="split-card__media" style="background-image:url(\'/assets/photos/custom.jpg\')" role="presentation"></div>\n'
-        '            <div class="split-card__body">\n              <h3>%s</h3>\n              <p>%s</p>\n            </div>\n          </a>\n'
-        "        </div>\n      </div>\n    </section>\n"
-        '    <section class="section" id="other-consulting">\n'
-        '      <div class="wrap">\n        <div class="section-head">\n          <div>\n'
-        '            <p class="section-kicker">%s</p>\n'
-        "            <h2>%s</h2>\n"
-        '            <p class="section-intro">%s</p>\n          </div>\n'
-        '          <a class="link-more" href="%s">%s</a>\n        </div>\n'
-        '        <div class="mini-grid">\n%s\n        </div>\n      </div>\n    </section>\n'
-        '    <section class="section section--ink" id="specialties">\n'
-        '      <div class="wrap">\n        <div class="section-head">\n          <div>\n'
-        '            <p class="section-kicker">%s</p>\n'
-        "            <h2>%s</h2>\n"
-        '            <p class="section-intro">%s</p>\n          </div>\n'
-        '          <a class="link-more" href="%s">%s %s</a>\n        </div>\n'
-        '        <div class="spec-grid">\n%s\n        </div>\n      </div>\n    </section>\n'
-        '    <section class="section section--stone" id="industries">\n'
-        '      <div class="wrap">\n        <div class="section-head">\n          <div>\n'
-        '            <p class="section-kicker">%s</p>\n'
-        "            <h2>%s</h2>\n"
-        '            <p class="section-intro">%s</p>\n          </div>\n'
-        '          <a class="link-more" href="%s">%s %s</a>\n        </div>\n'
-        '        <div class="ind-grid">\n%s\n        </div>\n      </div>\n    </section>\n'
-        '    <section class="section">\n      <div class="wrap area-grid">\n        <div>\n'
-        '          <p class="section-kicker">Tampa Bay</p>\n          <h2>%s</h2>\n'
-        '          <div class="prose"><p>%s</p></div>\n        </div>\n'
-        '        <div class="area-photo" style="background-image:url(\'/assets/photos/tampa.jpg\')" role="img" aria-label="Tampa Bay"></div>\n'
-        "      </div>\n    </section>\n"
-        '    <section class="section section--ink" id="contact-strip">\n'
-        '      <div class="wrap contact-strip">\n        <div>\n'
-        '          <p class="section-kicker">%s</p>\n          <h2>%s</h2>\n'
-        '          <a class="phone-xl" href="tel:%s">%s</a>\n'
-        '          <address class="addr">%s<br>%s<br>%s<br>\n'
-        '            <a class="map-link" href="%s" rel="noopener noreferrer" target="_blank">%s</a>\n'
+    contact = (
+        "    <section class=\"section section--ink\" id=\"contact-strip\">\n"
+        "      <div class=\"wrap contact-strip\">\n        <div>\n"
+        "          <p class=\"section-kicker\">%s</p>\n          <h2>%s</h2>\n"
+        "          <a class=\"phone-xl\" href=\"tel:%s\">%s</a>\n"
+        "          <address class=\"addr\">%s<br>%s<br>%s<br>\n"
+        "            <a class=\"map-link\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">%s</a>\n"
         "          </address>\n"
-        '          <p class="hero-note" style="margin-top:1rem">%s</p>\n'
+        "          <p class=\"hero-note\" style=\"margin-top:1rem\">%s</p>\n"
         "        </div>\n        <div>\n"
-        '          <p><a class="btn btn-primary" href="%s">%s</a></p>\n'
+        "          <p><a class=\"btn btn-primary\" href=\"%s\">%s</a></p>\n"
         "        </div>\n      </div>\n    </section>\n"
     ) % (
-        cons_k, esc(cons_h), cons_intro, consult_anchor, t["see"], t["consulting"],
-        com_h, esc(com_t), com_p, res_h, esc(res_t), res_p,
-        cons_k, esc(other_h), other_intro, oth_href, t["see"], "\n".join(others),
-        spec_k, esc(spec_h), spec_intro, spec_href, t["see"], t["specialties"], "\n".join(specs),
-        ind_k, esc(ind_h), ind_intro, ind_href, t["see"], t["industries"], "\n".join(inds),
-        esc(area_h), area_p,
         t["contact"], esc(contact_h), PHONE_TEL, PHONE_DISP, BRAND, ADDR1, CITY, MAPS, t["maps"], t["hours"],
         contact_href, t["contact_cta"],
     )
 
-    return (
-        hero
-        + proof_html(lang)
-        + story_sections(lang, extra_expertise="\n".join(tile_html))
-        + supporting
+    return hero + proof_html(lang) + contact
+
+
+def services_body(lang):
+    t = T[lang]
+    if lang == "en":
+        crumbs = [("Home", "/"), ("Services", None)]
+        h1 = "Services"
+        lead = "Construction management and project management — the two ways HMCM runs the job."
+        photo = "construction-mgmt.jpg"
+        intro = (
+            "Hermanos Mendez Construction Management is hired two ways to run the work: "
+            "construction management in the field, and project management from preconstruction through closeout."
+        )
+        tiles = [
+            ("01", "Construction Management",
+             "Field coordination of trades, schedule, and site so the work moves with a single point of contact.",
+             "/construction-management/", "construction-mgmt.jpg"),
+            ("02", "Project Management",
+             "Oversight of scope, cost, and timeline from preconstruction through closeout.",
+             "/project-management/", "project-mgmt.jpg"),
+        ]
+        related = [
+            ("Consulting", "/consulting/", "Advisory for commercial and residential work."),
+            ("Contact", "/contact/", "Call the Tampa office."),
+        ]
+    else:
+        crumbs = [("Inicio", "/es/"), ("Servicios", None)]
+        h1 = "Servicios"
+        lead = "Gerencia de construcción y gerencia de proyectos: las dos formas en que HMCM dirige la obra."
+        photo = "construction-mgmt.jpg"
+        intro = (
+            "A Hermanos Mendez Construction Management se le contrata de dos maneras para dirigir el trabajo: "
+            "gerencia de construcción en el campo, y gerencia de proyectos desde la preconstrucción hasta el cierre."
+        )
+        tiles = [
+            ("01", "Gerencia de construcción",
+             "Coordinación de gremios, programa y sitio de obra, con un solo punto de contacto.",
+             "/es/gerencia-de-construccion/", "construction-mgmt.jpg"),
+            ("02", "Gerencia de proyectos",
+             "Control de alcance, costo y plazo desde la preconstrucción hasta el cierre.",
+             "/es/gerencia-de-proyectos/", "project-mgmt.jpg"),
+        ]
+        related = [
+            ("Consultoría", "/es/consultoria/", "Asesoría comercial y residencial."),
+            ("Contacto", "/es/contacto/", "Llame a la oficina en Tampa."),
+        ]
+
+    from chrome import page_banner
+    body = page_banner(lang, crumbs, h1, lead, photo)
+    tile_html = []
+    for idx, name, copy, href, ph in tiles:
+        tile_html.append(
+            "        <a class=\"tile\" href=\"%s\">\n"
+            "          <div class=\"tile__media\" style=\"background-image:url('/assets/photos/%s')\" role=\"presentation\"></div>\n"
+            "          <div class=\"tile__body\">\n"
+            "            <span class=\"tile__index\">%s</span>\n"
+            "            <h3>%s</h3>\n            <p>%s</p>\n"
+            "            <span class=\"tile-go\">%s</span>\n"
+            "          </div>\n        </a>" % (href, ph, idx, esc(name), copy, t["see"])
+        )
+    cards = "\n".join(
+        "          <a href=\"%s\"><h3>%s</h3><p>%s</p></a>" % (h, esc(n), d) for n, h, d in related
     )
+    contact = "/contact/" if lang == "en" else "/es/contacto/"
+    body += (
+        "\n    <section class=\"section section--rule\">\n"
+        "      <div class=\"wrap\">\n"
+        "        <div class=\"prose story-copy\">\n"
+        "          <p>%s</p>\n"
+        "        </div>\n"
+        "        <div class=\"tile-grid\" style=\"margin-top:2rem\">\n%s\n        </div>\n"
+        "      </div>\n"
+        "    </section>\n"
+        "    <section class=\"section section--stone\">\n"
+        "      <div class=\"wrap\">\n"
+        "        <p class=\"section-kicker\">%s</p>\n"
+        "        <h2>%s</h2>\n"
+        "        <div class=\"related\">\n%s\n        </div>\n"
+        "      </div>\n"
+        "    </section>\n"
+        "    <section class=\"section section--ink\">\n"
+        "      <div class=\"wrap cta-band\">\n"
+        "        <h2>%s</h2>\n"
+        "        <div class=\"hero-actions\">\n"
+        "          <a class=\"btn btn-primary\" href=\"tel:%s\">%s</a>\n"
+        "          <a class=\"btn btn-ghost\" href=\"%s\">%s</a>\n"
+        "        </div>\n"
+        "      </div>\n"
+        "    </section>"
+    ) % (
+        intro, "\n".join(tile_html),
+        t["on_this"], t["related"], cards,
+        PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact_cta"],
+    )
+    return body
 
 
 def build_homes(write, wrap_page):
     write("/", wrap_page(
         "en", "/", "/es/", "home",
-        "HMCM | Expertise on Demand in Tampa Bay",
-        "Hermanos Mendez Construction Management advises and manages land development and construction in Tampa Bay. Expertise on Demand.",
+        "HMCM | Qualified Professionals in Tampa Bay",
+        "Hermanos Mendez Construction Management provides a wide array of services as an extension of our client partners' business in Tampa Bay. Expertise on Demand.",
         _home("en"),
     ))
     write("/es/", wrap_page(
         "es", "/es/", "/", "home",
-        "HMCM | Expertise on Demand en Tampa Bay",
-        "Hermanos Mendez Construction Management asesora y gerencia el desarrollo de terrenos y la construcci\u00f3n en Tampa Bay. Expertise on Demand.",
+        "HMCM | Profesionales calificados en Tampa Bay",
+        "Hermanos Mendez Construction Management ofrece una amplia gama de servicios como extensión del negocio de nuestros socios clientes en Tampa Bay.",
         _home("es"),
     ))
+
+
+def build_services(write, wrap_page):
+    write("/services/", wrap_page(
+        "en", "/services/", "/es/servicios/", "services",
+        "Services | Construction Management and Project Management | HMCM",
+        "HMCM services in Tampa Bay: construction management and project management for land development and construction.",
+        services_body("en"),
+    ))
+    write("/es/servicios/", wrap_page(
+        "es", "/es/servicios/", "/services/", "services",
+        "Servicios | Gerencia de construcción y gerencia de proyectos | HMCM",
+        "Servicios de HMCM en Tampa Bay: gerencia de construcción y gerencia de proyectos para desarrollo de terrenos y construcción.",
+        services_body("es"),
+    ))
+
 
 
 def build_about(write, wrap_page):
