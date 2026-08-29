@@ -226,27 +226,29 @@ address { font-style: normal; }
   opacity: 0.7;
 }
 .nav-caret {
-  display: none;
-  flex: 0 0 auto;
-  width: 2.6rem;
-  height: 100%;
-  min-height: 2.7rem;
+  display: none !important;
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+  height: 0;
+  min-height: 0;
   padding: 0;
+  margin: 0;
+  overflow: hidden;
+  flex: 0 0 0;
   border: 0;
-  background: transparent;
-  color: var(--stone);
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
+  background: none;
+  color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  pointer-events: none;
+  visibility: hidden;
+  position: absolute;
+  font-size: 0;
 }
 .nav-caret::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 5px solid currentColor;
-  opacity: 0.8;
+  content: none;
+  display: none;
 }
 .nav-item.is-open > .nav-caret,
 .nav-caret:hover,
@@ -1142,9 +1144,40 @@ address { font-style: normal; }
   }
   .nav-item > .nav-parent::after { content: none; }
   .nav-caret {
-    display: inline-flex;
+    display: inline-flex !important;
+    position: static;
+    width: 2.6rem;
+    min-width: 2.6rem;
+    max-width: none;
+    height: auto;
+    min-height: 2.7rem;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    flex: 0 0 auto;
+    background: transparent;
+    color: var(--stone);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    -webkit-appearance: none;
+    pointer-events: auto;
+    visibility: visible;
+    font-size: inherit;
+    border: 0;
     border-bottom: 1px solid var(--rule-dark);
     border-left: 1px solid var(--rule-dark);
+  }
+  .nav-caret::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    opacity: 0.8;
   }
   .nav-item > .nav-drop,
   .nav-item > .nav-drop--wide {
@@ -1189,6 +1222,28 @@ address { font-style: normal; }
   .tile, .spec-card { min-height: 18rem; }
   .hero-full { min-height: 34rem; }
   .hero-full .wrap { padding: 3rem 0 2.6rem; }
+}
+
+@media (min-width: 901px) {
+  .nav-caret {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background: none !important;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .nav-caret::before {
+    content: none !important;
+    display: none !important;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1180px) {

@@ -84,11 +84,7 @@ T = {
             ("Multi-Family", "/industries/multi-family/"),
             ("SFR (Single-Family Residential)", "/industries/sfr/"),
             ("Custom Build", "/industries/custom-build/"),
-            ("Land Clearing", "/industries/land-clearing/"),
-            ("Stormwater Mitigation", "/industries/stormwater-mitigation/"),
-            ("Permitting", "/industries/permitting/"),
-            ("Inspections", "/industries/inspections/"),
-            ("Design-Build", "/industries/design-build/"),
+            ("Residential", "/consulting/residential/"),
         ],
         "footer_inds": [
             ("Commercial", "/industries/commercial/"),
@@ -163,11 +159,7 @@ T = {
             ("Multifamiliar", "/es/industrias/multifamiliar/"),
             ("Residencial unifamiliar (SFR)", "/es/industrias/sfr/"),
             ("Construcción a medida", "/es/industrias/construccion-a-medida/"),
-            ("Despeje de terrenos", "/es/industrias/despeje-de-terrenos/"),
-            ("Mitigación de aguas pluviales", "/es/industrias/mitigacion-de-aguas-pluviales/"),
-            ("Permisos", "/es/industrias/permisos/"),
-            ("Inspecciones", "/es/industrias/inspecciones/"),
-            ("Diseño-construcción", "/es/industrias/diseno-construccion/"),
+            ("Residencial", "/es/consultoria/residencial/"),
         ],
         "footer_inds": [
             ("Comercial", "/es/industrias/comercial/"),
@@ -371,8 +363,13 @@ def _nav(lang, current):
         f'          <a href="{href}">{esc(name)}</a>' for name, href in t["inds"]
     )
     consult_open = " is-current" if current.startswith("consult") else ""
-    services_open = " is-current" if current in ("services", "cm", "pm") or current.startswith("cm-") else ""
-    specs_open = " is-current" if current.startswith("spec") else ""
+    services_open = (
+        " is-current"
+        if current in ("services", "cm", "pm", "specialties")
+        or current.startswith("cm-")
+        or current.startswith("spec")
+        else ""
+    )
     inds_open = " is-current" if current.startswith("ind") else ""
 
     def caret(label):
@@ -391,6 +388,8 @@ def _nav(lang, current):
             <a href="{services}"{cur('services')}>{t['overview']}</a>
             <a href="{cm}"{cur('cm')}>{t['cm']}</a>
             <a href="{pm}"{cur('pm')}>{t['pm']}</a>
+            <a href="{sp}"{cur('specialties')}>{t['specialties']}</a>
+{spec_links}
           </div>
         </div>
         <div class="nav-item{consult_open}">
@@ -409,19 +408,10 @@ def _nav(lang, current):
             </div>
           </div>
         </div>
-        <div class="nav-item{specs_open}">
-          <a class="nav-parent" href="{sp}"{cur('specialties')}>{t['specialties']}</a>
-          {caret(t['specialties'])}
-          <div class="nav-drop">
-            <a href="{sp}"{cur('specialties')}>{t['overview']}</a>
-{spec_links}
-          </div>
-        </div>
         <div class="nav-item{inds_open}">
           <a class="nav-parent" href="{ind}"{cur('industries')}>{t['industries']}</a>
           {caret(t['industries'])}
           <div class="nav-drop">
-            <a href="{ind}"{cur('industries')}>{t['overview']}</a>
 {ind_links}
           </div>
         </div>

@@ -33,12 +33,6 @@ def aside(lang, links, heading=None):
         "        </aside>"
     ) % (heading or t["related"], items)
 
-def related_grid(items):
-    cards = []
-    for n, h, d in items:
-        cards.append('          <a href="%s"><h3>%s</h3><p>%s</p></a>' % (h, esc(n), d))
-    return '<div class="related">\n' + "\n".join(cards) + "\n        </div>"
-
 def interior_body(lang, crumbs, h1, lead, photo, paras, links, related, aside_h=None):
     t = T[lang]
     contact = "/contact/" if lang == "en" else "/es/contacto/"
@@ -49,14 +43,6 @@ def interior_body(lang, crumbs, h1, lead, photo, paras, links, related, aside_h=
         '        <div class="prose">\n%s\n        </div>\n%s\n'
         "      </div>\n    </section>"
     ) % (pjoin(paras), aside(lang, links, aside_h))
-    if related:
-        body += (
-            '\n    <section class="section section--stone">\n'
-            '      <div class="wrap">\n'
-            '        <p class="section-kicker">%s</p>\n'
-            "        <h2>%s</h2>\n        %s\n"
-            "      </div>\n    </section>"
-        ) % (t["on_this"], t["related"], related_grid(related))
     body += (
         '\n    <section class="section section--ink">\n'
         '      <div class="wrap cta-band">\n'

@@ -152,11 +152,6 @@ def about_body(lang):
             "The office is at %s, %s. Phone <a href=\"tel:%s\">%s</a>. %s Free on-site parking."
             % (ADDR1, CITY, PHONE_TEL, PHONE_DISP, t["hours"])
         )
-        related = [
-            ("Contact", "/contact/", "Address, hours, and map."),
-            ("Consulting", "/consulting/", "Commercial and residential advisory."),
-            ("Construction Management", "/construction-management/", "Field coordination of the job."),
-        ]
         pos = "Expertise on Demand"
         knowledge = "The Knowledge, Skills, and Abilities to Impact Change"
     else:
@@ -170,11 +165,6 @@ def about_body(lang):
             "La oficina est\u00e1 en %s, %s. Tel\u00e9fono <a href=\"tel:%s\">%s</a>. %s Estacionamiento gratuito en el sitio."
             % (ADDR1, CITY, PHONE_TEL, PHONE_DISP, t["hours"])
         )
-        related = [
-            ("Contacto", "/es/contacto/", "Direcci\u00f3n, horario y mapa."),
-            ("Consultor\u00eda", "/es/consultoria/", "Asesor\u00eda comercial y residencial."),
-            ("Gerencia de construcci\u00f3n", "/es/gerencia-de-construccion/", "Coordinaci\u00f3n de campo."),
-        ]
         pos = "Expertise on Demand"
         knowledge = "El conocimiento, las habilidades y las aptitudes para impulsar el cambio"
 
@@ -190,9 +180,6 @@ def about_body(lang):
     ) % (esc(pos), esc(knowledge))
     body += proof_html(lang)
     body += story_sections(lang)
-    cards = "\n".join(
-        '          <a href="%s"><h3>%s</h3><p>%s</p></a>' % (h, esc(n), d) for n, h, d in related
-    )
     body += (
         '\n    <section class="section">\n'
         '      <div class="wrap area-grid">\n'
@@ -202,13 +189,6 @@ def about_body(lang):
         '          <div class="prose"><p>%s</p></div>\n'
         "        </div>\n"
         '        <div class="area-photo" style="background-image:url(\'/assets/photos/tampa.jpg\')" role="img" aria-label="Tampa Bay"></div>\n'
-        "      </div>\n"
-        "    </section>\n"
-        '    <section class="section section--stone">\n'
-        '      <div class="wrap">\n'
-        '        <p class="section-kicker">%s</p>\n'
-        "        <h2>%s</h2>\n"
-        '        <div class="related">\n%s\n        </div>\n'
         "      </div>\n"
         "    </section>\n"
         '    <section class="section section--ink">\n'
@@ -222,7 +202,6 @@ def about_body(lang):
         "    </section>"
     ) % (
         esc(kicker), esc(office_h), office_p,
-        t["on_this"], t["related"], cards,
         PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact_cta"],
     )
     return body
@@ -321,10 +300,6 @@ def services_body(lang):
              "Dedicated execution and field oversight for owners who already have designs, budgets, and trades in place.",
              "/project-management/", "project-mgmt.jpg"),
         ]
-        related = [
-            ("Consulting", "/consulting/", "Advisory for commercial and residential work."),
-            ("Contact", "/contact/", "Call the Tampa office."),
-        ]
     else:
         crumbs = [("Inicio", "/es/"), ("Servicios", None)]
         h1 = "Servicios"
@@ -342,10 +317,6 @@ def services_body(lang):
              "Ejecución y supervisión de campo dedicadas para propietarios que ya tienen diseños, presupuestos y gremios en su lugar.",
              "/es/gerencia-de-proyectos/", "project-mgmt.jpg"),
         ]
-        related = [
-            ("Consultoría", "/es/consultoria/", "Asesoría comercial y residencial."),
-            ("Contacto", "/es/contacto/", "Llame a la oficina en Tampa."),
-        ]
 
     from chrome import page_banner
     body = page_banner(lang, crumbs, h1, lead, photo)
@@ -360,9 +331,6 @@ def services_body(lang):
             "            <span class=\"tile-go\">%s</span>\n"
             "          </div>\n        </a>" % (href, ph, idx, esc(name), copy, t["see"])
         )
-    cards = "\n".join(
-        "          <a href=\"%s\"><h3>%s</h3><p>%s</p></a>" % (h, esc(n), d) for n, h, d in related
-    )
     contact = "/contact/" if lang == "en" else "/es/contacto/"
     body += (
         "\n    <section class=\"section section--rule\">\n"
@@ -371,13 +339,6 @@ def services_body(lang):
         "          <p>%s</p>\n"
         "        </div>\n"
         "        <div class=\"tile-grid\" style=\"margin-top:2rem\">\n%s\n        </div>\n"
-        "      </div>\n"
-        "    </section>\n"
-        "    <section class=\"section section--stone\">\n"
-        "      <div class=\"wrap\">\n"
-        "        <p class=\"section-kicker\">%s</p>\n"
-        "        <h2>%s</h2>\n"
-        "        <div class=\"related\">\n%s\n        </div>\n"
         "      </div>\n"
         "    </section>\n"
         "    <section class=\"section section--ink\">\n"
@@ -391,7 +352,6 @@ def services_body(lang):
         "    </section>"
     ) % (
         intro, "\n".join(tile_html),
-        t["on_this"], t["related"], cards,
         PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact_cta"],
     )
     return body
