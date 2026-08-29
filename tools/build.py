@@ -55,7 +55,7 @@ def interior_body(lang, crumbs, h1, lead, photo, paras, links, related, aside_h=
     return body
 
 def build_from_json():
-    pages = json.loads((Path(__file__).parent / "pages.json").read_text())["pages"]
+    pages = json.loads((Path(__file__).parent / "pages.json").read_text(encoding="utf-8"))["pages"]
     for pg in pages:
         if pg["en_path"] == "/about/":
             continue
@@ -72,63 +72,56 @@ def build_from_json():
 def build_contact():
     embed = "https://www.google.com/maps?q=28.0402677,-82.4727936&z=17&output=embed"
     hours = {
-        "en": [
-            ("Monday", "8:00 AM-5:00 PM"),
-            ("Tuesday", "8:00 AM-5:00 PM"),
-            ("Wednesday", "8:00 AM-5:00 PM"),
-            ("Thursday", "8:00 AM-5:00 PM"),
-            ("Friday", "8:00 AM-5:00 PM"),
-            ("Saturday", "Closed"),
-            ("Sunday", "Closed"),
-        ],
-        "es": [
-            ("Lunes", "8:00 a. m.-5:00 p. m."),
-            ("Martes", "8:00 a. m.-5:00 p. m."),
-            ("Miércoles", "8:00 a. m.-5:00 p. m."),
-            ("Jueves", "8:00 a. m.-5:00 p. m."),
-            ("Viernes", "8:00 a. m.-5:00 p. m."),
-            ("Sábado", "Cerrado"),
-            ("Domingo", "Cerrado"),
-        ],
+        "en": [("Monday","8:00 AM-5:00 PM"),("Tuesday","8:00 AM-5:00 PM"),("Wednesday","8:00 AM-5:00 PM"),("Thursday","8:00 AM-5:00 PM"),("Friday","8:00 AM-5:00 PM"),("Saturday","Closed"),("Sunday","Closed")],
+        "es": [("Lunes","8:00 a. m.-5:00 p. m."),("Martes","8:00 a. m.-5:00 p. m."),("Miercoles","8:00 a. m.-5:00 p. m."),("Jueves","8:00 a. m.-5:00 p. m."),("Viernes","8:00 a. m.-5:00 p. m."),("Sabado","Cerrado"),("Domingo","Cerrado")],
     }
-    copy = {
-        "en": dict(
-            path="/contact/",
-            pair="/es/contacto/",
-            title="Call the Office | HMCM Tampa | (813) 323-4648",
-            desc="Call Hermanos Mendez Construction Management in Tampa: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday–Friday 8:00 AM–5:00 PM.",
-            h1="Call the Office",
-            lead="We are in Tampa. The phone is the way to reach HMCM.",
-            p1="Call <a href=\"tel:%s\">%s</a>. There is no email published on this website. Owners, developers, and client-partners call when they need an extension of their team: consulting, construction management, or project management for land development and construction." % (PHONE_TEL, PHONE_DISP),
-            p2="The office is at 10002 N Forest Hills Dr, Tampa, FL 33612. Monday–Friday 8:00 AM–5:00 PM. Saturday and Sunday closed. Free on-site parking. Open the Google listing for directions.",
-            crumbs=[("Home", "/"), ("Contact", None)],
-            hours_h="Hours",
-            map_t="Map",
-        ),
-        "es": dict(
-            path="/es/contacto/",
-            pair="/contact/",
-            title="Llame a la oficina | HMCM Tampa | (813) 323-4648",
-            desc="Llame a Hermanos Mendez Construction Management en Tampa: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
-            h1="Llame a la oficina",
-            lead="Estamos en Tampa. El teléfono es la vía para comunicarse con HMCM.",
-            p1="Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electrónico. Propietarios, desarrolladores y socios clientes llaman cuando necesitan una extensión de su equipo: consultoría, gerencia de construcción o gerencia de proyectos para desarrollo de terrenos y construcción." % (PHONE_TEL, PHONE_DISP),
-            p2="La oficina está en 10002 N Forest Hills Dr, Tampa, FL 33612. Lunes a viernes, 8:00 a. m. a 5:00 p. m. Sábado y domingo cerrado. Estacionamiento gratuito en el sitio. Abra la ficha de Google para indicaciones.",
-            crumbs=[("Inicio", "/es/"), ("Contacto", None)],
-            hours_h="Horario",
-            map_t="Mapa",
-        ),
-    }
-    for lang, c in copy.items():
+    # use proper accents in ES via unicode
+    hours["es"] = [
+        ("Lunes", "8:00 a. m.-5:00 p. m."),
+        ("Martes", "8:00 a. m.-5:00 p. m."),
+        ("Mi\u00e9rcoles", "8:00 a. m.-5:00 p. m."),
+        ("Jueves", "8:00 a. m.-5:00 p. m."),
+        ("Viernes", "8:00 a. m.-5:00 p. m."),
+        ("S\u00e1bado", "Cerrado"),
+        ("Domingo", "Cerrado"),
+    ]
+    for lang, path, pair, title, desc, h1, lead, p1 in [
+        ("en","/contact/","/es/contacto/","Contact HMCM in Tampa | (813) 323-4648",
+         "Contact Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday-Friday 8:00 AM-5:00 PM.",
+         "Get in Touch",
+         "Call the office. We are in Tampa, with free on-site parking.",
+         pjoin([
+             "Call <a href=\"tel:%s\">%s</a>. The phone is how work starts here. There is no email published on this website and no contact form, because a five-minute conversation about your site, your drawings, or where a job has stopped is worth more than a form submission — and you will be talking to the people who would actually run the work." % (PHONE_TEL, PHONE_DISP),
+             "A few things are useful to have at hand: where the property is, what stage the project is at, whether drawings or permits exist yet, and what is prompting the call. If the job has stalled, the single most useful thing you can tell us is what the last thing to happen was.",
+             "We work throughout the Tampa Bay area as consultants, construction managers, and project managers. If you are not sure which of those you need, say what the situation is and we will tell you — that conversation costs nothing. Office hours are Monday through Friday, 8:00 AM to 5:00 PM.",
+             "More on how engagements are structured: <a href=\"/services/\">services</a>, <a href=\"/consulting/\">consulting</a>, <a href=\"/construction-management/\">construction management</a>, and <a href=\"/project-management/\">project management</a>.",
+         ])),
+        ("es","/es/contacto/","/contact/","Contacto HMCM en Tampa | (813) 323-4648",
+         "Contacto de Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
+         "P\u00f3ngase en contacto",
+         "El telefono es la via principal. La oficina esta en Tampa, con estacionamiento gratuito en el sitio.",
+         "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electronico." % (PHONE_TEL, PHONE_DISP)),
+    ]:
         t = T[lang]
-        lis = "\n".join("            <li><span>%s</span><span>%s</span></li>" % (d, h) for d, h in hours[lang])
-        body = page_banner(lang, c["crumbs"], c["h1"], c["lead"], "tampa.jpg")
+        crumbs = [("Home","/"),("Contact", None)] if lang=="en" else [("Inicio","/es/"),("Contacto", None)]
+        if lang == "es":
+            h1 = "P\u00f3ngase en contacto"
+            lead = "Llame a la oficina. Estamos en Tampa, con estacionamiento gratuito en el sitio."
+            p1 = pjoin([
+                "Llame al <a href=\"tel:%s\">%s</a>. El tel\u00e9fono es como empieza el trabajo aqu\u00ed. En este sitio no se publica correo electr\u00f3nico ni hay formulario de contacto, porque una conversaci\u00f3n de cinco minutos sobre su sitio, sus planos o el punto donde se detuvo una obra vale m\u00e1s que un formulario enviado, y hablar\u00e1 con las personas que realmente dirigir\u00edan el trabajo." % (PHONE_TEL, PHONE_DISP),
+                "Conviene tener a la mano algunos datos: d\u00f3nde est\u00e1 la propiedad, en qu\u00e9 etapa est\u00e1 el proyecto, si ya existen planos o permisos y qu\u00e9 motiva la llamada. Si la obra est\u00e1 detenida, lo m\u00e1s \u00fatil que puede decirnos es cu\u00e1l fue lo \u00faltimo que ocurri\u00f3.",
+                "Trabajamos en toda el \u00e1rea de Tampa Bay como consultores, gerentes de construcci\u00f3n y gerentes de proyecto. Si no est\u00e1 seguro de cu\u00e1l de esos necesita, describa la situaci\u00f3n y se lo diremos; esa conversaci\u00f3n no cuesta nada. El horario de oficina es de lunes a viernes, de 8:00 a. m. a 5:00 p. m.",
+                "M\u00e1s sobre c\u00f3mo se estructuran los encargos: <a href=\"/es/servicios/\">servicios</a>, <a href=\"/es/consultoria/\">consultor\u00eda</a>, <a href=\"/es/gerencia-de-construccion/\">gerencia de construcci\u00f3n</a> y <a href=\"/es/gerencia-de-proyectos/\">gerencia de proyectos</a>.",
+            ])
+        lis = "\n".join("            <li><span>%s</span><span>%s</span></li>" % (d,h) for d,h in hours[lang])
+        hours_h = "Hours" if lang=="en" else "Horario"
+        map_t = "Map" if lang=="en" else "Mapa"
+        body = page_banner(lang, crumbs, h1, lead, "tampa.jpg")
         body += (
             '\n    <section class="section section--rule">\n'
             '      <div class="wrap contact-strip">\n'
             '        <div class="prose">\n'
-            "          <p>%s</p>\n"
-            "          <p>%s</p>\n"
+            "%s\n"
             '          <address class="addr">%s<br>%s<br>%s</address>\n'
             '          <p><a class="map-link" href="%s" rel="noopener noreferrer" target="_blank">%s</a></p>\n'
             "          <p>%s</p>\n"
@@ -141,11 +134,8 @@ def build_contact():
             '      <div class="wrap">\n'
             '        <iframe class="map-embed" title="%s" src="%s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n'
             "      </div>\n    </section>"
-        ) % (
-            c["p1"], c["p2"], BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"],
-            PHONE_TEL, PHONE_DISP, c["hours_h"], lis, c["map_t"], embed,
-        )
-        write(c["path"], wrap_page(lang, c["path"], c["pair"], "contact", c["title"], c["desc"], body))
+        ) % (p1, BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"], PHONE_TEL, PHONE_DISP, hours_h, lis, map_t, embed)
+        write(path, wrap_page(lang, path, pair, "contact", title, desc, body))
 
 def build_404():
     html = (
@@ -178,6 +168,16 @@ def build_redirects():
         ("/es/servicios/consultoria/", "/es/consultoria/"),
         ("/es/servicios/gerencia-de-construccion/", "/es/gerencia-de-construccion/"),
         ("/es/servicios/gerencia-de-proyectos/", "/es/gerencia-de-proyectos/"),
+        ("/industries/land-clearing/", "/specialties/land-clearing/"),
+        ("/es/industrias/despeje-de-terrenos/", "/es/especialidades/despeje-de-terrenos/"),
+        ("/industries/stormwater-mitigation/", "/specialties/stormwater-mitigation/"),
+        ("/es/industrias/mitigacion-de-aguas-pluviales/", "/es/especialidades/mitigacion-de-aguas-pluviales/"),
+        ("/industries/inspections/", "/specialties/inspections/"),
+        ("/es/industrias/inspecciones/", "/es/especialidades/inspecciones/"),
+        ("/industries/design-build/", "/construction-management/design-build/"),
+        ("/industries/permitting/", "/construction-management/permitting/"),
+        ("/es/industrias/diseno-construccion/", "/es/gerencia-de-construccion/diseno-construccion/"),
+        ("/es/industrias/permisos/", "/es/gerencia-de-construccion/permisos/"),
     ]
     for old, new in mapping:
         html = (
@@ -199,7 +199,17 @@ def build_meta():
         "Redirect 301 /services/project-management/ /project-management/\n"
         "Redirect 301 /es/servicios/consultoria/ /es/consultoria/\n"
         "Redirect 301 /es/servicios/gerencia-de-construccion/ /es/gerencia-de-construccion/\n"
-        "Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/\n",
+        "Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/\n"
+        "Redirect 301 /industries/land-clearing/ /specialties/land-clearing/\n"
+        "Redirect 301 /es/industrias/despeje-de-terrenos/ /es/especialidades/despeje-de-terrenos/\n"
+        "Redirect 301 /industries/stormwater-mitigation/ /specialties/stormwater-mitigation/\n"
+        "Redirect 301 /es/industrias/mitigacion-de-aguas-pluviales/ /es/especialidades/mitigacion-de-aguas-pluviales/\n"
+        "Redirect 301 /industries/inspections/ /specialties/inspections/\n"
+        "Redirect 301 /es/industrias/inspecciones/ /es/especialidades/inspecciones/\n"
+        "Redirect 301 /industries/design-build/ /construction-management/design-build/\n"
+        "Redirect 301 /industries/permitting/ /construction-management/permitting/\n"
+        "Redirect 301 /es/industrias/diseno-construccion/ /es/gerencia-de-construccion/diseno-construccion/\n"
+        "Redirect 301 /es/industrias/permisos/ /es/gerencia-de-construccion/permisos/\n",
         encoding="utf-8",
     )
     (ROOT / "robots.txt").write_text("User-agent: *\nAllow: /\n\nSitemap: https://hmcmfl.com/sitemap.xml\n", encoding="utf-8")

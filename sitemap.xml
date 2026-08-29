@@ -127,6 +127,15 @@
     <loc>https://hmcmfl.com/es/especialidades/desarrollo-de-terrenos/</loc>
   </url>
   <url>
+    <loc>https://hmcmfl.com/es/especialidades/despeje-de-terrenos/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/inspecciones/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/es/especialidades/mitigacion-de-aguas-pluviales/</loc>
+  </url>
+  <url>
     <loc>https://hmcmfl.com/es/especialidades/nueva-construccion/</loc>
   </url>
   <url>
@@ -166,22 +175,7 @@
     <loc>https://hmcmfl.com/es/industrias/construccion-a-medida/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/es/industrias/despeje-de-terrenos/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/es/industrias/diseno-construccion/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/es/industrias/inspecciones/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/es/industrias/mitigacion-de-aguas-pluviales/</loc>
-  </url>
-  <url>
     <loc>https://hmcmfl.com/es/industrias/multifamiliar/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/es/industrias/permisos/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/es/industrias/residencial/</loc>
@@ -202,28 +196,13 @@
     <loc>https://hmcmfl.com/industries/custom-build/</loc>
   </url>
   <url>
-    <loc>https://hmcmfl.com/industries/design-build/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/industries/inspections/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/industries/land-clearing/</loc>
-  </url>
-  <url>
     <loc>https://hmcmfl.com/industries/multi-family/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/industries/permitting/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/industries/residential/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/industries/sfr/</loc>
-  </url>
-  <url>
-    <loc>https://hmcmfl.com/industries/stormwater-mitigation/</loc>
   </url>
   <url>
     <loc>https://hmcmfl.com/project-management/</loc>
@@ -238,6 +217,12 @@
     <loc>https://hmcmfl.com/specialties/demolition/</loc>
   </url>
   <url>
+    <loc>https://hmcmfl.com/specialties/inspections/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/land-clearing/</loc>
+  </url>
+  <url>
     <loc>https://hmcmfl.com/specialties/land-development/</loc>
   </url>
   <url>
@@ -245,5 +230,8 @@
   </url>
   <url>
     <loc>https://hmcmfl.com/specialties/renovation/</loc>
+  </url>
+  <url>
+    <loc>https://hmcmfl.com/specialties/stormwater-mitigation/</loc>
   </url>
 </urlset>
