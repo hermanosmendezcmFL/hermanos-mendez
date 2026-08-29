@@ -72,45 +72,62 @@ def build_from_json():
 def build_contact():
     embed = "https://www.google.com/maps?q=28.0402677,-82.4727936&z=17&output=embed"
     hours = {
-        "en": [("Monday","8:00 AM-5:00 PM"),("Tuesday","8:00 AM-5:00 PM"),("Wednesday","8:00 AM-5:00 PM"),("Thursday","8:00 AM-5:00 PM"),("Friday","8:00 AM-5:00 PM"),("Saturday","Closed"),("Sunday","Closed")],
-        "es": [("Lunes","8:00 a. m.-5:00 p. m."),("Martes","8:00 a. m.-5:00 p. m."),("Miercoles","8:00 a. m.-5:00 p. m."),("Jueves","8:00 a. m.-5:00 p. m."),("Viernes","8:00 a. m.-5:00 p. m."),("Sabado","Cerrado"),("Domingo","Cerrado")],
+        "en": [
+            ("Monday", "8:00 AM-5:00 PM"),
+            ("Tuesday", "8:00 AM-5:00 PM"),
+            ("Wednesday", "8:00 AM-5:00 PM"),
+            ("Thursday", "8:00 AM-5:00 PM"),
+            ("Friday", "8:00 AM-5:00 PM"),
+            ("Saturday", "Closed"),
+            ("Sunday", "Closed"),
+        ],
+        "es": [
+            ("Lunes", "8:00 a. m.-5:00 p. m."),
+            ("Martes", "8:00 a. m.-5:00 p. m."),
+            ("Miércoles", "8:00 a. m.-5:00 p. m."),
+            ("Jueves", "8:00 a. m.-5:00 p. m."),
+            ("Viernes", "8:00 a. m.-5:00 p. m."),
+            ("Sábado", "Cerrado"),
+            ("Domingo", "Cerrado"),
+        ],
     }
-    # use proper accents in ES via unicode
-    hours["es"] = [
-        ("Lunes", "8:00 a. m.-5:00 p. m."),
-        ("Martes", "8:00 a. m.-5:00 p. m."),
-        ("Mi\u00e9rcoles", "8:00 a. m.-5:00 p. m."),
-        ("Jueves", "8:00 a. m.-5:00 p. m."),
-        ("Viernes", "8:00 a. m.-5:00 p. m."),
-        ("S\u00e1bado", "Cerrado"),
-        ("Domingo", "Cerrado"),
-    ]
-    for lang, path, pair, title, desc, h1, lead, p1 in [
-        ("en","/contact/","/es/contacto/","Contact HMCM in Tampa | (813) 323-4648",
-         "Contact Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday-Friday 8:00 AM-5:00 PM.",
-         "Get in Touch",
-         "Call the office. We are in Tampa, with free on-site parking.",
-         "Call <a href=\"tel:%s\">%s</a>. There is no email published on this website." % (PHONE_TEL, PHONE_DISP)),
-        ("es","/es/contacto/","/contact/","Contacto HMCM en Tampa | (813) 323-4648",
-         "Contacto de Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
-         "P\u00f3ngase en contacto",
-         "El telefono es la via principal. La oficina esta en Tampa, con estacionamiento gratuito en el sitio.",
-         "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electronico." % (PHONE_TEL, PHONE_DISP)),
-    ]:
+    copy = {
+        "en": dict(
+            path="/contact/",
+            pair="/es/contacto/",
+            title="Call the Office | HMCM Tampa | (813) 323-4648",
+            desc="Call Hermanos Mendez Construction Management in Tampa: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday–Friday 8:00 AM–5:00 PM.",
+            h1="Call the Office",
+            lead="We are in Tampa. The phone is the way to reach HMCM.",
+            p1="Call <a href=\"tel:%s\">%s</a>. There is no email published on this website. Owners, developers, and client-partners call when they need an extension of their team: consulting, construction management, or project management for land development and construction." % (PHONE_TEL, PHONE_DISP),
+            p2="The office is at 10002 N Forest Hills Dr, Tampa, FL 33612. Monday–Friday 8:00 AM–5:00 PM. Saturday and Sunday closed. Free on-site parking. Open the Google listing for directions.",
+            crumbs=[("Home", "/"), ("Contact", None)],
+            hours_h="Hours",
+            map_t="Map",
+        ),
+        "es": dict(
+            path="/es/contacto/",
+            pair="/contact/",
+            title="Llame a la oficina | HMCM Tampa | (813) 323-4648",
+            desc="Llame a Hermanos Mendez Construction Management en Tampa: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
+            h1="Llame a la oficina",
+            lead="Estamos en Tampa. El teléfono es la vía para comunicarse con HMCM.",
+            p1="Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electrónico. Propietarios, desarrolladores y socios clientes llaman cuando necesitan una extensión de su equipo: consultoría, gerencia de construcción o gerencia de proyectos para desarrollo de terrenos y construcción." % (PHONE_TEL, PHONE_DISP),
+            p2="La oficina está en 10002 N Forest Hills Dr, Tampa, FL 33612. Lunes a viernes, 8:00 a. m. a 5:00 p. m. Sábado y domingo cerrado. Estacionamiento gratuito en el sitio. Abra la ficha de Google para indicaciones.",
+            crumbs=[("Inicio", "/es/"), ("Contacto", None)],
+            hours_h="Horario",
+            map_t="Mapa",
+        ),
+    }
+    for lang, c in copy.items():
         t = T[lang]
-        crumbs = [("Home","/"),("Contact", None)] if lang=="en" else [("Inicio","/es/"),("Contacto", None)]
-        if lang == "es":
-            h1 = "P\u00f3ngase en contacto"
-            lead = "Llame a la oficina. Estamos en Tampa, con estacionamiento gratuito en el sitio."
-            p1 = "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electr\u00f3nico." % (PHONE_TEL, PHONE_DISP)
-        lis = "\n".join("            <li><span>%s</span><span>%s</span></li>" % (d,h) for d,h in hours[lang])
-        hours_h = "Hours" if lang=="en" else "Horario"
-        map_t = "Map" if lang=="en" else "Mapa"
-        body = page_banner(lang, crumbs, h1, lead, "tampa.jpg")
+        lis = "\n".join("            <li><span>%s</span><span>%s</span></li>" % (d, h) for d, h in hours[lang])
+        body = page_banner(lang, c["crumbs"], c["h1"], c["lead"], "tampa.jpg")
         body += (
             '\n    <section class="section section--rule">\n'
             '      <div class="wrap contact-strip">\n'
             '        <div class="prose">\n'
+            "          <p>%s</p>\n"
             "          <p>%s</p>\n"
             '          <address class="addr">%s<br>%s<br>%s</address>\n'
             '          <p><a class="map-link" href="%s" rel="noopener noreferrer" target="_blank">%s</a></p>\n'
@@ -124,8 +141,11 @@ def build_contact():
             '      <div class="wrap">\n'
             '        <iframe class="map-embed" title="%s" src="%s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n'
             "      </div>\n    </section>"
-        ) % (p1, BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"], PHONE_TEL, PHONE_DISP, hours_h, lis, map_t, embed)
-        write(path, wrap_page(lang, path, pair, "contact", title, desc, body))
+        ) % (
+            c["p1"], c["p2"], BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"],
+            PHONE_TEL, PHONE_DISP, c["hours_h"], lis, c["map_t"], embed,
+        )
+        write(c["path"], wrap_page(lang, c["path"], c["pair"], "contact", c["title"], c["desc"], body))
 
 def build_404():
     html = (

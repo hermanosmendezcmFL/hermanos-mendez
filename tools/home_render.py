@@ -138,35 +138,42 @@ def story_sections(lang, extra_expertise=""):
 def about_body(lang):
     t = T[lang]
     contact = "/contact/" if lang == "en" else "/es/contacto/"
-    c_over = "/consulting/" if lang == "en" else "/es/consultoria/"
-    cm = "/construction-management/" if lang == "en" else "/es/gerencia-de-construccion/"
-    pm = "/project-management/" if lang == "en" else "/es/gerencia-de-proyectos/"
     if lang == "en":
         crumbs = [("Home", "/"), ("About", None)]
-        h1 = "About HMCM"
-        lead = "Hermanos Mendez Construction Management advises and manages land development and construction in Tampa Bay."
+        h1 = "Experience the Difference"
+        lead = "A true extension of your business.<br>Expertise on Demand, from a Tampa office that stays on the job."
         photo = "tampa.jpg"
         kicker = "Office"
-        office_h = "Tampa Bay"
+        office_h = "The Tampa Office"
         office_p = (
-            "The office is at %s, %s. Phone <a href=\"tel:%s\">%s</a>. %s Free on-site parking."
+            "The office is at %s, %s. Phone <a href=\"tel:%s\">%s</a>. %s Free on-site parking. There is no email published on this website."
             % (ADDR1, CITY, PHONE_TEL, PHONE_DISP, t["hours"])
         )
         pos = "Expertise on Demand"
         knowledge = "The Knowledge, Skills, and Abilities to Impact Change"
+        intros = [
+            "Hermanos Mendez Construction Management works as a true extension of our client-partners' business. We sit on the owner's side of the table for consulting, construction management, and project management across land development and construction in Tampa Bay. Decisions, schedule, and the field route through one accountable contact.",
+            "Twenty-six years in the business, and over $300 million in completed projects, are the scale behind that posture. We are structured for substantial work: commercial developments, multi-family buildings, custom houses, and the site work that unlocks them. This site does not publish a project list. The proof is the practice.",
+            "Our team has the knowledge, skills, and abilities to impact change where you need it most. Expertise on Demand means we step in at the phase you are in, without a split chain of command. Owners hire a practice, not a rotating cast. The people who pick up the phone are the people who will walk the site. Call the Tampa office to talk about a job.",
+        ]
     else:
         crumbs = [("Inicio", "/es/"), ("Empresa", None)]
-        h1 = "Sobre HMCM"
-        lead = "Hermanos Mendez Construction Management asesora y gerencia el desarrollo de terrenos y la construcci\u00f3n en Tampa Bay."
+        h1 = "Conozca la diferencia"
+        lead = "Una verdadera extensión de su negocio.<br>Experiencia a demanda, desde una oficina en Tampa que se queda en la obra."
         photo = "tampa.jpg"
         kicker = "Oficina"
-        office_h = "Tampa Bay"
+        office_h = "La oficina en Tampa"
         office_p = (
-            "La oficina est\u00e1 en %s, %s. Tel\u00e9fono <a href=\"tel:%s\">%s</a>. %s Estacionamiento gratuito en el sitio."
+            "La oficina está en %s, %s. Teléfono <a href=\"tel:%s\">%s</a>. %s Estacionamiento gratuito en el sitio. En este sitio no se publica correo electrónico."
             % (ADDR1, CITY, PHONE_TEL, PHONE_DISP, t["hours"])
         )
-        pos = "Expertise on Demand"
+        pos = "Experiencia a demanda"
         knowledge = "El conocimiento, las habilidades y las aptitudes para impulsar el cambio"
+        intros = [
+            "Hermanos Mendez Construction Management trabaja como una verdadera extensión del negocio de nuestros socios clientes. Nos sentamos del lado del propietario para consultoría, gerencia de construcción y gerencia de proyectos en desarrollo de terrenos y construcción en Tampa Bay. Las decisiones, el programa y el campo pasan por un solo responsable.",
+            "Veintiséis años en el negocio, y más de 300 millones de dólares en proyectos completados, son la escala detrás de esa postura. Estamos estructurados para obra de envergadura: desarrollos comerciales, edificios multifamiliares, casas a medida y la obra de sitio que los abre. Este sitio no publica una lista de obras. La prueba es la práctica.",
+            "Nuestro equipo tiene el conocimiento, las habilidades y las aptitudes para impulsar el cambio donde más lo necesita. Experiencia a demanda significa que entramos en la fase en la que usted está, sin una cadena de mando partida. Los propietarios contratan una práctica, no un elenco rotativo. Quienes contestan el teléfono son quienes recorren el sitio. Llame a la oficina en Tampa para hablar de un trabajo.",
+        ]
 
     from chrome import page_banner
     body = page_banner(lang, crumbs, h1, lead, photo)
@@ -178,6 +185,13 @@ def about_body(lang):
         "      </div>\n"
         "    </section>\n"
     ) % (esc(pos), esc(knowledge))
+    body += (
+        '\n    <section class="section section--rule" id="practice">\n'
+        '      <div class="wrap">\n'
+        '        <div class="prose story-copy">\n%s\n        </div>\n'
+        "      </div>\n"
+        "    </section>\n"
+    ) % _paras(intros)
     body += proof_html(lang)
     body += story_sections(lang)
     body += (
@@ -285,37 +299,45 @@ def services_body(lang):
     t = T[lang]
     if lang == "en":
         crumbs = [("Home", "/"), ("Services", None)]
-        h1 = "Services"
-        lead = "Construction management and project management — the two ways HMCM runs the job."
+        h1 = "What We Do"
+        lead = "Consulting, construction management, and project management for land development and construction in Tampa Bay."
         photo = "construction-mgmt.jpg"
-        intro = (
-            "Hermanos Mendez Construction Management is hired two ways to run the work: "
-            "construction management as an end-to-end partner, and project management as dedicated execution and field oversight of an established framework."
-        )
+        intros = [
+            "Hermanos Mendez Construction Management provides a wide array of services as an extension of our client-partners' business, driving maximum impact at a streamlined cost. The practice is built around consulting for commercial and residential work, construction management, and project management.",
+            "Construction management is the end-to-end engagement: from concept through completion, or intervention at any phase. Project management is dedicated execution and field oversight of an established framework. We do not design the project, build the initial budgets, or negotiate trade contracts under that pathway.",
+            "Consulting is the advisory door. It can remain advisory, or scale into construction management or project management when the job needs the field. Land development, new construction, renovation, and demolition are the specialties we expect to see on a Tampa Bay job, whether we are advising or running the work. See <a href=\"/consulting/\">Consulting</a> and <a href=\"/specialties/\">Specialties</a>.",
+        ]
         tiles = [
             ("01", "Construction Management",
-             "Field coordination of trades, schedule, and site so the work moves with a single point of contact.",
+             "Your dedicated partner from initial concept through final completion, or ready to step in at any phase.",
              "/construction-management/", "construction-mgmt.jpg"),
             ("02", "Project Management",
              "Dedicated execution and field oversight for owners who already have designs, budgets, and trades in place.",
              "/project-management/", "project-mgmt.jpg"),
+            ("03", "Consulting",
+             "Expertise at every phase: end-to-end support, or targeted troubleshooting when expert help is needed most.",
+             "/consulting/", "consulting.jpg"),
         ]
     else:
         crumbs = [("Inicio", "/es/"), ("Servicios", None)]
-        h1 = "Servicios"
-        lead = "Gerencia de construcción y gerencia de proyectos: las dos formas en que HMCM dirige la obra."
+        h1 = "Qué hacemos"
+        lead = "Consultoría, gerencia de construcción y gerencia de proyectos para desarrollo de terrenos y construcción en Tampa Bay."
         photo = "construction-mgmt.jpg"
-        intro = (
-            "A Hermanos Mendez Construction Management se le contrata de dos maneras para dirigir el trabajo: "
-            "gerencia de construcción como socio de principio a fin, y gerencia de proyectos como ejecución y supervisión de campo dedicadas de un marco ya establecido."
-        )
+        intros = [
+            "Hermanos Mendez Construction Management ofrece una amplia gama de servicios como extensión del negocio de nuestros socios clientes, máximo impacto a un costo ágil. La práctica se centra en la consultoría comercial y residencial, la gerencia de construcción y la gerencia de proyectos.",
+            "La gerencia de construcción es el encargo de principio a fin: del concepto a la entrega, o la intervención en cualquier fase. La gerencia de proyectos es ejecución y supervisión de campo dedicadas de un marco ya establecido. En esa ruta no diseñamos el proyecto, no armamos los presupuestos iniciales ni negociamos contratos de gremios.",
+            "La consultoría es la puerta de asesoría. Puede quedarse en asesoría, o escalar a gerencia de construcción o de proyectos cuando la obra necesita el campo. El desarrollo de terrenos, la nueva construcción, la renovación y la demolición son las especialidades que esperamos ver en un trabajo en Tampa Bay, ya sea que asesoremos o dirijamos la obra. Vea <a href=\"/es/consultoria/\">Consultoría</a> y <a href=\"/es/especialidades/\">Especialidades</a>.",
+        ]
         tiles = [
             ("01", "Gerencia de construcción",
-             "Coordinación de gremios, programa y sitio de obra, con un solo punto de contacto.",
+             "Su socio dedicado desde el concepto inicial hasta la entrega final, o listo para entrar en cualquier fase.",
              "/es/gerencia-de-construccion/", "construction-mgmt.jpg"),
             ("02", "Gerencia de proyectos",
              "Ejecución y supervisión de campo dedicadas para propietarios que ya tienen diseños, presupuestos y gremios en su lugar.",
              "/es/gerencia-de-proyectos/", "project-mgmt.jpg"),
+            ("03", "Consultoría",
+             "Experiencia en cada fase: apoyo de principio a fin, o una intervención puntual cuando más se necesita ayuda experta.",
+             "/es/consultoria/", "consulting.jpg"),
         ]
 
     from chrome import page_banner
@@ -336,7 +358,7 @@ def services_body(lang):
         "\n    <section class=\"section section--rule\">\n"
         "      <div class=\"wrap\">\n"
         "        <div class=\"prose story-copy\">\n"
-        "          <p>%s</p>\n"
+        "%s\n"
         "        </div>\n"
         "        <div class=\"tile-grid\" style=\"margin-top:2rem\">\n%s\n        </div>\n"
         "      </div>\n"
@@ -351,7 +373,7 @@ def services_body(lang):
         "      </div>\n"
         "    </section>"
     ) % (
-        intro, "\n".join(tile_html),
+        _paras(intros), "\n".join(tile_html),
         PHONE_DISP, PHONE_TEL, t["call_now"], contact, t["contact_cta"],
     )
     return body
@@ -375,14 +397,14 @@ def build_homes(write, wrap_page):
 def build_services(write, wrap_page):
     write("/services/", wrap_page(
         "en", "/services/", "/es/servicios/", "services",
-        "Services | Construction Management and Project Management | HMCM",
-        "HMCM services in Tampa Bay: construction management and project management for land development and construction.",
+        "What We Do | Construction Management and Project Management | HMCM Tampa Bay",
+        "What we do in Tampa Bay: consulting, construction management, and project management for land development and construction. Expertise on Demand.",
         services_body("en"),
     ))
     write("/es/servicios/", wrap_page(
         "es", "/es/servicios/", "/services/", "services",
-        "Servicios | Gerencia de construcción y gerencia de proyectos | HMCM",
-        "Servicios de HMCM en Tampa Bay: gerencia de construcción y gerencia de proyectos para desarrollo de terrenos y construcción.",
+        "Qué hacemos | Gerencia de construcción y gerencia de proyectos | HMCM Tampa Bay",
+        "Qué hacemos en Tampa Bay: consultoría, gerencia de construcción y gerencia de proyectos para desarrollo de terrenos y construcción. Experiencia a demanda.",
         services_body("es"),
     ))
 
@@ -391,13 +413,13 @@ def build_services(write, wrap_page):
 def build_about(write, wrap_page):
     write("/about/", wrap_page(
         "en", "/about/", "/es/empresa/", "about",
-        "About HMCM | Hermanos Mendez Construction Management in Tampa",
-        "Hermanos Mendez Construction Management advises and manages land development and construction in Tampa Bay.",
+        "Experience the Difference | About HMCM | Tampa Bay",
+        "Hermanos Mendez Construction Management is a true extension of your business in Tampa Bay. Twenty-six years in the business and over $300 million in completed projects. Expertise on Demand.",
         about_body("en"),
     ))
     write("/es/empresa/", wrap_page(
         "es", "/es/empresa/", "/about/", "about",
-        "Sobre HMCM | Hermanos Mendez Construction Management en Tampa",
-        "Hermanos Mendez Construction Management asesora y gerencia el desarrollo de terrenos y la construcci\u00f3n en Tampa Bay.",
+        "Conozca la diferencia | Empresa | HMCM Tampa Bay",
+        "Hermanos Mendez Construction Management es una verdadera extensión de su negocio en Tampa Bay. Veintiséis años en el negocio y más de 300 millones de dólares en proyectos completados. Experiencia a demanda.",
         about_body("es"),
     ))
