@@ -18,6 +18,32 @@ LAT = 28.0402677
 LNG = -82.4727936
 OG = f"{CANON}/assets/og.png"
 
+PHOTO_ALT = {
+    "hero.jpg": "Construction worker pouring concrete on a job site",
+    "tampa.jpg": "Tampa skyline across the water at night",
+    "consulting.jpg": "Hands at a desk reviewing diagrams and plans",
+    "consulting-field.jpg": "Field crew working on a construction slab",
+    "meeting.jpg": "Field crew working on a construction slab",
+    "commercial.jpg": "Restaurant dining room with an open kitchen",
+    "restaurant.jpg": "Restaurant interior with dining tables set for service",
+    "sfr.jpg": "Two-story house with a wrap-around porch and a green lawn",
+    "custom.jpg": "Custom house with a landscaped front yard at dusk",
+    "construction-mgmt.jpg": "Construction worker pouring concrete on a job site",
+    "project-mgmt.jpg": "Hands writing on construction documents",
+    "plans.jpg": "Hands writing on construction documents",
+    "docs.jpg": "Hands writing on construction documents",
+    "land.jpg": "Open field ready for land development",
+    "clearing.jpg": "Wood-framed houses on a dirt construction lot",
+    "stormwater.jpg": "Open field before site drainage and development",
+    "new-construction.jpg": "Wood-framed houses under construction",
+    "interior.jpg": "Modern commercial building exterior at dusk",
+    "renovation.jpg": "Renovated interior room with wood flooring",
+    "demolition.jpg": "High-rise construction site with tower cranes",
+    "efficiency.jpg": "Power lines across an open field at sunset",
+    "systems.jpg": "Welder at work on a metal job",
+    "multifamily.jpg": "Multi-family residential building",
+}
+
 T = {
     "en": {
         "skip": "Skip to content",
@@ -56,9 +82,11 @@ T = {
         "related": "Related",
         "on_this": "More",
         "call_now": "Call Now",
+        "call_short": "Call",
         "contact_cta": "Get in Touch",
         "visit": "Visit the office",
         "breadcrumb": "Breadcrumb",
+        "sitemap": "Site Map",
         "other_items": [
             ("Efficiency Evaluations and Implementations", "/consulting/other/efficiency-evaluations/"),
             ("Systems Evaluations and Implementations", "/consulting/other/systems-evaluations/"),
@@ -131,9 +159,11 @@ T = {
         "related": "Relacionado",
         "on_this": "Más",
         "call_now": "Llamar ahora",
+        "call_short": "Llamar",
         "contact_cta": "Póngase en contacto",
         "visit": "Visitar la oficina",
         "breadcrumb": "Miga de pan",
+        "sitemap": "Mapa del sitio",
         "other_items": [
             ("Evaluaciones e implementaciones de eficiencia", "/es/consultoria/otros/evaluaciones-de-eficiencia/"),
             ("Evaluaciones e implementaciones de sistemas", "/es/consultoria/otros/evaluaciones-de-sistemas/"),
@@ -282,7 +312,7 @@ def jsonld(page_url, page_name, lang, crumbs=None):
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=2)
 
 
-def head(lang, path, pair, title, desc, robots="index,follow"):
+def head(lang, path, pair, title, desc, robots="index,follow", crumbs=None):
     page_url = f"{CANON}{path}"
     pair_url = f"{CANON}{pair}"
     en_url = page_url if lang == "en" else pair_url
@@ -294,7 +324,7 @@ def head(lang, path, pair, title, desc, robots="index,follow"):
 <html lang="{lang}">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   <meta name="robots" content="{robots}">
@@ -303,6 +333,7 @@ def head(lang, path, pair, title, desc, robots="index,follow"):
   <link rel="alternate" hreflang="en" href="{en_url}">
   <link rel="alternate" hreflang="es" href="{es_url}">
   <link rel="alternate" hreflang="x-default" href="{en_url}">
+  <link rel="icon" href="/assets/favicon.png" sizes="32x32">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/libre-baskerville-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -313,7 +344,7 @@ def head(lang, path, pair, title, desc, robots="index,follow"):
   <meta property="og:type" content="website">
   <meta property="og:url" content="{page_url}">
   <meta property="og:image" content="{OG}">
-  <meta property="og:image:alt" content="HMCM — Construct | Renovate | Demolish">
+  <meta property="og:image:alt" content="HMCM, Hermanos Mendez Construction Management">
   <meta property="og:locale" content="{locale}">
   <meta property="og:locale:alternate" content="{alt_locale}">
   <meta name="twitter:card" content="summary_large_image">
@@ -322,7 +353,7 @@ def head(lang, path, pair, title, desc, robots="index,follow"):
   <meta name="twitter:image" content="{OG}">
   <link rel="stylesheet" href="/css/styles.css">
   <script type="application/ld+json">
-{jsonld(page_url, title, lang)}
+{jsonld(page_url, title, lang, crumbs)}
   </script>
 </head>"""
 
@@ -433,7 +464,7 @@ def header_full(lang, current, path, pair):
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo-link" href="{home}">
-        <img src="/assets/logo-light.svg" width="240" height="90" alt="HMCM logo: Hermanos Mendez Construction Management — Construct, Renovate, Demolish">
+        <img src="/assets/logo-light.png" width="226" height="56" alt="HMCM, Hermanos Mendez Construction Management">
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="{t['menu']}">
         <span class="nav-toggle-bars"></span>
@@ -446,7 +477,7 @@ def header_full(lang, current, path, pair):
         <span class="sep" aria-hidden="true">|</span>
         <a href="{es_href}" hreflang="es" lang="es"{es_cur}>ES</a>
       </div>
-      <a class="btn-call" href="tel:{PHONE_TEL}">{t['call']}</a>
+      <a class="btn-call" href="tel:{PHONE_TEL}" aria-label="{t['call']}"><span class="call-full">{t['call']}</span><span class="call-short">{t['call_short']}</span></a>
     </div>
   </header>"""
 
@@ -468,7 +499,7 @@ def footer(lang):
     <div class="wrap footer-grid">
       <div>
         <a class="footer-logo" href="{home}">
-          <img src="/assets/logo-light.svg" width="200" height="75" alt="HMCM — Hermanos Mendez Construction Management">
+          <img src="/assets/logo-light.png" width="200" height="50" alt="HMCM, Hermanos Mendez Construction Management">
         </a>
         <p class="footer-meta">{ADDR1}<br>{CITY}<br>
           <a href="tel:{PHONE_TEL}">{PHONE_DISP}</a></p>
@@ -503,6 +534,7 @@ def footer(lang):
           <li><a href="{home}">{t['home']}</a></li>
           <li><a href="{about}">{t['about']}</a></li>
           <li><a href="{contact}">{t['contact']}</a></li>
+          <li><a href="{'/sitemap/' if lang=='en' else '/es/mapa-del-sitio/'}">{t['sitemap']}</a></li>
           <li><a href="{'/es/' if lang=='en' else '/'}">{t['es_label']}</a></li>
         </ul>
       </div>
@@ -534,8 +566,9 @@ def crumbs_html(lang, crumbs):
 
 
 def page_banner(lang, crumbs, h1, lead, photo):
+    alt = PHOTO_ALT.get(photo, "Construction work in Tampa Bay")
     return f"""    <section class="page-banner">
-      <div class="page-banner__bg" style="background-image:url('/assets/photos/{photo}')" role="presentation"></div>
+      <img class="page-banner__bg" src="/assets/photos/{photo}" alt="{esc(alt)}" width="1600" height="900">
       <div class="wrap">
 {crumbs_html(lang, crumbs)}
         <h1>{esc(h1)}</h1>
@@ -544,9 +577,9 @@ def page_banner(lang, crumbs, h1, lead, photo):
     </section>"""
 
 
-def wrap_page(lang, path, pair, current, title, desc, body, robots="index,follow"):
+def wrap_page(lang, path, pair, current, title, desc, body, robots="index,follow", crumbs=None):
     return (
-        head(lang, path, pair, title, desc, robots)
+        head(lang, path, pair, title, desc, robots, crumbs)
         + "\n"
         + header_full(lang, current, path, pair)
         + "\n  <main id=\"main\">\n"

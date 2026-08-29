@@ -84,7 +84,7 @@
       "en_path": "/consulting/commercial/",
       "es_path": "/es/consultoria/comercial/",
       "nav": "consult-commercial",
-      "photo": "commercial.jpg",
+      "photo": "restaurant.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -198,7 +198,7 @@
       "en_path": "/consulting/residential/",
       "es_path": "/es/consultoria/residencial/",
       "nav": "consult-residential",
-      "photo": "custom.jpg",
+      "photo": "sfr.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -328,7 +328,7 @@
       "en_path": "/consulting/other/",
       "es_path": "/es/consultoria/otros/",
       "nav": "consult-other",
-      "photo": "docs.jpg",
+      "photo": "consulting.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -678,7 +678,7 @@
       "en_path": "/consulting/other/business-development/",
       "es_path": "/es/consultoria/otros/desarrollo-de-negocios/",
       "nav": "consult-other",
-      "photo": "meeting.jpg",
+      "photo": "consulting.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -996,7 +996,7 @@
       "en_path": "/consulting/other/distress-stalled-project-support/",
       "es_path": "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
       "nav": "consult-distress",
-      "photo": "construction-mgmt.jpg",
+      "photo": "consulting-field.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -1354,7 +1354,7 @@
       "en_path": "/consulting/other/sop-employee-management/",
       "es_path": "/es/consultoria/otros/sop-gestion-de-empleados/",
       "nav": "consult-other",
-      "photo": "meeting.jpg",
+      "photo": "consulting.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -1670,7 +1670,7 @@
       "en_path": "/construction-management/project-rescue/",
       "es_path": "/es/gerencia-de-construccion/rescate-y-resolucion/",
       "nav": "cm-rescue",
-      "photo": "construction-mgmt.jpg",
+      "photo": "consulting-field.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -1882,7 +1882,7 @@
       "en_path": "/construction-management/project-execution/",
       "es_path": "/es/gerencia-de-construccion/ejecucion-y-supervision/",
       "nav": "cm-exec",
-      "photo": "project-mgmt.jpg",
+      "photo": "construction-mgmt.jpg",
       "crumbs_en": [
         [
           "Home",
@@ -3104,7 +3104,7 @@
       "en_path": "/industries/sfr/",
       "es_path": "/es/industrias/sfr/",
       "nav": "ind",
-      "photo": "custom.jpg",
+      "photo": "sfr.jpg",
       "crumbs_en": [
         [
           "Home",

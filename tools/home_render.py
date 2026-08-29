@@ -1,5 +1,5 @@
 from html import escape as esc
-from chrome import T, BRAND, ADDR1, CITY, PHONE_DISP, PHONE_TEL, MAPS
+from chrome import T, BRAND, ADDR1, CITY, PHONE_DISP, PHONE_TEL, MAPS, PHOTO_ALT
 
 
 def proof_html(lang):
@@ -287,10 +287,9 @@ def _home(lang):
 
     hero = (
         "\n    <section class=\"hero-full\">\n"
-        "      <div class=\"hero-full__bg\" style=\"background-image:url('/assets/photos/hero.jpg')\" role=\"presentation\"></div>\n"
+        "      <img class=\"hero-full__bg\" src=\"/assets/photos/hero.jpg\" alt=\"%s\" width=\"1920\" height=\"1280\">\n"
         "      <div class=\"wrap\">\n"
         "        <p class=\"eyebrow\">Tampa, Florida</p>\n"
-        "        <p class=\"hero-tag\">Construct | Renovate | Demolish</p>\n"
         "        <h1>%s</h1>\n"
         "        <p class=\"hero-position\">%s</p>\n"
         "        <p class=\"hero-sub\">%s</p>\n"
@@ -302,7 +301,7 @@ def _home(lang):
         "        </div>\n"
         "      </div>\n    </section>\n"
     ) % (
-        esc(h1), esc(position), esc(knowledge), lead,
+        esc(PHOTO_ALT.get('hero.jpg','Construction work in Tampa Bay')), esc(h1), esc(position), esc(knowledge), lead,
         PHONE_TEL, PHONE_DISP, services_href, esc(cta_services), about_href, esc(cta_about),
     )
 
@@ -435,12 +434,14 @@ def build_services(write, wrap_page):
         "Services | Consulting, Construction Management, Project Management | HMCM",
         "The three ways HMCM is hired in Tampa Bay: consulting, construction management, and project management for land development and construction.",
         services_body("en"),
+        crumbs=[("Home", "/"), ("Services", None)],
     ))
     write("/es/servicios/", wrap_page(
         "es", "/es/servicios/", "/services/", "services",
         "Servicios | Consultoría, gerencia de construcción y gerencia de proyectos | HMCM",
         "Las tres formas de contratar a HMCM en Tampa Bay: consultoría, gerencia de construcción y gerencia de proyectos para desarrollo de terrenos y construcción.",
         services_body("es"),
+        crumbs=[("Inicio", "/es/"), ("Servicios", None)],
     ))
 
 
@@ -453,10 +454,12 @@ def build_about(write, wrap_page):
         en["title"],
         en["desc"],
         about_body("en"),
+        crumbs=[("Home", "/"), ("About", None)],
     ))
     write("/es/empresa/", wrap_page(
         "es", "/es/empresa/", "/about/", "about",
         es["title"],
         es["desc"],
         about_body("es"),
+        crumbs=[("Inicio", "/es/"), ("Empresa", None)],
     ))

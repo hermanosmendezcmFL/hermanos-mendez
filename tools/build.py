@@ -63,10 +63,12 @@ def build_from_json():
         write(pg["en_path"], wrap_page(
             "en", pg["en_path"], pg["es_path"], pg["nav"], en["title"], en["desc"],
             interior_body("en", pg["crumbs_en"], en["h1"], en["lead"], pg["photo"], en["paras"], en["links"], en.get("related"), en.get("aside_h")),
+            crumbs=pg["crumbs_en"],
         ))
         write(pg["es_path"], wrap_page(
             "es", pg["es_path"], pg["en_path"], pg["nav"], es["title"], es["desc"],
             interior_body("es", pg["crumbs_es"], es["h1"], es["lead"], pg["photo"], es["paras"], es["links"], es.get("related"), es.get("aside_h")),
+            crumbs=pg["crumbs_es"],
         ))
 
 def build_contact():
@@ -88,10 +90,10 @@ def build_contact():
     for lang, path, pair, title, desc, h1, lead, p1 in [
         ("en","/contact/","/es/contacto/","Contact HMCM in Tampa | (813) 323-4648",
          "Contact Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Monday-Friday 8:00 AM-5:00 PM.",
-         "Get in Touch",
-         "Call the office. We are in Tampa, with free on-site parking.",
+         "Call the Office",
+         "Call the Tampa office. Free on-site parking.",
          pjoin([
-             "Call <a href=\"tel:%s\">%s</a>. The phone is how work starts here. There is no email published on this website and no contact form, because a five-minute conversation about your site, your drawings, or where a job has stopped is worth more than a form submission — and you will be talking to the people who would actually run the work." % (PHONE_TEL, PHONE_DISP),
+             "Call <a href=\"tel:%s\">%s</a>. A five-minute conversation about your site, your drawings, or where a job has stopped is the fastest way to get moving, and you will be talking to the people who would actually run the work." % (PHONE_TEL, PHONE_DISP),
              "A few things are useful to have at hand: where the property is, what stage the project is at, whether drawings or permits exist yet, and what is prompting the call. If the job has stalled, the single most useful thing you can tell us is what the last thing to happen was.",
              "We work throughout the Tampa Bay area as consultants, construction managers, and project managers. If you are not sure which of those you need, say what the situation is and we will tell you — that conversation costs nothing. Office hours are Monday through Friday, 8:00 AM to 5:00 PM.",
              "More on how engagements are structured: <a href=\"/services/\">services</a>, <a href=\"/consulting/\">consulting</a>, <a href=\"/construction-management/\">construction management</a>, and <a href=\"/project-management/\">project management</a>.",
@@ -99,8 +101,8 @@ def build_contact():
         ("es","/es/contacto/","/contact/","Contacto HMCM en Tampa | (813) 323-4648",
          "Contacto de Hermanos Mendez Construction Management: 10002 N Forest Hills Dr, Tampa, FL 33612. (813) 323-4648. Lunes a viernes, 8:00 a. m. a 5:00 p. m.",
          "P\u00f3ngase en contacto",
-         "El telefono es la via principal. La oficina esta en Tampa, con estacionamiento gratuito en el sitio.",
-         "Llame al <a href=\"tel:%s\">%s</a>. En este sitio no se publica correo electronico." % (PHONE_TEL, PHONE_DISP)),
+         "Llame a la oficina en Tampa. Estacionamiento gratuito en el sitio.",
+         "Llame al <a href=\"tel:%s\">%s</a>." % (PHONE_TEL, PHONE_DISP)),
     ]:
         t = T[lang]
         crumbs = [("Home","/"),("Contact", None)] if lang=="en" else [("Inicio","/es/"),("Contacto", None)]
@@ -108,7 +110,7 @@ def build_contact():
             h1 = "P\u00f3ngase en contacto"
             lead = "Llame a la oficina. Estamos en Tampa, con estacionamiento gratuito en el sitio."
             p1 = pjoin([
-                "Llame al <a href=\"tel:%s\">%s</a>. El tel\u00e9fono es como empieza el trabajo aqu\u00ed. En este sitio no se publica correo electr\u00f3nico ni hay formulario de contacto, porque una conversaci\u00f3n de cinco minutos sobre su sitio, sus planos o el punto donde se detuvo una obra vale m\u00e1s que un formulario enviado, y hablar\u00e1 con las personas que realmente dirigir\u00edan el trabajo." % (PHONE_TEL, PHONE_DISP),
+                "Llame al <a href=\"tel:%s\">%s</a>. Una conversaci\u00f3n de cinco minutos sobre su sitio, sus planos o el punto donde se detuvo una obra es la forma m\u00e1s r\u00e1pida de avanzar, y hablar\u00e1 con las personas que realmente dirigir\u00edan el trabajo." % (PHONE_TEL, PHONE_DISP),
                 "Conviene tener a la mano algunos datos: d\u00f3nde est\u00e1 la propiedad, en qu\u00e9 etapa est\u00e1 el proyecto, si ya existen planos o permisos y qu\u00e9 motiva la llamada. Si la obra est\u00e1 detenida, lo m\u00e1s \u00fatil que puede decirnos es cu\u00e1l fue lo \u00faltimo que ocurri\u00f3.",
                 "Trabajamos en toda el \u00e1rea de Tampa Bay como consultores, gerentes de construcci\u00f3n y gerentes de proyecto. Si no est\u00e1 seguro de cu\u00e1l de esos necesita, describa la situaci\u00f3n y se lo diremos; esa conversaci\u00f3n no cuesta nada. El horario de oficina es de lunes a viernes, de 8:00 a. m. a 5:00 p. m.",
                 "M\u00e1s sobre c\u00f3mo se estructuran los encargos: <a href=\"/es/servicios/\">servicios</a>, <a href=\"/es/consultoria/\">consultor\u00eda</a>, <a href=\"/es/gerencia-de-construccion/\">gerencia de construcci\u00f3n</a> y <a href=\"/es/gerencia-de-proyectos/\">gerencia de proyectos</a>.",
@@ -135,13 +137,13 @@ def build_contact():
             '        <iframe class="map-embed" title="%s" src="%s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n'
             "      </div>\n    </section>"
         ) % (p1, BRAND, ADDR1, CITY, MAPS, t["maps"], t["parking"], PHONE_TEL, PHONE_DISP, hours_h, lis, map_t, embed)
-        write(path, wrap_page(lang, path, pair, "contact", title, desc, body))
+        write(path, wrap_page(lang, path, pair, "contact", title, desc, body, crumbs=crumbs))
 
 def build_404():
     html = (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         "  <meta charset=\"utf-8\">\n"
-        "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+        "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n"
         "  <title>Page not found | HMCM</title>\n"
         "  <meta name=\"robots\" content=\"noindex\">\n"
         "  <meta name=\"theme-color\" content=\"#171614\">\n"
@@ -191,6 +193,95 @@ def build_redirects():
         ) % (new, CANON, new, new, new, new)
         write(old, html, sitemap=False)
 
+
+def build_html_sitemaps():
+    pages = json.loads((Path(__file__).parent / "pages.json").read_text(encoding="utf-8"))["pages"]
+    def groups(lang):
+        if lang == "en":
+            return [
+                ("Company", [
+                    ("Home", "/"),
+                    ("About", "/about/"),
+                    ("Contact", "/contact/"),
+                    ("Services", "/services/"),
+                    ("Site Map", "/sitemap/"),
+                ]),
+                ("Consulting", []),
+                ("Construction Management", []),
+                ("Project Management", []),
+                ("Specialties", []),
+                ("Industries", []),
+            ]
+        return [
+            ("Empresa", [
+                ("Inicio", "/es/"),
+                ("Empresa", "/es/empresa/"),
+                ("Contacto", "/es/contacto/"),
+                ("Servicios", "/es/servicios/"),
+                ("Mapa del sitio", "/es/mapa-del-sitio/"),
+            ]),
+            ("Consultoría", []),
+            ("Gerencia de construcción", []),
+            ("Gerencia de proyectos", []),
+            ("Especialidades", []),
+            ("Industrias", []),
+        ]
+    en_g = groups("en")
+    es_g = groups("es")
+    bucket = {
+        "/consulting": 1, "/es/consultoria": 1,
+        "/construction-management": 2, "/es/gerencia-de-construccion": 2,
+        "/project-management": 3, "/es/gerencia-de-proyectos": 3,
+        "/specialties": 4, "/es/especialidades": 4,
+        "/industries": 5, "/es/industrias": 5,
+    }
+    def idx_for(path):
+        for prefix, i in bucket.items():
+            if path.rstrip("/") == prefix or path.startswith(prefix + "/"):
+                return i
+        return None
+    for pg in pages:
+        en, es = pg["en"], pg["es"]
+        i = idx_for(pg["en_path"])
+        if i is None:
+            continue
+        en_g[i][1].append((en["h1"], pg["en_path"]))
+        es_g[i][1].append((es["h1"], pg["es_path"]))
+
+    def col_html(grouped):
+        cols = []
+        for heading, links in grouped:
+            items = "\n".join('            <li><a href="%s">%s</a></li>' % (h, esc(n)) for n, h in links)
+            cols.append(
+                "        <div>\n          <h2>%s</h2>\n          <ul>\n%s\n          </ul>\n        </div>"
+                % (esc(heading), items)
+            )
+        return "\n".join(cols)
+
+    specs = [
+        ("en", "/sitemap/", "/es/mapa-del-sitio/",
+         "Site Map | HMCM Tampa Bay",
+         "HTML site map of Hermanos Mendez Construction Management pages: services, consulting, industries, and contact in Tampa Bay.",
+         "Site Map",
+         "Every public page on HMCMFL.com, grouped by section.",
+         [("Home", "/"), ("Site Map", None)],
+         en_g),
+        ("es", "/es/mapa-del-sitio/", "/sitemap/",
+         "Mapa del sitio | HMCM Tampa Bay",
+         "Mapa HTML de Hermanos Mendez Construction Management: servicios, consultoría, industrias y contacto en Tampa Bay.",
+         "Mapa del sitio",
+         "Todas las páginas públicas de HMCMFL.com, agrupadas por sección.",
+         [("Inicio", "/es/"), ("Mapa del sitio", None)],
+         es_g),
+    ]
+    for lang, path, pair, title, desc, h1, lead, crumbs, grouped in specs:
+        body = page_banner(lang, crumbs, h1, lead, "tampa.jpg")
+        body += (
+            '\n    <section class="section">\n'
+            '      <div class="wrap sitemap-cols">\n%s\n      </div>\n    </section>'
+        ) % col_html(grouped)
+        write(path, wrap_page(lang, path, pair, "home", title, desc, body, crumbs=crumbs))
+
 def build_meta():
     (ROOT / ".htaccess").write_text(
         "DirectoryIndex index.html\nErrorDocument 404 /404.html\n"
@@ -236,6 +327,7 @@ if __name__ == "__main__":
     build_services(write, wrap_page)
     build_from_json()
     build_contact()
+    build_html_sitemaps()
     build_404()
     build_redirects()
     urls = build_meta()
