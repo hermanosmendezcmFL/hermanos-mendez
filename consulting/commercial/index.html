@@ -211,6 +211,22 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "name": "Failing Asset Evaluation",
+              "url": "https://hmcmfl.com/consulting/other/failing-asset-evaluation/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Distress & Stalled Project Support",
+              "url": "https://hmcmfl.com/consulting/other/distress-stalled-project-support/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
               "name": "Land Development",
               "url": "https://hmcmfl.com/specialties/land-development/"
             }
@@ -288,7 +304,8 @@
         <a href="/">Home</a>
         <a href="/about/">About Us</a>
         <div class="nav-item">
-          <button class="nav-parent" type="button" aria-expanded="false">Services</button>
+          <a class="nav-parent" href="/services/">Services</a>
+          <button class="nav-caret" type="button" aria-expanded="false" aria-label="Services: Menu"></button>
           <div class="nav-drop">
             <a href="/services/">Overview</a>
             <a href="/construction-management/">Construction Management</a>
@@ -296,7 +313,8 @@
           </div>
         </div>
         <div class="nav-item is-current">
-          <button class="nav-parent" type="button" aria-expanded="false">Consulting</button>
+          <a class="nav-parent" href="/consulting/">Consulting</a>
+          <button class="nav-caret" type="button" aria-expanded="false" aria-label="Consulting: Menu"></button>
           <div class="nav-drop nav-drop--wide">
             <div class="nav-drop-col">
               <p class="nav-drop-label">Consulting</p>
@@ -305,20 +323,16 @@
               <a href="/consulting/residential/">Residential</a>
             </div>
             <div class="nav-drop-col">
-              <p class="nav-drop-label">Other Consulting Services</p>
-              <a href="/consulting/other/">Overview</a>
-            <a href="/consulting/other/efficiency-evaluations/">Efficiency Evaluations and Implementations</a>
-            <a href="/consulting/other/systems-evaluations/">Systems Evaluations and Implementations</a>
-            <a href="/consulting/other/business-development/">Business Development</a>
+              <p class="nav-drop-label">Specialized Consulting Services</p>
+            <a href="/consulting/other/failing-asset-evaluation/">Failing Asset Evaluation</a>
             <a href="/consulting/other/special-projects/">Special Projects</a>
-            <a href="/consulting/other/takeoff-support/">Takeoff Support and Contract Negotiations</a>
-            <a href="/consulting/other/purchasing-assistance/">Purchasing Assistance</a>
-            <a href="/consulting/other/sop-employee-management/">SOP and Employee Management</a>
+            <a href="/consulting/other/distress-stalled-project-support/">Distress &amp; Stalled Project Support</a>
             </div>
           </div>
         </div>
         <div class="nav-item">
-          <button class="nav-parent" type="button" aria-expanded="false">Specialties</button>
+          <a class="nav-parent" href="/specialties/">Specialties</a>
+          <button class="nav-caret" type="button" aria-expanded="false" aria-label="Specialties: Menu"></button>
           <div class="nav-drop">
             <a href="/specialties/">Overview</a>
           <a href="/specialties/land-development/">Land Development</a>
@@ -328,7 +342,8 @@
           </div>
         </div>
         <div class="nav-item">
-          <button class="nav-parent" type="button" aria-expanded="false">Industries</button>
+          <a class="nav-parent" href="/industries/">Industries</a>
+          <button class="nav-caret" type="button" aria-expanded="false" aria-label="Industries: Menu"></button>
           <div class="nav-drop">
             <a href="/industries/">Overview</a>
           <a href="/industries/commercial/">Commercial</a>
@@ -373,16 +388,21 @@
             <p>Commercial consulting is for owners and partners who need a construction reading of a commercial job.</p>
             <p>The work usually starts with use, access, utilities, and what the jurisdiction will require. From there we look at sequence: what has to come down, what stormwater and permitting will drive, and how the job should be packaged so bidders are answering the same scope.</p>
             <p>We stay on the owner's side of the table. The engagement can remain advisory, or it can grow into running the job.</p>
+            <p>Commercial consulting can include defined tasks we run as part of the same engagement: <a href="/consulting/other/efficiency-evaluations/">Efficiency Evaluations and Implementations</a>, <a href="/consulting/other/systems-evaluations/">Systems Evaluations and Implementations</a>, <a href="/consulting/other/business-development/">Business Development</a>, <a href="/consulting/other/takeoff-support/">Takeoff Support and Contract Negotiations</a>, <a href="/consulting/other/purchasing-assistance/">Purchasing Assistance</a>, and <a href="/consulting/other/sop-employee-management/">SOP and Employee Management</a>. When a commercial job has stopped or slipped, see <a href="/consulting/other/distress-stalled-project-support/">Distress &amp; Stalled Project Support</a>.</p>
         </div>
         <aside class="aside-box">
           <h2>Related</h2>
           <ul>
           <li><a href="/consulting/">Consulting overview</a></li>
-          <li><a href="/consulting/residential/">Residential consulting</a></li>
+          <li><a href="/consulting/residential/">Residential Consulting</a></li>
+          <li><a href="/consulting/other/efficiency-evaluations/">Efficiency Evaluations and Implementations</a></li>
+          <li><a href="/consulting/other/systems-evaluations/">Systems Evaluations and Implementations</a></li>
+          <li><a href="/consulting/other/business-development/">Business Development</a></li>
+          <li><a href="/consulting/other/takeoff-support/">Takeoff Support and Contract Negotiations</a></li>
+          <li><a href="/consulting/other/purchasing-assistance/">Purchasing Assistance</a></li>
+          <li><a href="/consulting/other/sop-employee-management/">SOP and Employee Management</a></li>
+          <li><a href="/consulting/other/distress-stalled-project-support/">Distress &amp; Stalled Project Support</a></li>
           <li><a href="/industries/commercial/">Commercial industry</a></li>
-          <li><a href="/industries/design-build/">Design-Build</a></li>
-          <li><a href="/industries/permitting/">Permitting</a></li>
-          <li><a href="/contact/">Contact</a></li>
           </ul>
         </aside>
       </div>
@@ -392,9 +412,9 @@
         <p class="section-kicker">More</p>
         <h2>Related</h2>
         <div class="related">
-          <a href="/consulting/residential/"><h3>Residential consulting</h3><p>The dwelling-side consulting path.</p></a>
-          <a href="/construction-management/"><h3>Construction Management</h3><p>When the commercial job needs field coordination.</p></a>
-          <a href="/specialties/land-development/"><h3>Land Development</h3><p>Site work that precedes a commercial building.</p></a>
+          <a href="/consulting/other/efficiency-evaluations/"><h3>Efficiency Evaluations and Implementations</h3><p>Sequence, labor, and putting changes in place.</p></a>
+          <a href="/consulting/other/takeoff-support/"><h3>Takeoff Support and Contract Negotiations</h3><p>Quantities and terms before you sign.</p></a>
+          <a href="/consulting/other/distress-stalled-project-support/"><h3>Distress &amp; Stalled Project Support</h3><p>When a commercial job has stopped or slipped.</p></a>
         </div>
       </div>
     </section>

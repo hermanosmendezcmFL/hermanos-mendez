@@ -26,68 +26,43 @@
         ]
       ],
       "en": {
-        "title": "Construction Consulting in Tampa Bay | HMCM",
-        "desc": "HMCM consulting for land development and construction: commercial, residential, and additional consulting services including takeoff, purchasing, and special projects.",
-        "h1": "Consulting for land development and construction",
-        "lead": "Advisory work for owners who need a clear picture of the job before it is built, and while it is underway.",
+        "title": "Expert Consultant Partners — Real Results | HMCM Tampa Bay",
+        "desc": "HMCM consulting: expertise at every phase. End-to-end support from concept to completion, or targeted troubleshooting, for land development and construction in Tampa Bay.",
+        "h1": "Expert Consultant Partners — Real Results",
+        "lead": "Expertise at Every Phase.<br>Whether you need end-to-end support from concept to completion, or targeted troubleshooting to overcome a specific hurdle, HMCM is exactly where you need us to be.",
         "paras": [
-          "Consulting at HMCM is how owners hire us for judgment, scoping, and planning. It is the advisory side of land development and construction in Tampa Bay.",
-          "Typical work starts with a site or a set of drawings. We identify what has to happen for the job to be permittable and buildable, then put that into a sequence an owner can act on.",
-          "When the engagement grows into field coordination or full cost-and-schedule control, we move into construction management or project management."
+          "Owners partner with HMCM for trusted judgment, high-impact problem resolution, and strategic planning. We don't step in to take over your project—we act as a seamless extension of your own efforts, stepping in exactly when expert help is needed most.",
+          "<strong>On-Demand Problem Resolution:</strong> Whatever challenge you are experiencing, we provide a professional assessment and apply our expertise, knowledge, and industry relationships to deliver immediate impact and keep your project moving.",
+          "<strong>Actionable Strategy:</strong> We evaluate your current situation—whether it's a site, a set of drawings, or an unexpected hurdle—and identify exactly what must happen to succeed, organizing it into a sequence you can act on.",
+          "<strong>Scalable Support:</strong> When your engagement grows to require field coordination or full cost-and-schedule control, we smoothly transition into dedicated project or construction management."
         ],
         "links": [
           [
-            "Commercial consulting",
+            "Commercial Consulting",
             "/consulting/commercial/"
           ],
           [
-            "Residential consulting",
+            "Residential Consulting",
             "/consulting/residential/"
           ],
           [
-            "Other consulting services",
+            "Specialized Services",
             "/consulting/other/"
-          ],
-          [
-            "Construction Management",
-            "/construction-management/"
-          ],
-          [
-            "Project Management",
-            "/project-management/"
-          ],
-          [
-            "Contact",
-            "/contact/"
           ]
         ],
-        "related": [
-          [
-            "Commercial",
-            "/consulting/commercial/",
-            "Owner-side advisory on commercial sites and buildings."
-          ],
-          [
-            "Residential",
-            "/consulting/residential/",
-            "Houses, custom work, and residential renovation consulting."
-          ],
-          [
-            "Other consulting",
-            "/consulting/other/",
-            "Efficiency, systems, takeoff, purchasing, SOP, and more."
-          ]
-        ]
+        "related": [],
+        "aside_h": "Partner Solutions"
       },
       "es": {
-        "title": "Consultoría de construcción en Tampa Bay | HMCM",
-        "desc": "Consultoría HMCM para desarrollo de terrenos y construcción: comercial, residencial y servicios adicionales de consultoría, incluyendo takeoff, compras y proyectos especiales.",
-        "h1": "Consultoría para desarrollo de terrenos y construcción",
-        "lead": "Asesoría para propietarios que necesitan una lectura clara de la obra antes de construir, y mientras está en marcha.",
+        "title": "Socios consultores expertos — resultados reales | HMCM Tampa Bay",
+        "desc": "Consultoría HMCM: experiencia en cada fase. Apoyo de principio a fin, del concepto a la entrega, o una intervención puntual, para desarrollo de terrenos y construcción en Tampa Bay.",
+        "h1": "Socios consultores expertos — resultados reales",
+        "lead": "Experiencia en cada fase.<br>Ya sea que necesite apoyo de principio a fin, del concepto a la entrega, o una intervención puntual para superar un obstáculo concreto, HMCM está exactamente donde se nos necesita.",
         "paras": [
-          "La consultoría en HMCM es cómo nos contratan para criterio, alcance y planificación. Es el lado de asesoría del desarrollo de terrenos y la construcción en Tampa Bay.",
-          "El trabajo típico empieza con un predio o un juego de planos. Identificamos lo que hace falta para que la obra sea permisible y construible, y lo dejamos en una secuencia que el propietario pueda ejecutar.",
-          "Si el encargo crece hacia coordinación de campo o control de costo y plazo, pasamos a gerencia de construcción o de proyectos."
+          "Los propietarios se asocian con HMCM por un criterio de confianza, la resolución de problemas de alto impacto y la planificación estratégica. No entramos a tomar el control de su proyecto — actuamos como una extensión natural de su propio esfuerzo, y nos incorporamos exactamente cuando más se necesita ayuda experta.",
+          "<strong>Resolución de Problemas a Demanda:</strong> Cualquiera que sea el reto, hacemos una evaluación profesional y aplicamos nuestra experiencia, conocimiento y relaciones en el sector para lograr un impacto inmediato y mantener el proyecto en marcha.",
+          "<strong>Estrategia Accionable:</strong> Evaluamos su situación actual —ya sea un predio, un juego de planos o un obstáculo inesperado— e identificamos exactamente qué debe ocurrir para tener éxito, organizándolo en una secuencia que usted puede ejecutar.",
+          "<strong>Apoyo Escalable:</strong> Cuando el encargo crece y requiere coordinación de campo o control completo de costo y plazo, pasamos de forma fluida a gerencia de proyectos o de construcción dedicada."
         ],
         "links": [
           [
@@ -99,39 +74,12 @@
             "/es/consultoria/residencial/"
           ],
           [
-            "Otros servicios de consultoría",
+            "Servicios especializados",
             "/es/consultoria/otros/"
-          ],
-          [
-            "Gerencia de construcción",
-            "/es/gerencia-de-construccion/"
-          ],
-          [
-            "Gerencia de proyectos",
-            "/es/gerencia-de-proyectos/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
           ]
         ],
-        "related": [
-          [
-            "Comercial",
-            "/es/consultoria/comercial/",
-            "Asesoría del lado del propietario en predios y edificios comerciales."
-          ],
-          [
-            "Residencial",
-            "/es/consultoria/residencial/",
-            "Viviendas, obra a medida y renovación residencial."
-          ],
-          [
-            "Otros servicios",
-            "/es/consultoria/otros/",
-            "Eficiencia, sistemas, takeoff, compras, SOP y más."
-          ]
-        ]
+        "related": [],
+        "aside_h": "Soluciones para socios"
       }
     },
     {
@@ -175,7 +123,8 @@
         "paras": [
           "Commercial consulting is for owners and partners who need a construction reading of a commercial job.",
           "The work usually starts with use, access, utilities, and what the jurisdiction will require. From there we look at sequence: what has to come down, what stormwater and permitting will drive, and how the job should be packaged so bidders are answering the same scope.",
-          "We stay on the owner's side of the table. The engagement can remain advisory, or it can grow into running the job."
+          "We stay on the owner's side of the table. The engagement can remain advisory, or it can grow into running the job.",
+          "Commercial consulting can include defined tasks we run as part of the same engagement: <a href=\"/consulting/other/efficiency-evaluations/\">Efficiency Evaluations and Implementations</a>, <a href=\"/consulting/other/systems-evaluations/\">Systems Evaluations and Implementations</a>, <a href=\"/consulting/other/business-development/\">Business Development</a>, <a href=\"/consulting/other/takeoff-support/\">Takeoff Support and Contract Negotiations</a>, <a href=\"/consulting/other/purchasing-assistance/\">Purchasing Assistance</a>, and <a href=\"/consulting/other/sop-employee-management/\">SOP and Employee Management</a>. When a commercial job has stopped or slipped, see <a href=\"/consulting/other/distress-stalled-project-support/\">Distress &amp; Stalled Project Support</a>."
         ],
         "links": [
           [
@@ -183,41 +132,57 @@
             "/consulting/"
           ],
           [
-            "Residential consulting",
+            "Residential Consulting",
             "/consulting/residential/"
+          ],
+          [
+            "Efficiency Evaluations and Implementations",
+            "/consulting/other/efficiency-evaluations/"
+          ],
+          [
+            "Systems Evaluations and Implementations",
+            "/consulting/other/systems-evaluations/"
+          ],
+          [
+            "Business Development",
+            "/consulting/other/business-development/"
+          ],
+          [
+            "Takeoff Support and Contract Negotiations",
+            "/consulting/other/takeoff-support/"
+          ],
+          [
+            "Purchasing Assistance",
+            "/consulting/other/purchasing-assistance/"
+          ],
+          [
+            "SOP and Employee Management",
+            "/consulting/other/sop-employee-management/"
+          ],
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/"
           ],
           [
             "Commercial industry",
             "/industries/commercial/"
-          ],
-          [
-            "Design-Build",
-            "/industries/design-build/"
-          ],
-          [
-            "Permitting",
-            "/industries/permitting/"
-          ],
-          [
-            "Contact",
-            "/contact/"
           ]
         ],
         "related": [
           [
-            "Residential consulting",
-            "/consulting/residential/",
-            "The dwelling-side consulting path."
+            "Efficiency Evaluations and Implementations",
+            "/consulting/other/efficiency-evaluations/",
+            "Sequence, labor, and putting changes in place."
           ],
           [
-            "Construction Management",
-            "/construction-management/",
-            "When the commercial job needs field coordination."
+            "Takeoff Support and Contract Negotiations",
+            "/consulting/other/takeoff-support/",
+            "Quantities and terms before you sign."
           ],
           [
-            "Land Development",
-            "/specialties/land-development/",
-            "Site work that precedes a commercial building."
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/",
+            "When a commercial job has stopped or slipped."
           ]
         ]
       },
@@ -229,7 +194,8 @@
         "paras": [
           "La consultoría comercial es para propietarios y socios que necesitan una lectura de construcción de una obra comercial.",
           "El trabajo suele empezar por uso, acceso, servicios y lo que exigirá la jurisdicción. Luego se mira la secuencia: qué hay que demoler o despejar, qué impondrán las aguas pluviales y los permisos, y cómo empacar la obra para que oferentes y gremios respondan al mismo alcance.",
-          "Nos mantenemos del lado del propietario. El encargo puede quedarse en asesoría, o crecer hacia dirigir la obra."
+          "Nos mantenemos del lado del propietario. El encargo puede quedarse en asesoría, o crecer hacia dirigir la obra.",
+          "La consultoría comercial puede incluir tareas concretas dentro del mismo encargo: <a href=\"/es/consultoria/otros/evaluaciones-de-eficiencia/\">evaluaciones e implementaciones de eficiencia</a>, <a href=\"/es/consultoria/otros/evaluaciones-de-sistemas/\">evaluaciones e implementaciones de sistemas</a>, <a href=\"/es/consultoria/otros/desarrollo-de-negocios/\">desarrollo de negocios</a>, <a href=\"/es/consultoria/otros/soporte-de-estimacion/\">soporte de takeoff y negociación de contratos</a>, <a href=\"/es/consultoria/otros/asistencia-en-compras/\">asistencia en compras</a> y <a href=\"/es/consultoria/otros/sop-gestion-de-empleados/\">SOP y gestión de empleados</a>. Si una obra comercial se detuvo o se atrasó, vea <a href=\"/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/\">Apoyo a proyectos en dificultades o detenidos</a>."
         ],
         "links": [
           [
@@ -241,37 +207,53 @@
             "/es/consultoria/residencial/"
           ],
           [
+            "Evaluaciones e implementaciones de eficiencia",
+            "/es/consultoria/otros/evaluaciones-de-eficiencia/"
+          ],
+          [
+            "Evaluaciones e implementaciones de sistemas",
+            "/es/consultoria/otros/evaluaciones-de-sistemas/"
+          ],
+          [
+            "Desarrollo de negocios",
+            "/es/consultoria/otros/desarrollo-de-negocios/"
+          ],
+          [
+            "Soporte de takeoff y negociación de contratos",
+            "/es/consultoria/otros/soporte-de-estimacion/"
+          ],
+          [
+            "Asistencia en compras",
+            "/es/consultoria/otros/asistencia-en-compras/"
+          ],
+          [
+            "SOP y gestión de empleados",
+            "/es/consultoria/otros/sop-gestion-de-empleados/"
+          ],
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/"
+          ],
+          [
             "Industria comercial",
             "/es/industrias/comercial/"
-          ],
-          [
-            "Diseño-construcción",
-            "/es/industrias/diseno-construccion/"
-          ],
-          [
-            "Permisos",
-            "/es/industrias/permisos/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
           ]
         ],
         "related": [
           [
-            "Consultoría residencial",
-            "/es/consultoria/residencial/",
-            "La vía de consultoría para viviendas."
+            "Evaluaciones e implementaciones de eficiencia",
+            "/es/consultoria/otros/evaluaciones-de-eficiencia/",
+            "Secuencia, mano de obra e implementación de cambios."
           ],
           [
-            "Gerencia de construcción",
-            "/es/gerencia-de-construccion/",
-            "Cuando la obra comercial necesita coordinación de campo."
+            "Soporte de takeoff y negociación de contratos",
+            "/es/consultoria/otros/soporte-de-estimacion/",
+            "Cantidades y términos antes de firmar."
           ],
           [
-            "Desarrollo de terrenos",
-            "/es/especialidades/desarrollo-de-terrenos/",
-            "Obra de sitio que antecede al edificio comercial."
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
+            "Cuando una obra comercial se detuvo o se atrasó."
           ]
         ]
       }
@@ -317,7 +299,8 @@
         "paras": [
           "Residential consulting is for homeowners, builders, and small developers who need construction advice on a house or a small residential job.",
           "The questions are different from commercial work: lot constraints, living through renovation, finish quality, and a budget that is usually less forgiving of rework.",
-          "We help frame what is new, what is renovation, and what has to come down, then the order of permits, inspections, and trades. If the lot still needs clearing or drainage, that sits in the same conversation as the house."
+          "We help frame what is new, what is renovation, and what has to come down, then the order of permits, inspections, and trades. If the lot still needs clearing or drainage, that sits in the same conversation as the house.",
+          "Residential consulting can include <a href=\"/consulting/other/takeoff-support/\">Takeoff Support and Contract Negotiations</a> on the same page used for commercial work. When a house or small residential job has stopped or slipped, see <a href=\"/consulting/other/distress-stalled-project-support/\">Distress &amp; Stalled Project Support</a>."
         ],
         "links": [
           [
@@ -325,8 +308,16 @@
             "/consulting/"
           ],
           [
-            "Commercial consulting",
+            "Commercial Consulting",
             "/consulting/commercial/"
+          ],
+          [
+            "Takeoff Support and Contract Negotiations",
+            "/consulting/other/takeoff-support/"
+          ],
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/"
           ],
           [
             "SFR",
@@ -339,22 +330,18 @@
           [
             "Renovation",
             "/specialties/renovation/"
-          ],
-          [
-            "Contact",
-            "/contact/"
           ]
         ],
         "related": [
           [
-            "SFR",
-            "/industries/sfr/",
-            "Single-family residential as a market."
+            "Takeoff Support and Contract Negotiations",
+            "/consulting/other/takeoff-support/",
+            "Quantities and terms before you sign."
           ],
           [
-            "Custom Build",
-            "/industries/custom-build/",
-            "Closer control of scope and finishes."
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/",
+            "When a residential job has stopped or slipped."
           ],
           [
             "Renovation",
@@ -371,7 +358,8 @@
         "paras": [
           "La consultoría residencial es para propietarios, constructores y pequeños desarrolladores que necesitan consejo de construcción sobre una casa o una obra residencial pequeña.",
           "Las preguntas no son las del comercial: límites del lote, vivir durante la renovación, calidad de acabados y un presupuesto que suele tolerar peor el retrabajo.",
-          "Ayudamos a plantear qué es obra nueva, qué es renovación y qué hay que derribar, y luego el orden de permisos, inspecciones y gremios. Si el lote aún requiere despeje o drenaje, eso entra en la misma conversación que la casa."
+          "Ayudamos a plantear qué es obra nueva, qué es renovación y qué hay que derribar, y luego el orden de permisos, inspecciones y gremios. Si el lote aún requiere despeje o drenaje, eso entra en la misma conversación que la casa.",
+          "La consultoría residencial puede incluir <a href=\"/es/consultoria/otros/soporte-de-estimacion/\">soporte de takeoff y negociación de contratos</a> en la misma página que se usa en comercial. Si una vivienda u obra residencial pequeña se detuvo o se atrasó, vea <a href=\"/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/\">Apoyo a proyectos en dificultades o detenidos</a>."
         ],
         "links": [
           [
@@ -381,6 +369,14 @@
           [
             "Consultoría comercial",
             "/es/consultoria/comercial/"
+          ],
+          [
+            "Soporte de takeoff y negociación de contratos",
+            "/es/consultoria/otros/soporte-de-estimacion/"
+          ],
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/"
           ],
           [
             "SFR",
@@ -393,22 +389,18 @@
           [
             "Renovación",
             "/es/especialidades/renovacion/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
           ]
         ],
         "related": [
           [
-            "SFR",
-            "/es/industrias/sfr/",
-            "El mercado residencial unifamiliar."
+            "Soporte de takeoff y negociación de contratos",
+            "/es/consultoria/otros/soporte-de-estimacion/",
+            "Cantidades y términos antes de firmar."
           ],
           [
-            "Construcción a medida",
-            "/es/industrias/construccion-a-medida/",
-            "Mayor control de alcance y acabados."
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
+            "Cuando una obra residencial se detuvo o se atrasó."
           ],
           [
             "Renovación",
@@ -433,7 +425,7 @@
           "/consulting/"
         ],
         [
-          "Other consulting services",
+          "Specialized Consulting Services",
           null
         ]
       ],
@@ -447,97 +439,115 @@
           "/es/consultoria/"
         ],
         [
-          "Otros servicios de consultoría",
+          "Consultoría especializada",
           null
         ]
       ],
       "en": {
-        "title": "Other Consulting Services | HMCM Tampa Bay",
-        "desc": "Additional HMCM consulting services: efficiency and systems evaluations and implementations, business development, special projects, takeoff support and contract negotiations, purchasing assistance, SOP and employee management.",
-        "h1": "Other consulting services",
-        "lead": "Defined consulting tasks that are not a request to run the job.",
+        "title": "Specialized Consulting Services | HMCM Tampa Bay",
+        "desc": "Specialized HMCM consulting: failing asset evaluation, special projects, and distress and stalled project support in Tampa Bay.",
+        "h1": "Specialized Consulting Services",
+        "lead": "Consulting for assets that are not performing, scopes that do not fit a standard box, and jobs that have stalled.",
         "paras": [
-          "Owners and contractors often need a specific consulting task: an evaluation, a takeoff, purchasing help, or a written process.",
-          "These services can attach to a commercial or residential engagement, or they can be hired on their own. Call (813) 323-4648 to talk through which one fits."
+          "Specialized consulting is for owners and partners who need a focused reading of a problem that is not a request to run the whole job.",
+          "We evaluate failing assets, define special-project constraints, and restore a workable path when a job is in distress or has stopped. These services can stand alone or attach to a commercial or residential consulting engagement.",
+          "Defined commercial tasks such as efficiency and systems evaluations, business development, takeoff, purchasing, and SOP work live on the Commercial Consulting page. Takeoff support is also linked from Residential Consulting."
         ],
         "links": [
           [
-            "Consulting overview",
-            "/consulting/"
+            "Failing Asset Evaluation",
+            "/consulting/other/failing-asset-evaluation/"
           ],
           [
-            "Commercial",
+            "Special Projects",
+            "/consulting/other/special-projects/"
+          ],
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/"
+          ],
+          [
+            "Commercial Consulting",
             "/consulting/commercial/"
           ],
           [
-            "Residential",
+            "Residential Consulting",
             "/consulting/residential/"
           ],
           [
-            "Contact",
-            "/contact/"
+            "Consulting overview",
+            "/consulting/"
           ]
         ],
         "related": [
           [
-            "Takeoff Support and Contract Negotiations",
-            "/consulting/other/takeoff-support/",
-            "Quantities and terms before you sign."
-          ],
-          [
-            "Purchasing Assistance",
-            "/consulting/other/purchasing-assistance/",
-            "Buyout and proposal comparison."
+            "Failing Asset Evaluation",
+            "/consulting/other/failing-asset-evaluation/",
+            "A reading of an underperforming site or building."
           ],
           [
             "Special Projects",
             "/consulting/other/special-projects/",
-            "Work that does not fit a standard CM/PM box."
+            "Scopes with an odd constraint."
+          ],
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/",
+            "When a job has stopped or lost a path forward."
           ]
         ]
       },
       "es": {
-        "title": "Otros servicios de consultoría | HMCM Tampa Bay",
-        "desc": "Servicios adicionales de consultoría HMCM: evaluaciones e implementaciones de eficiencia y de sistemas, desarrollo de negocios, proyectos especiales, takeoff y negociación de contratos, asistencia en compras, SOP y gestión de empleados.",
-        "h1": "Otros servicios de consultoría",
-        "lead": "Tareas concretas de consultoría que no son una petición de dirigir la obra.",
+        "title": "Consultoría especializada | HMCM Tampa Bay",
+        "desc": "Consultoría especializada HMCM: evaluación de activos en deterioro, proyectos especiales y apoyo a proyectos en dificultades o detenidos en Tampa Bay.",
+        "h1": "Consultoría especializada",
+        "lead": "Consultoría para activos que no rinden, alcances que no caben en un encargo típico y obras que se han detenido.",
         "paras": [
-          "Propietarios y contratistas suelen necesitar una tarea de consultoría concreta: una evaluación, un takeoff, ayuda en compras o un proceso por escrito.",
-          "Estos servicios pueden sumarse a un encargo comercial o residencial, o contratarse por separado. Llame al (813) 323-4648 para ver cuál encaja."
+          "La consultoría especializada es para propietarios y socios que necesitan una lectura concreta de un problema, no una petición de dirigir toda la obra.",
+          "Evaluamos activos en deterioro, definimos las restricciones de un proyecto especial y devolvemos un camino viable cuando una obra está en dificultades o se detuvo. Estos servicios pueden contratarse solos o sumarse a un encargo comercial o residencial.",
+          "Las tareas comerciales concretas —evaluaciones de eficiencia y de sistemas, desarrollo de negocios, takeoff, compras y SOP— están en la página de Consultoría comercial. El soporte de takeoff también se enlaza desde Consultoría residencial."
         ],
         "links": [
           [
-            "Resumen de consultoría",
-            "/es/consultoria/"
+            "Evaluación de activos en deterioro",
+            "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/"
           ],
           [
-            "Comercial",
+            "Proyectos especiales",
+            "/es/consultoria/otros/proyectos-especiales/"
+          ],
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/"
+          ],
+          [
+            "Consultoría comercial",
             "/es/consultoria/comercial/"
           ],
           [
-            "Residencial",
+            "Consultoría residencial",
             "/es/consultoria/residencial/"
           ],
           [
-            "Contacto",
-            "/es/contacto/"
+            "Resumen de consultoría",
+            "/es/consultoria/"
           ]
         ],
         "related": [
           [
-            "Takeoff y negociación de contratos",
-            "/es/consultoria/otros/soporte-de-estimacion/",
-            "Cantidades y términos antes de firmar."
-          ],
-          [
-            "Asistencia en compras",
-            "/es/consultoria/otros/asistencia-en-compras/",
-            "Buyout y comparación de propuestas."
+            "Evaluación de activos en deterioro",
+            "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/",
+            "Una lectura de un predio o edificio que no rinde."
           ],
           [
             "Proyectos especiales",
             "/es/consultoria/otros/proyectos-especiales/",
-            "Obra que no cabe en un CM/PM estándar."
+            "Alcances con una restricción atípica."
+          ],
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
+            "Cuando una obra se detuvo o perdió el camino."
           ]
         ]
       }
@@ -969,7 +979,7 @@
     {
       "en_path": "/consulting/other/special-projects/",
       "es_path": "/es/consultoria/otros/proyectos-especiales/",
-      "nav": "consult-other",
+      "nav": "consult-special",
       "photo": "land.jpg",
       "crumbs_en": [
         [
@@ -1102,6 +1112,298 @@
             "Asistencia en compras",
             "/es/consultoria/otros/asistencia-en-compras/",
             "Apoyo en buyout."
+          ]
+        ]
+      }
+    },
+    {
+      "en_path": "/consulting/other/failing-asset-evaluation/",
+      "es_path": "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/",
+      "nav": "consult-failing",
+      "photo": "renovation.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Consulting",
+          "/consulting/"
+        ],
+        [
+          "Specialized Consulting Services",
+          "/consulting/other/"
+        ],
+        [
+          "Failing Asset Evaluation",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Consultoría",
+          "/es/consultoria/"
+        ],
+        [
+          "Consultoría especializada",
+          "/es/consultoria/otros/"
+        ],
+        [
+          "Evaluación de activos en deterioro",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Failing Asset Evaluation | HMCM Tampa Bay",
+        "desc": "HMCM consulting: failing asset evaluation for underperforming sites and buildings in Tampa Bay. A professional assessment and a sequence you can act on.",
+        "h1": "Failing Asset Evaluation",
+        "lead": "A professional reading of an underperforming site, building, or investment—what is failing, why, and what it would take to recover.",
+        "paras": [
+          "HMCM evaluates assets that are not performing as intended: delayed entitlements, incomplete construction, occupancy that never materialized, or a site that cannot support the use it was bought for.",
+          "We look at physical condition, the paper (drawings, permits, contracts), and the path back to a permittable, buildable, or saleable position. The deliverable is a clear assessment and a sequence an owner can act on—not a takeover of the asset.",
+          "This work sits inside specialized consulting. When recovery needs field coordination or cost-and-schedule control, the engagement can move into construction management or project management."
+        ],
+        "links": [
+          [
+            "Specialized Services",
+            "/consulting/other/"
+          ],
+          [
+            "Special Projects",
+            "/consulting/other/special-projects/"
+          ],
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/"
+          ],
+          [
+            "Commercial Consulting",
+            "/consulting/commercial/"
+          ],
+          [
+            "Consulting overview",
+            "/consulting/"
+          ]
+        ],
+        "related": [
+          [
+            "Distress & Stalled Project Support",
+            "/consulting/other/distress-stalled-project-support/",
+            "When a job has stopped or lost a path forward."
+          ],
+          [
+            "Special Projects",
+            "/consulting/other/special-projects/",
+            "Scopes with an odd constraint."
+          ],
+          [
+            "Commercial Consulting",
+            "/consulting/commercial/",
+            "Owner-side advisory on commercial work."
+          ]
+        ]
+      },
+      "es": {
+        "title": "Evaluación de activos en deterioro | HMCM Tampa Bay",
+        "desc": "Consultoría HMCM: evaluación de activos en deterioro para predios y edificios que no rinden en Tampa Bay. Una evaluación profesional y una secuencia que se puede ejecutar.",
+        "h1": "Evaluación de activos en deterioro",
+        "lead": "Una lectura profesional de un predio, edificio o inversión que no rinde: qué está fallando, por qué, y qué haría falta para recuperarlo.",
+        "paras": [
+          "HMCM evalúa activos que no rinden como se esperaba: permisos retrasados, construcción incompleta, ocupación que nunca se materializó, o un predio que no sostiene el uso para el que se compró.",
+          "Revisamos la condición física, el papel (planos, permisos, contratos) y el camino de vuelta a una posición permisible, construible o vendible. El entregable es una evaluación clara y una secuencia que el propietario puede ejecutar — no una toma de control del activo.",
+          "Este trabajo forma parte de la consultoría especializada. Si la recuperación requiere coordinación de campo o control de costo y plazo, el encargo puede pasar a gerencia de construcción o de proyectos."
+        ],
+        "links": [
+          [
+            "Servicios especializados",
+            "/es/consultoria/otros/"
+          ],
+          [
+            "Proyectos especiales",
+            "/es/consultoria/otros/proyectos-especiales/"
+          ],
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/"
+          ],
+          [
+            "Consultoría comercial",
+            "/es/consultoria/comercial/"
+          ],
+          [
+            "Resumen de consultoría",
+            "/es/consultoria/"
+          ]
+        ],
+        "related": [
+          [
+            "Apoyo a proyectos en dificultades o detenidos",
+            "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
+            "Cuando una obra se detuvo o perdió el camino."
+          ],
+          [
+            "Proyectos especiales",
+            "/es/consultoria/otros/proyectos-especiales/",
+            "Alcances con una restricción atípica."
+          ],
+          [
+            "Consultoría comercial",
+            "/es/consultoria/comercial/",
+            "Asesoría del lado del propietario en obra comercial."
+          ]
+        ]
+      }
+    },
+    {
+      "en_path": "/consulting/other/distress-stalled-project-support/",
+      "es_path": "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/",
+      "nav": "consult-distress",
+      "photo": "construction-mgmt.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Consulting",
+          "/consulting/"
+        ],
+        [
+          "Specialized Consulting Services",
+          "/consulting/other/"
+        ],
+        [
+          "Distress & Stalled Project Support",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Consultoría",
+          "/es/consultoria/"
+        ],
+        [
+          "Consultoría especializada",
+          "/es/consultoria/otros/"
+        ],
+        [
+          "Apoyo a proyectos en dificultades o detenidos",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Distress & Stalled Project Support | HMCM Tampa Bay",
+        "desc": "HMCM consulting for jobs that have stalled, slipped, or lost a workable path: diagnosis, a realistic sequence, and support to get the work moving again.",
+        "h1": "Distress & Stalled Project Support",
+        "lead": "Targeted help when a job has stopped, slipped, or lost a workable path forward.",
+        "paras": [
+          "Projects stall for specific reasons: a permit that will not clear, a contractor who walked, a budget that no longer matches the drawings, or a sequence that collapsed in the field.",
+          "HMCM steps in to diagnose the stall, restore a realistic path, and put the next actions in order—who has to decide, what has to be re-bid or redesigned, and what the site can actually support.",
+          "Owners and partners hire this as consulting. If the recovery requires dedicated field or cost control, we can transition into construction management or project management without starting over. This support is available on both commercial and residential work."
+        ],
+        "links": [
+          [
+            "Commercial Consulting",
+            "/consulting/commercial/"
+          ],
+          [
+            "Residential Consulting",
+            "/consulting/residential/"
+          ],
+          [
+            "Failing Asset Evaluation",
+            "/consulting/other/failing-asset-evaluation/"
+          ],
+          [
+            "Special Projects",
+            "/consulting/other/special-projects/"
+          ],
+          [
+            "Specialized Services",
+            "/consulting/other/"
+          ],
+          [
+            "Consulting overview",
+            "/consulting/"
+          ]
+        ],
+        "related": [
+          [
+            "Commercial Consulting",
+            "/consulting/commercial/",
+            "Owner-side advisory on commercial work."
+          ],
+          [
+            "Residential Consulting",
+            "/consulting/residential/",
+            "Advisory at dwelling scale."
+          ],
+          [
+            "Failing Asset Evaluation",
+            "/consulting/other/failing-asset-evaluation/",
+            "When the asset itself is not performing."
+          ]
+        ]
+      },
+      "es": {
+        "title": "Apoyo a proyectos en dificultades o detenidos | HMCM Tampa Bay",
+        "desc": "Consultoría HMCM para obras que se detuvieron, se atrasaron o perdieron un camino viable: diagnóstico, una secuencia realista y apoyo para volver a mover el trabajo.",
+        "h1": "Apoyo a proyectos en dificultades o detenidos",
+        "lead": "Ayuda puntual cuando una obra se detuvo, se atrasó o perdió un camino viable.",
+        "paras": [
+          "Las obras se detienen por razones concretas: un permiso que no se despeja, un contratista que se retiró, un presupuesto que ya no coincide con los planos, o una secuencia que se vino abajo en el campo.",
+          "HMCM interviene para diagnosticar la parada, devolver un camino realista y ordenar las siguientes acciones: quién tiene que decidir, qué hay que reofertar o rediseñar, y qué puede sostener realmente el sitio.",
+          "Propietarios y socios contratan esto como consultoría. Si la recuperación requiere control dedicado de campo o de costo, podemos pasar a gerencia de construcción o de proyectos sin empezar de cero. Este apoyo está disponible en obra comercial y residencial."
+        ],
+        "links": [
+          [
+            "Consultoría comercial",
+            "/es/consultoria/comercial/"
+          ],
+          [
+            "Consultoría residencial",
+            "/es/consultoria/residencial/"
+          ],
+          [
+            "Evaluación de activos en deterioro",
+            "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/"
+          ],
+          [
+            "Proyectos especiales",
+            "/es/consultoria/otros/proyectos-especiales/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/consultoria/otros/"
+          ],
+          [
+            "Resumen de consultoría",
+            "/es/consultoria/"
+          ]
+        ],
+        "related": [
+          [
+            "Consultoría comercial",
+            "/es/consultoria/comercial/",
+            "Asesoría del lado del propietario en obra comercial."
+          ],
+          [
+            "Consultoría residencial",
+            "/es/consultoria/residencial/",
+            "Asesoría a escala de vivienda."
+          ],
+          [
+            "Evaluación de activos en deterioro",
+            "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/",
+            "Cuando el activo mismo no rinde."
           ]
         ]
       }

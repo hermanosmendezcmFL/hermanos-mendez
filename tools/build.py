@@ -23,7 +23,7 @@ def write(path, html, sitemap=True):
 def pjoin(ps):
     return "\n".join("            <p>%s</p>" % p for p in ps)
 
-def aside(lang, links):
+def aside(lang, links, heading=None):
     t = T[lang]
     items = "\n".join('          <li><a href="%s">%s</a></li>' % (h, esc(n)) for n, h in links)
     return (
@@ -31,7 +31,7 @@ def aside(lang, links):
         "          <h2>%s</h2>\n"
         "          <ul>\n%s\n          </ul>\n"
         "        </aside>"
-    ) % (t["related"], items)
+    ) % (heading or t["related"], items)
 
 def related_grid(items):
     cards = []
@@ -39,7 +39,7 @@ def related_grid(items):
         cards.append('          <a href="%s"><h3>%s</h3><p>%s</p></a>' % (h, esc(n), d))
     return '<div class="related">\n' + "\n".join(cards) + "\n        </div>"
 
-def interior_body(lang, crumbs, h1, lead, photo, paras, links, related):
+def interior_body(lang, crumbs, h1, lead, photo, paras, links, related, aside_h=None):
     t = T[lang]
     contact = "/contact/" if lang == "en" else "/es/contacto/"
     body = page_banner(lang, crumbs, h1, lead, photo)
@@ -48,7 +48,7 @@ def interior_body(lang, crumbs, h1, lead, photo, paras, links, related):
         '      <div class="wrap content-grid">\n'
         '        <div class="prose">\n%s\n        </div>\n%s\n'
         "      </div>\n    </section>"
-    ) % (pjoin(paras), aside(lang, links))
+    ) % (pjoin(paras), aside(lang, links, aside_h))
     if related:
         body += (
             '\n    <section class="section section--stone">\n'
@@ -76,11 +76,11 @@ def build_from_json():
         en, es = pg["en"], pg["es"]
         write(pg["en_path"], wrap_page(
             "en", pg["en_path"], pg["es_path"], pg["nav"], en["title"], en["desc"],
-            interior_body("en", pg["crumbs_en"], en["h1"], en["lead"], pg["photo"], en["paras"], en["links"], en.get("related")),
+            interior_body("en", pg["crumbs_en"], en["h1"], en["lead"], pg["photo"], en["paras"], en["links"], en.get("related"), en.get("aside_h")),
         ))
         write(pg["es_path"], wrap_page(
             "es", pg["es_path"], pg["en_path"], pg["nav"], es["title"], es["desc"],
-            interior_body("es", pg["crumbs_es"], es["h1"], es["lead"], pg["photo"], es["paras"], es["links"], es.get("related")),
+            interior_body("es", pg["crumbs_es"], es["h1"], es["lead"], pg["photo"], es["paras"], es["links"], es.get("related"), es.get("aside_h")),
         ))
 
 def build_contact():
@@ -210,27 +210,6 @@ def build_meta():
         parts += ["  <url>", "    <loc>%s</loc>" % u, "  </url>"]
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
-    (ROOT / "README.md").write_text(
-        "# Hermanos Mendez Construction Management, LLC\n\n"
-        "Static website for **HMCM** \u2014 consulting (commercial and residential, plus other consulting services), "
-        "construction management, and project management for land development and construction in Tampa Bay.\n\n"
-        "Canonical host: **https://hmcmfl.com**\n\n"
-        "This repo is portable HTML, CSS, JavaScript, and assets. There is no required build step to serve the site. "
-        "`tools/build.py` regenerates pages if you are editing content.\n\n"
-        "## Local preview\n\n"
-        "```bash\npython3 -m http.server 8080 --directory .\n```\n\n"
-        "Open http://localhost:8080\n\n"
-        "## Deploy\n\n"
-        "Upload the repository contents (keep the folder structure) to any static host. "
-        "`index.html` must sit at the host\u2019s site root so `https://hmcmfl.com/` serves the home page. "
-        "This repository does not include GitHub Pages, a CNAME, or DNS records.\n\n"
-        "## Contact\n\n"
-        "- Hermanos Mendez Construction Management, LLC\n"
-        "- 10002 N Forest Hills Dr, Tampa, FL 33612\n"
-        "- (813) 323-4648\n"
-        "- Monday\u2013Friday 8:00 AM\u20135:00 PM; Saturday\u2013Sunday closed\n",
-        encoding="utf-8",
-    )
     return urls
 
 if __name__ == "__main__":

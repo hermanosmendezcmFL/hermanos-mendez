@@ -33,6 +33,8 @@ T = {
         "commercial": "Commercial",
         "residential": "Residential",
         "other_group": "Other Consulting Services",
+        "specialized_group": "Specialized Consulting Services",
+        "partner_solutions": "Partner Solutions",
         "cm": "Construction Management",
         "pm": "Project Management",
         "specialties": "Specialties",
@@ -63,6 +65,11 @@ T = {
             ("Takeoff Support and Contract Negotiations", "/consulting/other/takeoff-support/"),
             ("Purchasing Assistance", "/consulting/other/purchasing-assistance/"),
             ("SOP and Employee Management", "/consulting/other/sop-employee-management/"),
+        ],
+        "specialized_items": [
+            ("Failing Asset Evaluation", "/consulting/other/failing-asset-evaluation/"),
+            ("Special Projects", "/consulting/other/special-projects/"),
+            ("Distress & Stalled Project Support", "/consulting/other/distress-stalled-project-support/"),
         ],
         "specs": [
             ("Land Development", "/specialties/land-development/"),
@@ -96,6 +103,8 @@ T = {
         "commercial": "Comercial",
         "residential": "Residencial",
         "other_group": "Otros servicios de consultoría",
+        "specialized_group": "Consultoría especializada",
+        "partner_solutions": "Soluciones para socios",
         "cm": "Gerencia de construcción",
         "pm": "Gerencia de proyectos",
         "specialties": "Especialidades",
@@ -126,6 +135,11 @@ T = {
             ("Soporte de takeoff y negociación de contratos", "/es/consultoria/otros/soporte-de-estimacion/"),
             ("Asistencia en compras", "/es/consultoria/otros/asistencia-en-compras/"),
             ("SOP y gestión de empleados", "/es/consultoria/otros/sop-gestion-de-empleados/"),
+        ],
+        "specialized_items": [
+            ("Evaluación de activos en deterioro", "/es/consultoria/otros/evaluacion-de-activos-en-deterioro/"),
+            ("Proyectos especiales", "/es/consultoria/otros/proyectos-especiales/"),
+            ("Apoyo a proyectos en dificultades o detenidos", "/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/"),
         ],
         "specs": [
             ("Desarrollo de terrenos", "/es/especialidades/desarrollo-de-terrenos/"),
@@ -160,6 +174,8 @@ OFFERS = [
     ("Takeoff Support and Contract Negotiations", f"{CANON}/consulting/other/takeoff-support/"),
     ("Purchasing Assistance", f"{CANON}/consulting/other/purchasing-assistance/"),
     ("SOP and Employee Management", f"{CANON}/consulting/other/sop-employee-management/"),
+    ("Failing Asset Evaluation", f"{CANON}/consulting/other/failing-asset-evaluation/"),
+    ("Distress & Stalled Project Support", f"{CANON}/consulting/other/distress-stalled-project-support/"),
     ("Land Development", f"{CANON}/specialties/land-development/"),
     ("New Construction", f"{CANON}/specialties/new-construction/"),
     ("Renovation", f"{CANON}/specialties/renovation/"),
@@ -315,8 +331,16 @@ def _nav(lang, current):
     def cur(key, href=None):
         return ' aria-current="page"' if current == key else ""
 
-    other_links = "\n".join(
-        f'            <a href="{href}">{esc(name)}</a>' for name, href in t["other_items"]
+    def spec_cur(href):
+        if "failing-asset" in href or "activos-en-deterioro" in href:
+            return cur("consult-failing")
+        if "special-projects" in href or "proyectos-especiales" in href:
+            return cur("consult-special")
+        if "distress" in href or "dificultades" in href:
+            return cur("consult-distress")
+        return ""
+    spec_nav = "\n".join(
+        f'            <a href="{href}"{spec_cur(href)}>{esc(name)}</a>' for name, href in t["specialized_items"]
     )
     spec_links = "\n".join(
         f'          <a href="{href}">{esc(name)}</a>' for name, href in t["specs"]
@@ -326,11 +350,21 @@ def _nav(lang, current):
     )
     consult_open = " is-current" if current.startswith("consult") else ""
     services_open = " is-current" if current in ("services", "cm", "pm") else ""
+    specs_open = " is-current" if current.startswith("spec") else ""
+    inds_open = " is-current" if current.startswith("ind") else ""
+
+    def caret(label):
+        return (
+            f'<button class="nav-caret" type="button" aria-expanded="false" '
+            f'aria-label="{esc(label)}: {esc(t["menu"])}"></button>'
+        )
+
     return f"""      <nav id="site-nav" class="site-nav" aria-label="{t['primary']}">
         <a href="{home}"{cur('home')}>{t['home']}</a>
         <a href="{about}"{cur('about')}>{t['about_us']}</a>
         <div class="nav-item{services_open}">
-          <button class="nav-parent" type="button" aria-expanded="false">{t['services']}</button>
+          <a class="nav-parent" href="{services}"{cur('services')}>{t['services']}</a>
+          {caret(t['services'])}
           <div class="nav-drop">
             <a href="{services}"{cur('services')}>{t['overview']}</a>
             <a href="{cm}"{cur('cm')}>{t['cm']}</a>
@@ -338,7 +372,8 @@ def _nav(lang, current):
           </div>
         </div>
         <div class="nav-item{consult_open}">
-          <button class="nav-parent" type="button" aria-expanded="false">{t['consulting']}</button>
+          <a class="nav-parent" href="{c_over}"{cur('consulting')}>{t['consulting']}</a>
+          {caret(t['consulting'])}
           <div class="nav-drop nav-drop--wide">
             <div class="nav-drop-col">
               <p class="nav-drop-label">{t['consulting']}</p>
@@ -347,21 +382,22 @@ def _nav(lang, current):
               <a href="{c_res}"{cur('consult-residential')}>{t['residential']}</a>
             </div>
             <div class="nav-drop-col">
-              <p class="nav-drop-label">{t['other_group']}</p>
-              <a href="{c_oth}"{cur('consult-other')}>{t['overview']}</a>
-{other_links}
+              <p class="nav-drop-label">{t['specialized_group']}</p>
+{spec_nav}
             </div>
           </div>
         </div>
-        <div class="nav-item{' is-current' if current.startswith('spec') else ''}">
-          <button class="nav-parent" type="button" aria-expanded="false">{t['specialties']}</button>
+        <div class="nav-item{specs_open}">
+          <a class="nav-parent" href="{sp}"{cur('specialties')}>{t['specialties']}</a>
+          {caret(t['specialties'])}
           <div class="nav-drop">
             <a href="{sp}"{cur('specialties')}>{t['overview']}</a>
 {spec_links}
           </div>
         </div>
-        <div class="nav-item{' is-current' if current.startswith('ind') else ''}">
-          <button class="nav-parent" type="button" aria-expanded="false">{t['industries']}</button>
+        <div class="nav-item{inds_open}">
+          <a class="nav-parent" href="{ind}"{cur('industries')}>{t['industries']}</a>
+          {caret(t['industries'])}
           <div class="nav-drop">
             <a href="{ind}"{cur('industries')}>{t['overview']}</a>
 {ind_links}

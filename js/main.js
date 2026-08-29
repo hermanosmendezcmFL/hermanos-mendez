@@ -11,7 +11,7 @@
     toggle.setAttribute("aria-expanded", "false");
     nav.querySelectorAll(".nav-item.is-open").forEach(function (item) {
       item.classList.remove("is-open");
-      var btn = item.querySelector(".nav-parent");
+      var btn = item.querySelector(".nav-caret");
       if (btn) btn.setAttribute("aria-expanded", "false");
     });
   }
@@ -32,22 +32,21 @@
   }
 
   document.querySelectorAll(".nav-item").forEach(function (item) {
-    var btn = item.querySelector(".nav-parent");
+    var btn = item.querySelector(".nav-caret");
     if (!btn) return;
     btn.addEventListener("click", function (e) {
-      if (window.matchMedia("(max-width: 900px)").matches) {
-        e.preventDefault();
-        var open = !item.classList.contains("is-open");
-        item.parentElement.querySelectorAll(".nav-item.is-open").forEach(function (other) {
-          if (other !== item) {
-            other.classList.remove("is-open");
-            var ob = other.querySelector(".nav-parent");
-            if (ob) ob.setAttribute("aria-expanded", "false");
-          }
-        });
-        item.classList.toggle("is-open", open);
-        btn.setAttribute("aria-expanded", open ? "true" : "false");
-      }
+      e.preventDefault();
+      e.stopPropagation();
+      var open = !item.classList.contains("is-open");
+      item.parentElement.querySelectorAll(".nav-item.is-open").forEach(function (other) {
+        if (other !== item) {
+          other.classList.remove("is-open");
+          var ob = other.querySelector(".nav-caret");
+          if (ob) ob.setAttribute("aria-expanded", "false");
+        }
+      });
+      item.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   });
 
