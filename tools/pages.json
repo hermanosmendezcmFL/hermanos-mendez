@@ -1854,112 +1854,482 @@
         ]
       ],
       "en": {
-        "title": "Construction Management in Tampa Bay | HMCM",
-        "desc": "Construction management in Tampa Bay: field coordination of trades, schedule, and site for land development and construction, with a single point of contact.",
-        "h1": "Construction management for land development and construction",
-        "lead": "Coordination of the work in the field (trades, schedule, and site) for owners who need the job run, not only advised.",
+        "title": "Construction Management: Your End-to-End Partner | HMCM Tampa Bay",
+        "desc": "HMCM construction management in Tampa Bay: your dedicated partner from initial concept through final completion, or intervention at any phase.",
+        "h1": "Construction Management: Your End-to-End Partner",
+        "lead": "Your dedicated partner from initial concept through final completion—or ready to step in at any phase.",
         "paras": [
-          "Construction management is the field practice: on-site coordination that keeps trades, deliveries, and inspections from colliding.",
-          "We work as the owner's construction manager. One contact for the superintendent-level questions, the daily sequence, and the site constraints that never show up cleanly on a drawing.",
-          "Call (813) 323-4648 if the job already needs someone on the site."
+          "At HMCM, Construction Management means serving as your dedicated partner from initial concept through final completion. We begin every engagement by meeting with you to thoroughly assess your vision, budgetary requirements, and operational needs. By establishing a clear understanding of your goals from day one, we build a strategic roadmap designed to deliver a high-quality project seamlessly and efficiently.",
+          "Our comprehensive, A-to-Z approach covers every critical phase of development. We handle the procurement and coordination of architects, engineers, and specialized professional services, ensuring that your design is both innovative and buildable. From navigating complex permitting requirements and land development logistics to meticulous budget creation, we establish a secure foundation before construction ever begins. As the project advances into the field, we source and manage top-tier contractors and subcontractors, providing rigorous on-site oversight. We manage the daily sequences, trade coordination, and site constraints to ensure that every detail meets strict quality standards and is delivered in full.",
+          "While we excel at leading projects from inception, our expertise is highly adaptable. Whether you need us to drive the process from day one or require immediate intervention for targeted stall resolutions and specific issue solutions, HMCM is equipped to step in at any phase. We quickly assess roadblocks, realign teams, and apply our deep industry expertise to get your project back on track and moving confidently toward a successful handover."
         ],
         "links": [
           [
-            "Project Management",
-            "/project-management/"
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
           ],
           [
-            "Consulting",
-            "/consulting/"
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
           ],
           [
-            "New Construction",
-            "/specialties/new-construction/"
+            "Specialty Services",
+            "/construction-management/specialty-services/"
           ],
           [
-            "Demolition",
-            "/specialties/demolition/"
-          ],
-          [
-            "Industries",
-            "/industries/"
-          ],
-          [
-            "Contact",
-            "/contact/"
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
           ]
         ],
-        "related": [
-          [
-            "Project Management",
-            "/project-management/",
-            "Cost, scope, and timeline control."
-          ],
-          [
-            "Land Development",
-            "/specialties/land-development/",
-            "Site work before the building."
-          ],
-          [
-            "Inspections",
-            "/industries/inspections/",
-            "Inspection-ready sequencing in the field."
-          ]
-        ]
+        "related": [],
+        "aside_h": "Explore Capabilities"
       },
       "es": {
-        "title": "Gerencia de construcción en Tampa Bay | HMCM",
-        "desc": "Gerencia de construcción en Tampa Bay: coordinación de gremios, programa y sitio para desarrollo de terrenos y construcción, con un solo punto de contacto.",
-        "h1": "Gerencia de construcción para desarrollo de terrenos y construcción",
-        "lead": "Coordinación del trabajo en el campo (gremios, programa y sitio) para propietarios que necesitan que la obra se dirija, no solo que se asesore.",
+        "title": "Gerencia de construcción: su socio de principio a fin | HMCM Tampa Bay",
+        "desc": "Gerencia de construcción HMCM en Tampa Bay: su socio dedicado desde el concepto inicial hasta la entrega final, o una intervención en cualquier fase.",
+        "h1": "Gerencia de construcción: su socio de principio a fin",
+        "lead": "Su socio dedicado desde el concepto inicial hasta la entrega final, o listo para entrar en cualquier fase.",
         "paras": [
-          "La gerencia de construcción es la práctica de campo: la coordinación en sitio para que gremios, entregas e inspecciones no choquen.",
-          "Trabajamos como gerentes de construcción del propietario. Un contacto para las preguntas de nivel superintendente, la secuencia diaria y las restricciones del predio que nunca aparecen limpias en un plano.",
-          "Llame al (813) 323-4648 si la obra ya necesita a alguien en el sitio."
+          "En HMCM, la gerencia de construcción significa ser su socio dedicado desde el concepto inicial hasta la entrega final. Cada encargo empieza con una reunión para evaluar a fondo su visión, los requisitos de presupuesto y las necesidades operativas. Al establecer una comprensión clara de sus objetivos desde el primer día, construimos una hoja de ruta estratégica pensada para entregar un proyecto de alta calidad de forma fluida y eficiente.",
+          "Nuestro enfoque integral, de la A a la Z, cubre cada fase crítica del desarrollo. Nos ocupamos de la contratación y coordinación de arquitectos, ingenieros y servicios profesionales especializados, para que el diseño sea a la vez innovador y construible. Desde navegar requisitos complejos de permisos y la logística de desarrollo de terrenos hasta la creación meticulosa del presupuesto, establecemos una base segura antes de que empiece la construcción. Conforme el proyecto avanza al campo, seleccionamos y dirigimos contratistas y subcontratistas de primer nivel, con una supervisión rigurosa en el sitio. Gestionamos las secuencias diarias, la coordinación de gremios y las restricciones del predio para que cada detalle cumpla normas estrictas de calidad y se entregue por completo.",
+          "Aunque destacamos al dirigir proyectos desde el inicio, nuestra experiencia es muy adaptable. Ya sea que nos necesite para conducir el proceso desde el primer día o una intervención inmediata para resolver paradas concretas y problemas específicos, HMCM está preparado para entrar en cualquier fase. Evaluamos con rapidez los obstáculos, realineamos equipos y aplicamos un conocimiento profundo del sector para devolver el proyecto al rumbo y avanzar con confianza hacia una entrega exitosa."
         ],
         "links": [
           [
-            "Gerencia de proyectos",
-            "/es/gerencia-de-proyectos/"
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
           ],
           [
-            "Consultoría",
-            "/es/consultoria/"
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
           ],
           [
-            "Nueva construcción",
-            "/es/especialidades/nueva-construccion/"
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
           ],
           [
-            "Demolición",
-            "/es/especialidades/demolicion/"
-          ],
-          [
-            "Industrias",
-            "/es/industrias/"
-          ],
-          [
-            "Contacto",
-            "/es/contacto/"
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
           ]
         ],
-        "related": [
-          [
-            "Gerencia de proyectos",
-            "/es/gerencia-de-proyectos/",
-            "Control de costo, alcance y plazo."
-          ],
-          [
-            "Desarrollo de terrenos",
-            "/es/especialidades/desarrollo-de-terrenos/",
-            "Obra de sitio antes del edificio."
-          ],
-          [
-            "Inspecciones",
-            "/es/industrias/inspecciones/",
-            "Secuencia de campo lista para inspección."
-          ]
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/concept-to-completion/",
+      "es_path": "/es/gerencia-de-construccion/concepto-a-entrega/",
+      "nav": "cm-concept",
+      "photo": "plans.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Concept to Completion Services",
+          null
         ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Concepto a entrega",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Concept to Completion Services | Construction Management | HMCM",
+        "desc": "Full-scale end-to-end construction management in Tampa Bay: initial architect pairing, budget creation, and final build execution.",
+        "h1": "Concept to Completion Services",
+        "lead": "Full-scale, end-to-end construction management: from the first architect pairing and the budget through final build execution.",
+        "paras": [
+          "This is HMCM’s full-scale construction management engagement. We start at concept: meeting to assess your vision, budget, and operational needs, then pairing you with the right architect and engineers so the design is both innovative and buildable.",
+          "From there we handle permitting, land-development logistics, meticulous budget creation, contractor and subcontractor buyout, and on-site oversight through final execution. One team holds the roadmap from the first meeting through handover.",
+          "Choose this pathway when you want a dedicated construction manager from day one. Mid-project intervention is <a href=\"/construction-management/project-rescue/\">Project Rescue &amp; Resolution</a>. Field-only work on drawings and a budget that already exist is <a href=\"/construction-management/project-execution/\">Project Execution &amp; Oversight</a>."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Concepto a entrega | Gerencia de construcción | HMCM",
+        "desc": "Gerencia de construcción de principio a fin en Tampa Bay: emparejamiento inicial con el arquitecto, creación del presupuesto y ejecución final de la obra.",
+        "h1": "Concepto a entrega",
+        "lead": "Gerencia de construcción de principio a fin: desde el emparejamiento inicial con el arquitecto y el presupuesto hasta la ejecución final de la obra.",
+        "paras": [
+          "Este es el encargo de gerencia de construcción a escala completa de HMCM. Empezamos en el concepto: una reunión para evaluar su visión, presupuesto y necesidades operativas, y luego el emparejamiento con el arquitecto e ingenieros adecuados para que el diseño sea a la vez innovador y construible.",
+          "A partir de ahí nos ocupamos de permisos, logística de desarrollo de terrenos, creación meticulosa del presupuesto, contratación de contratistas y subcontratistas, y supervisión en sitio hasta la ejecución final. Un solo equipo sostiene la hoja de ruta desde la primera reunión hasta la entrega.",
+          "Elija esta vía cuando quiera un gerente de construcción dedicado desde el primer día. La intervención a mitad de obra es <a href=\"/es/gerencia-de-construccion/rescate-y-resolucion/\">Rescate y resolución de proyectos</a>. El trabajo solo de campo sobre planos y un presupuesto que ya existen es <a href=\"/es/gerencia-de-construccion/ejecucion-y-supervision/\">Ejecución y supervisión de proyectos</a>."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/project-rescue/",
+      "es_path": "/es/gerencia-de-construccion/rescate-y-resolucion/",
+      "nav": "cm-rescue",
+      "photo": "construction-mgmt.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Project Rescue & Resolution",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Rescate y resolución de proyectos",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Project Rescue & Resolution | Construction Management | HMCM",
+        "desc": "Construction management for troubled Tampa Bay sites: immediate mid-project intervention, targeted stall resolution, and on-demand problem-solving.",
+        "h1": "Project Rescue & Resolution",
+        "lead": "Immediate mid-project intervention: targeted stall resolution and on-demand problem-solving for troubled construction sites.",
+        "paras": [
+          "Project Rescue &amp; Resolution is how HMCM steps in as construction manager when a job has stalled, a trade sequence has collapsed, or a specific issue is holding the site. We assess roadblocks, realign teams, and take field control long enough to get the work moving.",
+          "This is the construction-management version of stall assistance—not the consulting page. <a href=\"/consulting/other/distress-stalled-project-support/\">Distress &amp; Stalled Project Support</a> is advisory: diagnosis and a sequence the owner can act on. Here, you hire us to intervene in the field.",
+          "We do not need to restart the project from concept. We step in at the phase you are in, apply industry expertise, and move the job toward a successful handover."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Rescate y resolución de proyectos | Gerencia de construcción | HMCM",
+        "desc": "Gerencia de construcción para obras en dificultades en Tampa Bay: intervención inmediata a mitad de proyecto, resolución de paradas y solución de problemas a demanda.",
+        "h1": "Rescate y resolución de proyectos",
+        "lead": "Intervención inmediata a mitad de proyecto: resolución de paradas concretas y solución de problemas a demanda en obras en dificultades.",
+        "paras": [
+          "Rescate y resolución de proyectos es cómo HMCM entra como gerente de construcción cuando una obra se detuvo, se vino abajo la secuencia de gremios o un problema concreto está frenando el sitio. Evaluamos los obstáculos, realineamos equipos y tomamos el control de campo el tiempo necesario para que el trabajo avance.",
+          "Esta es la versión de gerencia de construcción de la asistencia a obras detenidas, no la página de consultoría. El <a href=\"/es/consultoria/otros/apoyo-a-proyectos-en-dificultades/\">apoyo a proyectos en dificultades o detenidos</a> es asesoría: un diagnóstico y una secuencia que el propietario puede ejecutar. Aquí nos contratan para intervenir en el campo.",
+          "No hace falta reiniciar el proyecto desde el concepto. Entramos en la fase en la que usted está, aplicamos la experiencia del sector y movemos la obra hacia una entrega exitosa."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/specialty-services/",
+      "es_path": "/es/gerencia-de-construccion/servicios-especializados/",
+      "nav": "cm-specialty",
+      "photo": "land.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Specialty Services",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Servicios especializados",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Specialty Services | Construction Management | HMCM",
+        "desc": "Specialized construction-management solutions in Tampa Bay: land development, renovation, demolition, and other niche field work.",
+        "h1": "Specialty Services",
+        "lead": "Specialized, niche construction-management solutions—land development, renovation, demolition, and other constrained field work.",
+        "paras": [
+          "Specialty Services is the construction-management engagement for work that does not fit a standard ground-up stack: land development, renovation, demolition, and other niche sequences that need a dedicated construction manager.",
+          "We still run the job as construction manager—professionals, permits, trades, and site constraints—without treating the sequence as generic new construction. Existing pages on <a href=\"/specialties/land-development/\">land development</a>, <a href=\"/specialties/renovation/\">renovation</a>, and <a href=\"/specialties/demolition/\">demolition</a> describe those work types; this pathway is how you hire HMCM to manage them.",
+          "There is no catalog of invented projects on this page. If the job is specialized, this is the door. Full concept-to-completion management and mid-project rescue remain the other construction-management pathways."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Servicios especializados | Gerencia de construcción | HMCM",
+        "desc": "Soluciones especializadas de gerencia de construcción en Tampa Bay: desarrollo de terrenos, renovación, demolición y otra obra de nicho.",
+        "h1": "Servicios especializados",
+        "lead": "Soluciones especializadas de gerencia de construcción: desarrollo de terrenos, renovación, demolición y otra obra de campo con restricciones propias.",
+        "paras": [
+          "Servicios especializados es el encargo de gerencia de construcción para obra que no cabe en una pila estándar de construcción nueva: desarrollo de terrenos, renovación, demolición y otras secuencias de nicho que necesitan un gerente de construcción dedicado.",
+          "Seguimos dirigiendo la obra como gerentes de construcción —profesionales, permisos, gremios y restricciones del predio— sin tratar la secuencia como una construcción nueva genérica. Las páginas de <a href=\"/es/especialidades/desarrollo-de-terrenos/\">desarrollo de terrenos</a>, <a href=\"/es/especialidades/renovacion/\">renovación</a> y <a href=\"/es/especialidades/demolicion/\">demolición</a> describen esos tipos de trabajo; esta vía es cómo se contrata a HMCM para gerenciarlos.",
+          "En esta página no hay un catálogo de proyectos inventados. Si la obra es especializada, esta es la puerta. La gerencia de principio a fin y el rescate a mitad de proyecto siguen siendo las otras vías de gerencia de construcción."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
+      }
+    },
+    {
+      "en_path": "/construction-management/project-execution/",
+      "es_path": "/es/gerencia-de-construccion/ejecucion-y-supervision/",
+      "nav": "cm-exec",
+      "photo": "project-mgmt.jpg",
+      "crumbs_en": [
+        [
+          "Home",
+          "/"
+        ],
+        [
+          "Construction Management",
+          "/construction-management/"
+        ],
+        [
+          "Project Execution & Oversight",
+          null
+        ]
+      ],
+      "crumbs_es": [
+        [
+          "Inicio",
+          "/es/"
+        ],
+        [
+          "Gerencia de construcción",
+          "/es/gerencia-de-construccion/"
+        ],
+        [
+          "Ejecución y supervisión de proyectos",
+          null
+        ]
+      ],
+      "en": {
+        "title": "Project Execution & Oversight | Construction Management | HMCM",
+        "desc": "Field execution and oversight of existing Tampa Bay projects. Pre-existing plans and budgets only—no preliminary budgeting, scoping, or design-phase involvement.",
+        "h1": "Project Execution & Oversight",
+        "lead": "Pure field execution and oversight of existing projects. This service manages pre-existing plans and budgets only—with no preliminary budgeting, scoping, or design-phase involvement.",
+        "paras": [
+          "Project Execution &amp; Oversight is strictly field execution and oversight of a project that already exists. This service manages pre-existing plans and budgets only. There is no preliminary budgeting, no scoping, and no design-phase involvement in this pathway.",
+          "Owners hire this when drawings, numbers, and a path are already in place, and the need is on site: sourcing and managing contractors and subcontractors, daily sequences, trade coordination, site constraints, and quality through completion.",
+          "This is not full Construction Management. <a href=\"/construction-management/concept-to-completion/\">Concept to Completion Services</a> includes architect pairing, budget creation, permitting, and preconstruction. It is also not <a href=\"/project-management/\">Project Management</a>, which holds scope, cost, and timeline from the first budget through closeout. Execution and oversight stays in the field on what is already drawn and already budgeted."
+        ],
+        "links": [
+          [
+            "Construction Management",
+            "/construction-management/"
+          ],
+          [
+            "Concept to Completion Services",
+            "/construction-management/concept-to-completion/"
+          ],
+          [
+            "Project Rescue & Resolution",
+            "/construction-management/project-rescue/"
+          ],
+          [
+            "Specialty Services",
+            "/construction-management/specialty-services/"
+          ],
+          [
+            "Project Execution & Oversight",
+            "/construction-management/project-execution/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explore Capabilities"
+      },
+      "es": {
+        "title": "Ejecución y supervisión de proyectos | Gerencia de construcción | HMCM",
+        "desc": "Ejecución y supervisión de campo de proyectos existentes en Tampa Bay. Solo planos y presupuestos preexistentes: sin presupuestación preliminar, alcance ni fase de diseño.",
+        "h1": "Ejecución y supervisión de proyectos",
+        "lead": "Ejecución y supervisión de campo, en sentido estricto, de proyectos existentes. Este servicio gestiona solo planos y presupuestos preexistentes, sin presupuestación preliminar, alcance ni participación en la fase de diseño.",
+        "paras": [
+          "Ejecución y supervisión de proyectos es, en sentido estricto, la ejecución y supervisión de campo de un proyecto que ya existe. Este servicio gestiona solo planos y presupuestos preexistentes. En esta vía no hay presupuestación preliminar, no hay definición de alcance y no hay participación en la fase de diseño.",
+          "Los propietarios contratan esto cuando los planos, las cifras y el camino ya están en su lugar, y lo que hace falta está en el sitio: seleccionar y dirigir contratistas y subcontratistas, secuencias diarias, coordinación de gremios, restricciones del predio y calidad hasta la entrega.",
+          "Esto no es la gerencia de construcción completa. <a href=\"/es/gerencia-de-construccion/concepto-a-entrega/\">Concepto a entrega</a> incluye el emparejamiento con el arquitecto, la creación del presupuesto, los permisos y la preconstrucción. Tampoco es <a href=\"/es/gerencia-de-proyectos/\">gerencia de proyectos</a>, que sostiene alcance, costo y plazo desde el primer presupuesto hasta el cierre. La ejecución y supervisión se queda en el campo, sobre lo que ya está dibujado y ya está presupuestado."
+        ],
+        "links": [
+          [
+            "Gerencia de construcción",
+            "/es/gerencia-de-construccion/"
+          ],
+          [
+            "Concepto a entrega",
+            "/es/gerencia-de-construccion/concepto-a-entrega/"
+          ],
+          [
+            "Rescate y resolución de proyectos",
+            "/es/gerencia-de-construccion/rescate-y-resolucion/"
+          ],
+          [
+            "Servicios especializados",
+            "/es/gerencia-de-construccion/servicios-especializados/"
+          ],
+          [
+            "Ejecución y supervisión de proyectos",
+            "/es/gerencia-de-construccion/ejecucion-y-supervision/"
+          ]
+        ],
+        "related": [],
+        "aside_h": "Explorar capacidades"
       }
     },
     {

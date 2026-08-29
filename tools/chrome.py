@@ -166,6 +166,10 @@ OFFERS = [
     ("Commercial consulting", f"{CANON}/consulting/commercial/"),
     ("Residential consulting", f"{CANON}/consulting/residential/"),
     ("Construction Management", f"{CANON}/construction-management/"),
+    ("Concept to Completion Services", f"{CANON}/construction-management/concept-to-completion/"),
+    ("Project Rescue & Resolution", f"{CANON}/construction-management/project-rescue/"),
+    ("Specialty Services", f"{CANON}/construction-management/specialty-services/"),
+    ("Project Execution & Oversight", f"{CANON}/construction-management/project-execution/"),
     ("Project Management", f"{CANON}/project-management/"),
     ("Efficiency Evaluations and Implementations", f"{CANON}/consulting/other/efficiency-evaluations/"),
     ("Systems Evaluations and Implementations", f"{CANON}/consulting/other/systems-evaluations/"),
@@ -349,7 +353,7 @@ def _nav(lang, current):
         f'          <a href="{href}">{esc(name)}</a>' for name, href in t["inds"]
     )
     consult_open = " is-current" if current.startswith("consult") else ""
-    services_open = " is-current" if current in ("services", "cm", "pm") else ""
+    services_open = " is-current" if current in ("services", "cm", "pm") or current.startswith("cm-") else ""
     specs_open = " is-current" if current.startswith("spec") else ""
     inds_open = " is-current" if current.startswith("ind") else ""
 
