@@ -57,7 +57,7 @@
   document.addEventListener("click", function (e) {
     if (!nav) return;
     if (!nav.contains(e.target) && toggle && !toggle.contains(e.target)) {
-      if (window.matchMedia("(max-width: 900px)").matches) closeNav();
+      if (window.matchMedia("(max-width: 1100px)").matches) closeNav();
     }
   });
 })();

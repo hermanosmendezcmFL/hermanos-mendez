@@ -283,24 +283,60 @@ def build_html_sitemaps():
         write(path, wrap_page(lang, path, pair, "home", title, desc, body, crumbs=crumbs))
 
 def build_meta():
+    csp = (
+        "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+        "img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; "
+        "base-uri 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests"
+    )
+    redirects = """Redirect 301 /services/consulting/ /consulting/
+Redirect 301 /services/construction-management/ /construction-management/
+Redirect 301 /services/project-management/ /project-management/
+Redirect 301 /es/servicios/consultoria/ /es/consultoria/
+Redirect 301 /es/servicios/gerencia-de-construccion/ /es/gerencia-de-construccion/
+Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/
+Redirect 301 /industries/land-clearing/ /specialties/land-clearing/
+Redirect 301 /es/industrias/despeje-de-terrenos/ /es/especialidades/despeje-de-terrenos/
+Redirect 301 /industries/stormwater-mitigation/ /specialties/stormwater-mitigation/
+Redirect 301 /es/industrias/mitigacion-de-aguas-pluviales/ /es/especialidades/mitigacion-de-aguas-pluviales/
+Redirect 301 /industries/inspections/ /specialties/inspections/
+Redirect 301 /es/industrias/inspecciones/ /es/especialidades/inspecciones/
+Redirect 301 /industries/design-build/ /construction-management/design-build/
+Redirect 301 /industries/permitting/ /construction-management/permitting/
+Redirect 301 /es/industrias/diseno-construccion/ /es/gerencia-de-construccion/diseno-construccion/
+Redirect 301 /es/industrias/permisos/ /es/gerencia-de-construccion/permisos/
+"""
     (ROOT / ".htaccess").write_text(
-        "DirectoryIndex index.html\nErrorDocument 404 /404.html\n"
-        "Redirect 301 /services/consulting/ /consulting/\n"
-        "Redirect 301 /services/construction-management/ /construction-management/\n"
-        "Redirect 301 /services/project-management/ /project-management/\n"
-        "Redirect 301 /es/servicios/consultoria/ /es/consultoria/\n"
-        "Redirect 301 /es/servicios/gerencia-de-construccion/ /es/gerencia-de-construccion/\n"
-        "Redirect 301 /es/servicios/gerencia-de-proyectos/ /es/gerencia-de-proyectos/\n"
-        "Redirect 301 /industries/land-clearing/ /specialties/land-clearing/\n"
-        "Redirect 301 /es/industrias/despeje-de-terrenos/ /es/especialidades/despeje-de-terrenos/\n"
-        "Redirect 301 /industries/stormwater-mitigation/ /specialties/stormwater-mitigation/\n"
-        "Redirect 301 /es/industrias/mitigacion-de-aguas-pluviales/ /es/especialidades/mitigacion-de-aguas-pluviales/\n"
-        "Redirect 301 /industries/inspections/ /specialties/inspections/\n"
-        "Redirect 301 /es/industrias/inspecciones/ /es/especialidades/inspecciones/\n"
-        "Redirect 301 /industries/design-build/ /construction-management/design-build/\n"
-        "Redirect 301 /industries/permitting/ /construction-management/permitting/\n"
-        "Redirect 301 /es/industrias/diseno-construccion/ /es/gerencia-de-construccion/diseno-construccion/\n"
-        "Redirect 301 /es/industrias/permisos/ /es/gerencia-de-construccion/permisos/\n",
+        "DirectoryIndex index.html\n"
+        "ErrorDocument 404 /404.html\n"
+        "Options -Indexes\n"
+        "\n"
+        "<IfModule mod_headers.c>\n"
+        '  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"\n'
+        '  Header always set X-Frame-Options "DENY"\n'
+        '  Header always set X-Content-Type-Options "nosniff"\n'
+        '  Header always set Referrer-Policy "strict-origin-when-cross-origin"\n'
+        '  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"\n'
+        '  Header always set Content-Security-Policy "%s"\n'
+        "</IfModule>\n"
+        "\n"
+        "<IfModule mod_rewrite.c>\n"
+        "  RewriteEngine On\n"
+        "  RewriteCond %%{HTTPS} !=on\n"
+        "  RewriteCond %%{HTTP:X-Forwarded-Proto} !https\n"
+        "  RewriteRule ^ https://%%{HTTP_HOST}%%{REQUEST_URI} [L,R=301]\n"
+        "</IfModule>\n"
+        "\n"
+        "%s" % (csp, redirects),
+        encoding="utf-8",
+    )
+    (ROOT / "_headers").write_text(
+        "/*\n"
+        "  Strict-Transport-Security: max-age=31536000; includeSubDomains\n"
+        "  X-Frame-Options: DENY\n"
+        "  X-Content-Type-Options: nosniff\n"
+        "  Referrer-Policy: strict-origin-when-cross-origin\n"
+        "  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()\n"
+        "  Content-Security-Policy: %s\n" % csp,
         encoding="utf-8",
     )
     (ROOT / "robots.txt").write_text("User-agent: *\nAllow: /\n\nSitemap: https://hmcmfl.com/sitemap.xml\n", encoding="utf-8")

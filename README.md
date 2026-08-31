@@ -62,6 +62,10 @@ Legal name **Hermanos Mendez Construction Management, LLC** appears in schema (`
 
 No email address is published. Phone is the contact path.
 
+## Host security
+
+The zip includes `.htaccess` (Apache / cPanel / many GoDaddy plans) and `_headers` (Netlify-style hosts). Those send HTTPS-only, no framing, no MIME sniffing, a tight Content-Security-Policy, and a referrer policy. Turn on HTTPS in the host panel; the rewrite only helps if the server is Apache with `mod_rewrite`. Python’s local preview server ignores both files.
+
 ## Logos
 
 Header and footer use `/assets/logo-light.png` (white HMCM wordmark + arc, transparent). Dark lockup: `/assets/logo.png`. Open Graph and apple-touch-icon should match that wordmark.
