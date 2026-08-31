@@ -406,11 +406,10 @@ address { font-style: normal; }
 .btn-ink { background: var(--ink); color: var(--cream); }
 .btn-ink:hover { background: var(--copper-deep); color: #fff; }
 
-/* Full-viewport hero */
+/* Hero: tall enough to land, not a full-monitor billboard */
 .hero-full {
   position: relative;
-  min-height: calc(100vh - var(--header-h));
-  min-height: calc(100svh - var(--header-h));
+  min-height: clamp(24rem, 58svh, 36rem);
   display: flex;
   align-items: flex-end;
   color: var(--cream);
@@ -423,10 +422,9 @@ address { font-style: normal; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
   background-size: cover;
-  background-position: center;
-  transform: scale(1.04);
+  background-position: center 30%;
 }
 .hero-full::after {
   content: "";
@@ -439,14 +437,14 @@ address { font-style: normal; }
 .hero-full .wrap {
   position: relative;
   z-index: 1;
-  padding: 4.5rem 0 4.25rem;
+  padding: 3.25rem 0 2.85rem;
 }
 .hero-full h1 {
   margin: 0 0 1.1rem;
   max-width: 24ch;
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(2.35rem, 5.6vw, 4.15rem);
+  font-size: clamp(1.7rem, 2.4vw + 0.9rem, 2.85rem);
   line-height: 1.12;
   letter-spacing: -0.02em;
 }
@@ -454,7 +452,7 @@ address { font-style: normal; }
   margin: 0 0 0.85rem;
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(1.35rem, 2.6vw, 1.95rem);
+  font-size: clamp(1.12rem, 1.2vw + 0.7rem, 1.5rem);
   letter-spacing: -0.015em;
   color: var(--copper-soft);
   text-transform: none;
@@ -464,14 +462,14 @@ address { font-style: normal; }
   max-width: 36rem;
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(0.98rem, 0.8vw + 0.75rem, 1.15rem);
   color: var(--stone);
   text-transform: none;
 }
 .hero-lead {
-  margin: 0 0 1.85rem;
-  max-width: 40rem;
-  font-size: 1.15rem;
+  margin: 0 0 1.45rem;
+  max-width: 38rem;
+  font-size: 1.02rem;
   color: var(--stone);
 }
 .hero-lead a { color: #fff; text-underline-offset: 3px; }
@@ -1142,7 +1140,7 @@ address { font-style: normal; }
   .nav-drop-col + .nav-drop-col { border-left: 0; border-top: 1px solid var(--rule-dark); }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   :root { --header-h: 4.2rem; }
   .nav-toggle { display: block; order: 4; min-width: 44px; min-height: 44px; width: 44px; height: 44px; }
   .btn-call {
@@ -1155,7 +1153,7 @@ address { font-style: normal; }
   .btn-call .call-full { display: none; }
   .btn-call .call-short { display: inline; }
   .logo-link { flex: 1 1 auto; min-width: 0; }
-  .logo-link img { height: 44px; max-width: min(200px, 52vw); }
+  .logo-link img { height: 38px; max-width: min(154px, 40vw); }
   .lang-switch { order: 2; margin: 0; padding: 0 0.35rem; border: 0; }
 
   .site-nav {
@@ -1265,11 +1263,12 @@ address { font-style: normal; }
   }
   .split-card { grid-template-columns: 1fr; }
   .tile, .spec-card { min-height: 18rem; }
-  .hero-full { min-height: 34rem; }
-  .hero-full .wrap { padding: 3rem 0 2.6rem; }
+  .hero-full { min-height: 22rem; }
+  .hero-full .wrap { padding: 2.4rem 0 2.1rem; }
+  .hero-full h1 { font-size: clamp(1.55rem, 7.2vw, 2.15rem); }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
   .nav-caret {
     display: none !important;
     width: 0 !important;
@@ -1291,7 +1290,7 @@ address { font-style: normal; }
   }
 }
 
-@media (min-width: 901px) and (max-width: 1180px) {
+@media (min-width: 1101px) and (max-width: 1360px) {
   .site-nav > a,
   .nav-item > .nav-parent {
     padding: 0.55rem 0.45rem;
@@ -1300,6 +1299,29 @@ address { font-style: normal; }
   }
   .logo-link img { height: 48px; }
   .btn-call { font-size: 0.72rem; padding: 0.55rem 0.75rem; min-height: 44px; }
+}
+
+
+@media (max-height: 820px) {
+  .hero-full { min-height: min(28rem, calc(100svh - var(--header-h))); }
+  .hero-full .wrap { padding: 2.1rem 0 1.9rem; }
+  .hero-full h1 { font-size: clamp(1.6rem, 3.2vw, 2.35rem); }
+}
+
+
+@media (min-width: 1101px) and (max-width: 1280px) {
+  body { font-size: 1rem; }
+  .logo-link img { height: 46px; max-width: min(210px, 42vw); }
+}
+
+@media (max-width: 520px) {
+  .wrap {
+    width: min(var(--wrap), calc(100% - 2.75rem - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)));
+  }
+  .header-inner { gap: 0.45rem; }
+  .logo-link img { height: 34px; max-width: min(128px, 34vw); }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; justify-content: center; text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
