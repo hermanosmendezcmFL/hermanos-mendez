@@ -285,7 +285,8 @@ def build_html_sitemaps():
 def build_meta():
     csp = (
         "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
-        "img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; "
+        "img-src 'self'; font-src 'self'; connect-src 'self'; "
+        "frame-src https://www.google.com https://maps.google.com; object-src 'none'; "
         "base-uri 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests"
     )
     redirects = """Redirect 301 /services/consulting/ /consulting/
